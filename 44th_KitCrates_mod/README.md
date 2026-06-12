@@ -1,5 +1,7 @@
 # 44th Kit Crates
 
+**[Subscribe on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3743245113)**
+
 Arma 3 mod providing pre-configured kit selection crates for each unit type in the 44th. Players interact with their unit's crate to browse and select a loadout from the roles available to them. Each crate is locked to its unit — players should only take the crate that matches their assigned element.
 
 Crates are placed in the Eden Editor under **44th Mods → Kit Crates**.

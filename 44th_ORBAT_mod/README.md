@@ -1,5 +1,7 @@
 # 44th ORBAT
 
+**[Subscribe on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3743476647)**
+
 Arma 3 mod adding the full 44th order of battle. The complete ORBAT is placed in one click as an Eden composition with playable slots, or individual units/sections can be placed from the asset and group browsers.
 
 ## Requirements

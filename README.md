@@ -37,6 +37,7 @@ Adds pre-configured supply crates for each of the unit's sections and specialist
 ---
 
 ### [44th ORBAT](44th_ORBAT_mod/)
+[![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3743476647)
 
 Adds the full 44th order of battle. The complete ORBAT places in one click as an Eden composition under **44th Mods → Compositions** — all slots playable with lobby descriptions grouped by section, loadouts baked in, and Zeus modules included. Individual units and sections are also available in the asset and group browsers, spawning with the correct uniform, headgear, rank, basic kit, and TFAR radio frequencies.
 
@@ -54,6 +55,7 @@ Adds the full 44th order of battle. The complete ORBAT places in one click as an
 ---
 
 ### [44th Kit Crates](44th_KitCrates_mod/)
+[![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3743245113)
 
 Adds kit selection crates for each unit type. Players interact with a crate to choose their loadout from the roles available to their section. Crates appear in the Eden Editor under **44th Mods → Kit Crates**.
 
