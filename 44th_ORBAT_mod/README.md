@@ -1,20 +1,31 @@
 # 44th ORBAT
 
-Arma 3 mod adding pre-configured unit classes for every role across all 44th elements. Units are placed directly in the Eden Editor under **44th Mods** in the asset browser, or as complete sections/bricks via the group browser.
+Arma 3 mod adding the full 44th order of battle. The complete ORBAT is placed in one click as an Eden composition with playable slots, or individual units/sections can be placed from the asset and group browsers.
 
 ## Requirements
 
+- [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
 - [UK3CB BAF Units (ACE)](https://steamcommunity.com/sharedfiles/filedetails/?id=2382830257)
 
-## What it does
+## Full ORBAT composition
 
-Each unit spawns with:
+Found in Eden under **44th Mods → Compositions → 44th Modern Milsim ORBAT**. Placing it gives the entire ORBAT exactly as configured:
+
+- All 131 slots **playable**, with lobby descriptions grouped by section (e.g. *Rifleman — Zulu Section*)
+- Full role loadouts baked in
+- Zeus curator modules included for Lead/Co Zeus
+
+This is the intended way to set up a mission — units placed from the asset or group browsers spawn as AI by default (an Eden engine limitation: configs cannot mark units playable), so the mission maker would need to set playability manually.
+
+## Individual units
+
+Units placed from the asset browser (**44th Mods**) or group browser spawn with:
 - Correct MTP uniform and headgear for their role
 - Rank set automatically
 - Basic kit (map, compass, watch, FAK)
 - TFAR SR/LR radio frequencies pre-configured for their section net
 
-Zeus units (Lead Zeus, Co Zeus) additionally receive a game master module assigned on spawn — no pre-placed module needed.
+Zeus units (Lead Zeus, Co Zeus) additionally receive a game master module assigned on spawn — no pre-placed module needed. The curator refreshes its editable objects periodically, so mid-mission spawns stay Zeus-editable.
 
 ## Units
 
@@ -120,7 +131,7 @@ Zeus units (Lead Zeus, Co Zeus) additionally receive a game master module assign
 
 1. Copy the `@44th_ORBAT` folder into your Arma 3 directory.
 2. Enable the mod in the Arma 3 launcher.
-3. In Eden Editor, find units under **44th Mods** in the asset browser, or place full sections via the group browser.
+3. In Eden Editor, place the full ORBAT from **44th Mods → Compositions**, or find individual units under **44th Mods** in the asset browser and full sections in the group browser.
 
 ## Author
 

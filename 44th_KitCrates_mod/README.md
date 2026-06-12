@@ -6,7 +6,10 @@ Crates are placed in the Eden Editor under **44th Mods → Kit Crates**.
 
 ## Requirements
 
+- [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
 - Warbird
+
+If Warbird is not loaded, crates simply stay empty (the fill script times out safely after 60 seconds).
 
 ## Crates
 

@@ -32,13 +32,13 @@ Adds pre-configured supply crates for each of the unit's sections and specialist
 - SFSG — Fire Support, Precision, Section (8-man)
 - SRR, SAS
 
-**Requires:** UK3CB BAF (ACE), ACE3
+**Requires:** CBA_A3, UK3CB BAF (ACE), ACE3
 
 ---
 
 ### [44th ORBAT](44th_ORBAT_mod/)
 
-Adds pre-configured unit classes for every role across all 44th elements. Units spawn with the correct uniform, headgear, rank, basic kit, and TFAR radio frequencies for their section. Zeus units automatically receive a game master module on spawn. All units and sections are available in the Eden Editor asset and group browsers.
+Adds the full 44th order of battle. The complete ORBAT places in one click as an Eden composition under **44th Mods → Compositions** — all slots playable with lobby descriptions grouped by section, loadouts baked in, and Zeus modules included. Individual units and sections are also available in the asset and group browsers, spawning with the correct uniform, headgear, rank, basic kit, and TFAR radio frequencies.
 
 **Units included:**
 - Regimental HQ — Lead Zeus, Co Zeus
@@ -49,7 +49,7 @@ Adds pre-configured unit classes for every role across all 44th elements. Units 
 - SRR — Recon Bricks 1–3, JSFAW
 - SAS — Troop HQ, Bricks Zulu/Victor/Romeo/Juliet, JSFAW
 
-**Requires:** UK3CB BAF Units (ACE)
+**Requires:** CBA_A3, UK3CB BAF Units (ACE)
 
 ---
 
@@ -65,7 +65,7 @@ Adds kit selection crates for each unit type. Players interact with a crate to c
 - SRR — Specialist roles
 - SAS — Troop roles
 
-**Requires:** Warbird
+**Requires:** CBA_A3, Warbird
 
 ---
 

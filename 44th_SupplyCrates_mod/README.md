@@ -6,6 +6,7 @@ Arma 3 mod adding pre-configured supply crates for 44th Regiment loadouts. Crate
 
 ## Requirements
 
+- [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
 - [UK3CB BAF Units (ACE)](https://steamcommunity.com/sharedfiles/filedetails/?id=2382830257)
 - [ACE3](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
 
