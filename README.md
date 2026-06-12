@@ -36,6 +36,23 @@ Adds pre-configured supply crates for each of the unit's sections and specialist
 
 ---
 
+### [44th ORBAT](44th_ORBAT_mod/)
+
+Adds pre-configured unit classes for every role across all 44th elements. Units spawn with the correct uniform, headgear, rank, basic kit, and TFAR radio frequencies for their section. Zeus units automatically receive a game master module on spawn. All units and sections are available in the Eden Editor asset and group browsers.
+
+**Units included:**
+- Regimental HQ — Lead Zeus, Co Zeus
+- RBN — Platoon HQ, Zulu/Victor/Juliet sections
+- RBN Support — Sappers, GPMG, Mortar, Javelin, Sniper team, Mailman
+- Ranger — The Cadre (11-man), Mailman
+- SFSG — HQ, Zulu/Victor/Romeo/Juliet sections, Mailman
+- SRR — Recon Bricks 1–3, JSFAW
+- SAS — Troop HQ, Bricks Zulu/Victor/Romeo/Juliet, JSFAW
+
+**Requires:** UK3CB BAF Units (ACE)
+
+---
+
 ### [44th Kit Crates](44th_KitCrates_mod/)
 
 Adds kit selection crates for each unit type. Players interact with a crate to choose their loadout from the roles available to their section. Crates appear in the Eden Editor under **44th Mods → Kit Crates**.
