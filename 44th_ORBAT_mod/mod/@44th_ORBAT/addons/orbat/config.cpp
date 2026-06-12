@@ -1414,7 +1414,7 @@ class CfgGroups
             name = "Reg HQ";
             class _44th_GRP_RegHQ
             {
-                name = "Regimental HQ";
+                name = "Regimental Command";
                 side = 1;
                 class units
                 {
