@@ -1,0 +1,14 @@
+# Compiled Arma addon files
+*.pbo
+*.pbo.SHA512
+
+# Arma build artifacts
+*.bisign
+*.bikey
+
+# Claude Code local config
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
