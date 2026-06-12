@@ -1,5 +1,7 @@
 # 44th Supply Crates
 
+**[Subscribe on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3742862207)**
+
 Arma 3 mod adding pre-configured supply crates for 44th Regiment loadouts. Crates are placed directly in the Eden Editor under a dedicated **44th Supply Crates** category.
 
 ## Requirements
