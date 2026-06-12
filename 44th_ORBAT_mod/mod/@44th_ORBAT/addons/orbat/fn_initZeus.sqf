@@ -1,4 +1,4 @@
-params ["_unit", "_headgear", "_rank", "_srFreq", "_lrFreq"];
+﻿params ["_unit", "_headgear", "_rank", "_srFreq", "_lrFreq"];
 
 _unit forceAddUniform "UK3CB_BAF_U_Smock_MTP";
 if (_headgear != "") then { _unit addHeadgear _headgear; };
@@ -20,5 +20,7 @@ if (isServer) then {
     _curator addCuratorEditableObjects [entities "all", true];
     _curator setCuratorCoef ["EDIT",    0];
     _curator setCuratorCoef ["MOVE",    0];
-    _curator setCuratorCoef ["DESTROY", 1];
+    _curator setCuratorCoef ["DESTROY", 0];
+    _curator setCuratorCoef ["PLACE",   0];
 };
+
