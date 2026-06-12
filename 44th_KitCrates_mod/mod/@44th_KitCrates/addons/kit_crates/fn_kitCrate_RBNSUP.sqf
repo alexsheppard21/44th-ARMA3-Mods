@@ -1,4 +1,7 @@
-﻿clearWeaponCargoGlobal _this;
+﻿private _timeout = time + 60;
+waitUntil { !isNil "Wbk_AddKit" || time > _timeout };
+if (isNil "Wbk_AddKit") exitWith {};
+clearWeaponCargoGlobal _this;
 clearMagazineCargoGlobal _this;
 clearItemCargoGlobal _this;
 clearBackpackCargoGlobal _this;

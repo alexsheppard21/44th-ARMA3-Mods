@@ -21,6 +21,7 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] = {
             "A3_Supplies_F_Exp_Ammoboxes",
+            "cba_xeh",
             "UK3CB_BAF_Units_ACE"
         };
         author = "FullMetalShep";
@@ -41,10 +42,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Medical.sqf'";
-        };
     };
 
     // --- RANGER ---
@@ -54,10 +51,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_FireSupport_Ranger.sqf'";
-        };
     };
 
     class _44th_Crate_Precision_Ranger : Box_T_NATO_Wps_F
@@ -66,10 +59,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Precision_Ranger.sqf'";
-        };
     };
 
     class _44th_Crate_AntiArmour_Ranger : Box_T_NATO_Wps_F
@@ -78,10 +67,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_AntiArmour_Ranger.sqf'";
-        };
     };
 
     class _44th_Crate_Section_Ranger : UK3CB_BAF_Box_Section_Supplies_ACE
@@ -90,10 +75,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Section_Ranger.sqf'";
-        };
     };
 
     // --- RBN ---
@@ -103,10 +84,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SniperAmmo_RBN.sqf'";
-        };
     };
 
     class _44th_Crate_Section_RBN : UK3CB_BAF_Box_Section_Supplies_ACE
@@ -115,10 +92,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Section_RBN.sqf'";
-        };
     };
 
     class _44th_Crate_EOD_RBN : Box_T_NATO_Wps_F
@@ -127,10 +100,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_EOD_RBN.sqf'";
-        };
     };
 
     // --- SFSG ---
@@ -140,10 +109,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_FireSupport_SFSG.sqf'";
-        };
     };
 
     class _44th_Crate_Section_SFSG : UK3CB_BAF_Box_Section_Supplies_ACE
@@ -152,10 +117,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Section_SFSG.sqf'";
-        };
     };
 
     class _44th_Crate_Precision_SFSG : Box_T_NATO_Wps_F
@@ -164,10 +125,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Precision_SFSG.sqf'";
-        };
     };
 
     // --- SPECIAL FORCES ---
@@ -177,10 +134,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SRR.sqf'";
-        };
     };
 
     class _44th_Crate_SAS : UK3CB_BAF_Box_Section_Supplies_ACE
@@ -189,23 +142,24 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SAS.sqf'";
-        };
     };
 };
 
-class CfgFunctions
+class Extended_InitPost_EventHandlers
 {
-    class FTTH
-    {
-        class SupplyCrates
-        {
-            file = "\44th_SupplyCrates\supply_crates";
-            class postInit { postInit = 1; };
-        };
-    };
+    class _44th_Crate_Medical { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Medical.sqf'"; }; };
+    class _44th_Crate_FireSupport_Ranger { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_FireSupport_Ranger.sqf'"; }; };
+    class _44th_Crate_Precision_Ranger { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Precision_Ranger.sqf'"; }; };
+    class _44th_Crate_AntiArmour_Ranger { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_AntiArmour_Ranger.sqf'"; }; };
+    class _44th_Crate_Section_Ranger { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Section_Ranger.sqf'"; }; };
+    class _44th_Crate_SniperAmmo_RBN { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SniperAmmo_RBN.sqf'"; }; };
+    class _44th_Crate_Section_RBN { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Section_RBN.sqf'"; }; };
+    class _44th_Crate_EOD_RBN { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_EOD_RBN.sqf'"; }; };
+    class _44th_Crate_FireSupport_SFSG { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_FireSupport_SFSG.sqf'"; }; };
+    class _44th_Crate_Section_SFSG { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Section_SFSG.sqf'"; }; };
+    class _44th_Crate_Precision_SFSG { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Precision_SFSG.sqf'"; }; };
+    class _44th_Crate_SRR { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SRR.sqf'"; }; };
+    class _44th_Crate_SAS { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SAS.sqf'"; }; };
 };
 
 class CfgEditorCategories

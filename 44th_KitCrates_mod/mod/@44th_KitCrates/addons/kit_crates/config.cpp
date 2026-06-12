@@ -13,7 +13,7 @@ class CfgPatches
         weapons[] = {};
         requiredVersion = 0.1;
         requiredAddons[] = {
-            "A3_Supplies_F_Orange_Ammoboxes"
+            "A3_Supplies_F_Orange_Ammoboxes", "cba_xeh"
         };
         author = "FullMetalShep";
         version = 1;
@@ -30,10 +30,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_KitCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_RBN.sqf'";
-        };
     };
 
     class _44th_KitCrate_RBNSUP : C_IDAP_supplyCrate_F
@@ -42,10 +38,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_KitCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_RBNSUP.sqf'";
-        };
     };
 
     class _44th_KitCrate_RANGER : C_IDAP_supplyCrate_F
@@ -54,10 +46,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_KitCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_RANGER.sqf'";
-        };
     };
 
     class _44th_KitCrate_SFSG : C_IDAP_supplyCrate_F
@@ -66,10 +54,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_KitCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_SFSG.sqf'";
-        };
     };
 
     class _44th_KitCrate_SRR : C_IDAP_supplyCrate_F
@@ -78,10 +62,6 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_KitCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_SRR.sqf'";
-        };
     };
 
     class _44th_KitCrate_SAS : C_IDAP_supplyCrate_F
@@ -90,11 +70,17 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_KitCrates";
-        class EventHandlers
-        {
-            init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_SAS.sqf'";
-        };
     };
+};
+
+class Extended_InitPost_EventHandlers
+{
+    class _44th_KitCrate_RBN { class _44th_kitcrates { init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_RBN.sqf'"; }; };
+    class _44th_KitCrate_RBNSUP { class _44th_kitcrates { init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_RBNSUP.sqf'"; }; };
+    class _44th_KitCrate_RANGER { class _44th_kitcrates { init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_RANGER.sqf'"; }; };
+    class _44th_KitCrate_SFSG { class _44th_kitcrates { init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_SFSG.sqf'"; }; };
+    class _44th_KitCrate_SRR { class _44th_kitcrates { init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_SRR.sqf'"; }; };
+    class _44th_KitCrate_SAS { class _44th_kitcrates { init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_SAS.sqf'"; }; };
 };
 
 class CfgEditorCategories
