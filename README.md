@@ -1,8 +1,8 @@
 # 44th Arma Mods
 
-This repository contains Arma 3 mods developed for the 44th Regiment, a British-themed milsim unit. The mods are built to support our unit's specific loadouts, structure, and playstyle — covering everything from pre-configured supply crates to mission utilities.
+This repository contains Arma 3 mods developed for the 44th Royal Battalion, a British-themed milsim unit part of the wider 44th Gaming Group. The mods are built to support our unit's specific loadouts, structure, and playstyle — covering everything from pre-configured supply crates to mission utilities.
 
-All mods are available on the Steam Workshop and are designed to work alongside our standard mod pack (UK3CB BAF + ACE3).
+All mods are available on the Steam Workshop and are designed to work alongside our standard mod pack.
 
 ---
 
