@@ -90,12 +90,13 @@ class CfgEditorSubcategories
     class FTH_Sub_44th_SFSG   { displayName = "SFSG"; };
     class FTH_Sub_44th_SRR    { displayName = "SRR"; };
     class FTH_Sub_44th_SAS    { displayName = "SAS"; };
+    class FTH_Sub_44th_Compositions { displayName = "Compositions"; };
 };
 
 class CfgVehicles
 {
     class B_Soldier_unarmed_F;
-    class _44th_OrbatUnit : B_Soldier_unarmed_F { scope = 1; isPlayable = 1; };
+    class _44th_OrbatUnit : B_Soldier_unarmed_F { scope = 1; };
 
     // ─── Regimental HQ ────────────────────────────────────────────────────────
 
@@ -1175,8 +1176,8 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "COLONEL"; vehicle = "_44th_Reg_LeadZeus"; description = "Lead Zeus@Regimental Command"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "MAJOR";   vehicle = "_44th_Reg_CoZeus"; description = "Co Zeus"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "COLONEL"; vehicle = "_44th_Reg_LeadZeus"; description = "Lead Zeus@Regimental Command"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "MAJOR";   vehicle = "_44th_Reg_CoZeus"; description = "Co Zeus"; };
                 };
             };
         };
@@ -1192,11 +1193,11 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CAPTAIN";  vehicle = "_44th_RBN_PlatoonCommander"; description = "Platoon Commander@Bulldog"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "SERGEANT"; vehicle = "_44th_RBN_PlatoonSergeant"; description = "Platoon Sergeant"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_PlatoonSignaller"; description = "Platoon Signaller"; };
-                    class Unit3 { position[] = {2,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_PlatoonMedic"; description = "Platoon Medic"; };
-                    class Unit4 { position[] = {-2,4,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_PlatoonUAVOperator"; description = "Platoon UAV Operator"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CAPTAIN";  vehicle = "_44th_RBN_PlatoonCommander"; description = "Platoon Commander@Bulldog"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "SERGEANT"; vehicle = "_44th_RBN_PlatoonSergeant"; description = "Platoon Sergeant"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_PlatoonSignaller"; description = "Platoon Signaller"; };
+                    class Unit3 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_PlatoonMedic"; description = "Platoon Medic"; };
+                    class Unit4 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_PlatoonUAVOperator"; description = "Platoon UAV Operator"; };
                 };
             };
             class _44th_GRP_RBN_Zulu
@@ -1205,13 +1206,13 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_RBN_SectionCommander_Zulu"; description = "Section Commander@Zulu"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_RBN_Section2IC_Zulu"; description = "Section 2IC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_Sharpshooter_Zulu"; description = "Sharpshooter"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_Grenadier_Zulu"; description = "Grenadier"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_TeamMedic_Zulu"; description = "Team Medic"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_MachineGunner_Zulu"; description = "Machine Gunner"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_Rifleman_Zulu"; description = "Rifleman"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_RBN_SectionCommander_Zulu"; description = "Section Commander@Zulu"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_RBN_Section2IC_Zulu"; description = "Section 2IC"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_Sharpshooter_Zulu"; description = "Sharpshooter"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_Grenadier_Zulu"; description = "Grenadier"; };
+                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_TeamMedic_Zulu"; description = "Team Medic"; };
+                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_MachineGunner_Zulu"; description = "Machine Gunner"; };
+                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_Rifleman_Zulu"; description = "Rifleman"; };
                 };
             };
             class _44th_GRP_RBN_Victor
@@ -1220,13 +1221,13 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_RBN_SectionCommander_Victor"; description = "Section Commander@Victor"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_RBN_Section2IC_Victor"; description = "Section 2IC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_Sharpshooter_Victor"; description = "Sharpshooter"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_Grenadier_Victor"; description = "Grenadier"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_TeamMedic_Victor"; description = "Team Medic"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_MachineGunner_Victor"; description = "Machine Gunner"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_Rifleman_Victor"; description = "Rifleman"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_RBN_SectionCommander_Victor"; description = "Section Commander@Victor"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_RBN_Section2IC_Victor"; description = "Section 2IC"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_Sharpshooter_Victor"; description = "Sharpshooter"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_Grenadier_Victor"; description = "Grenadier"; };
+                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_TeamMedic_Victor"; description = "Team Medic"; };
+                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_MachineGunner_Victor"; description = "Machine Gunner"; };
+                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_Rifleman_Victor"; description = "Rifleman"; };
                 };
             };
             class _44th_GRP_RBN_Juliet
@@ -1235,13 +1236,13 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_RBN_SectionCommander_Juliet"; description = "Section Commander@Juliet"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_RBN_Section2IC_Juliet"; description = "Section 2IC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_Sharpshooter_Juliet"; description = "Sharpshooter"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_Grenadier_Juliet"; description = "Grenadier"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_TeamMedic_Juliet"; description = "Team Medic"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_MachineGunner_Juliet"; description = "Machine Gunner"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_RBN_Rifleman_Juliet"; description = "Rifleman"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_RBN_SectionCommander_Juliet"; description = "Section Commander@Juliet"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_RBN_Section2IC_Juliet"; description = "Section 2IC"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_Sharpshooter_Juliet"; description = "Sharpshooter"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_Grenadier_Juliet"; description = "Grenadier"; };
+                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_TeamMedic_Juliet"; description = "Team Medic"; };
+                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_MachineGunner_Juliet"; description = "Machine Gunner"; };
+                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_RBN_Rifleman_Juliet"; description = "Rifleman"; };
                 };
             };
         };
@@ -1257,8 +1258,8 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_Engineer"; description = "Engineer@Sappers"; };
-                    class Unit1 { position[] = {2,2,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_Breacher"; description = "Breacher"; };
+                    class Unit0 { position[] = {0,0,0};  special = "NONE"; player = "PLAYER COMMANDER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_Engineer"; description = "Engineer@Sappers"; };
+                    class Unit1 { position[] = {2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_Breacher"; description = "Breacher"; };
                 };
             };
             class _44th_GRP_RBNSup_GPMG
@@ -1267,8 +1268,8 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_GPMGGunner"; description = "GPMG Gunner@GPMG Team"; };
-                    class Unit1 { position[] = {2,2,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_GPMGAssistant"; description = "GPMG Assistant"; };
+                    class Unit0 { position[] = {0,0,0};  special = "NONE"; player = "PLAYER COMMANDER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_GPMGGunner"; description = "GPMG Gunner@GPMG Team"; };
+                    class Unit1 { position[] = {2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_GPMGAssistant"; description = "GPMG Assistant"; };
                 };
             };
             class _44th_GRP_RBNSup_Mortar
@@ -1277,8 +1278,8 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_MortarGunner"; description = "Mortar Gunner@Mortar Team"; };
-                    class Unit1 { position[] = {2,2,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_MortarAssistant"; description = "Mortar Assistant"; };
+                    class Unit0 { position[] = {0,0,0};  special = "NONE"; player = "PLAYER COMMANDER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_MortarGunner"; description = "Mortar Gunner@Mortar Team"; };
+                    class Unit1 { position[] = {2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_MortarAssistant"; description = "Mortar Assistant"; };
                 };
             };
             class _44th_GRP_RBNSup_Javelin
@@ -1287,8 +1288,8 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_JavelinGunner"; description = "Javelin Gunner@Launcher Team"; };
-                    class Unit1 { position[] = {2,2,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_JavelinAssistant"; description = "Javelin Assistant"; };
+                    class Unit0 { position[] = {0,0,0};  special = "NONE"; player = "PLAYER COMMANDER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_JavelinGunner"; description = "Javelin Gunner@Launcher Team"; };
+                    class Unit1 { position[] = {2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_JavelinAssistant"; description = "Javelin Assistant"; };
                 };
             };
             class _44th_GRP_RBNSup_SniperTeam
@@ -1297,9 +1298,9 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_Sniper"; description = "Sniper@Sniper Team"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_Sniper_AntiMaterial"; description = "Anti-Material Sniper"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_Spotter"; description = "Spotter"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_Sniper"; description = "Sniper@Sniper Team"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_Sniper_AntiMaterial"; description = "Anti-Material Sniper"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_RBNSup_Spotter"; description = "Spotter"; };
                 };
             };
         };
@@ -1315,16 +1316,16 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0  { position[] = {0,0,0};   special = "NONE"; rank = "CAPTAIN";  vehicle = "_44th_Ranger_TeamCommander"; description = "Team Commander@The Cadre"; };
-                    class Unit1  { position[] = {2,2,0};   special = "NONE"; rank = "SERGEANT"; vehicle = "_44th_Ranger_TeamSergeant"; description = "Team Sergeant"; };
-                    class Unit2  { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_Ranger_JFO"; description = "Joint Fires Observer"; };
-                    class Unit3  { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_Ranger_PartnerLiaison"; description = "Partner Liaison"; };
-                    class Unit4  { position[] = {2,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_Ranger_UASOperator"; description = "UAS Operator"; };
-                    class Unit5  { position[] = {-2,4,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_Ranger_EWOperator"; description = "EW Operator"; };
-                    class Unit6  { position[] = {0,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_Ranger_TeamMedic"; description = "Team Medic"; };
-                    class Unit7  { position[] = {2,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_Ranger_LeadBreacher"; description = "Lead Breacher"; };
-                    class Unit8  { position[] = {-2,6,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_Ranger_LeadScout"; description = "Lead Scout"; };
-                    class Unit9  { position[] = {0,8,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_Ranger_SupportOperator"; description = "Support Operator"; };
+                    class Unit0  { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CAPTAIN";  vehicle = "_44th_Ranger_TeamCommander"; description = "Team Commander@The Cadre"; };
+                    class Unit1  { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "SERGEANT"; vehicle = "_44th_Ranger_TeamSergeant"; description = "Team Sergeant"; };
+                    class Unit2  { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_Ranger_JFO"; description = "Joint Fires Observer"; };
+                    class Unit3  { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_Ranger_PartnerLiaison"; description = "Partner Liaison"; };
+                    class Unit4  { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_Ranger_UASOperator"; description = "UAS Operator"; };
+                    class Unit5  { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_Ranger_EWOperator"; description = "EW Operator"; };
+                    class Unit6  { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_Ranger_TeamMedic"; description = "Team Medic"; };
+                    class Unit7  { position[] = {2,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_Ranger_LeadBreacher"; description = "Lead Breacher"; };
+                    class Unit8  { position[] = {-2,6,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_Ranger_LeadScout"; description = "Lead Scout"; };
+                    class Unit9  { position[] = {0,8,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_Ranger_SupportOperator"; description = "Support Operator"; };
                 };
             };
         };
@@ -1340,9 +1341,9 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "SERGEANT"; vehicle = "_44th_SFSG_PlatoonSergeant"; description = "Platoon Sergeant@SFSG HQ"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sniper"; description = "Sniper"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Spotter"; description = "Spotter"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "SERGEANT"; vehicle = "_44th_SFSG_PlatoonSergeant"; description = "Platoon Sergeant@SFSG HQ"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sniper"; description = "Sniper"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Spotter"; description = "Spotter"; };
                 };
             };
             class _44th_GRP_SFSG_Zulu
@@ -1351,15 +1352,15 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Zulu"; description = "Section Lead@Zulu"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Zulu"; description = "Section 2iC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Zulu"; description = "Section Medic"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Zulu"; description = "Section Gunner (L7A2)"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Zulu"; description = "Section Gunner (L110A3)"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Zulu"; description = "Lead Breacher"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Zulu"; description = "Point Man"; };
-                    class Unit7 { position[] = {2,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Zulu"; description = "Sharpshooter"; };
-                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Zulu"; description = "Rifleman AT"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Zulu"; description = "Section Lead@Zulu"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Zulu"; description = "Section 2iC"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Zulu"; description = "Section Medic"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Zulu"; description = "Section Gunner (L7A2)"; };
+                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Zulu"; description = "Section Gunner (L110A3)"; };
+                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Zulu"; description = "Lead Breacher"; };
+                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Zulu"; description = "Point Man"; };
+                    class Unit7 { position[] = {2,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Zulu"; description = "Sharpshooter"; };
+                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Zulu"; description = "Rifleman AT"; };
                 };
             };
             class _44th_GRP_SFSG_Victor
@@ -1368,15 +1369,15 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Victor"; description = "Section Lead@Victor"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Victor"; description = "Section 2iC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Victor"; description = "Section Medic"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Victor"; description = "Section Gunner (L7A2)"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Victor"; description = "Section Gunner (L110A3)"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Victor"; description = "Lead Breacher"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Victor"; description = "Point Man"; };
-                    class Unit7 { position[] = {2,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Victor"; description = "Sharpshooter"; };
-                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Victor"; description = "Rifleman AT"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Victor"; description = "Section Lead@Victor"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Victor"; description = "Section 2iC"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Victor"; description = "Section Medic"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Victor"; description = "Section Gunner (L7A2)"; };
+                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Victor"; description = "Section Gunner (L110A3)"; };
+                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Victor"; description = "Lead Breacher"; };
+                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Victor"; description = "Point Man"; };
+                    class Unit7 { position[] = {2,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Victor"; description = "Sharpshooter"; };
+                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Victor"; description = "Rifleman AT"; };
                 };
             };
             class _44th_GRP_SFSG_Romeo
@@ -1385,15 +1386,15 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Romeo"; description = "Section Lead@Romeo"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Romeo"; description = "Section 2iC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Romeo"; description = "Section Medic"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Romeo"; description = "Section Gunner (L7A2)"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Romeo"; description = "Section Gunner (L110A3)"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Romeo"; description = "Lead Breacher"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Romeo"; description = "Point Man"; };
-                    class Unit7 { position[] = {2,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Romeo"; description = "Sharpshooter"; };
-                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Romeo"; description = "Rifleman AT"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Romeo"; description = "Section Lead@Romeo"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Romeo"; description = "Section 2iC"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Romeo"; description = "Section Medic"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Romeo"; description = "Section Gunner (L7A2)"; };
+                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Romeo"; description = "Section Gunner (L110A3)"; };
+                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Romeo"; description = "Lead Breacher"; };
+                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Romeo"; description = "Point Man"; };
+                    class Unit7 { position[] = {2,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Romeo"; description = "Sharpshooter"; };
+                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Romeo"; description = "Rifleman AT"; };
                 };
             };
             class _44th_GRP_SFSG_Juliet
@@ -1402,15 +1403,15 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Juliet"; description = "Section Lead@Juliet"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Juliet"; description = "Section 2iC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Juliet"; description = "Section Medic"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Juliet"; description = "Section Gunner (L7A2)"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Juliet"; description = "Section Gunner (L110A3)"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Juliet"; description = "Lead Breacher"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Juliet"; description = "Point Man"; };
-                    class Unit7 { position[] = {2,6,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Juliet"; description = "Sharpshooter"; };
-                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Juliet"; description = "Rifleman AT"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Juliet"; description = "Section Lead@Juliet"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Juliet"; description = "Section 2iC"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Juliet"; description = "Section Medic"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Juliet"; description = "Section Gunner (L7A2)"; };
+                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Juliet"; description = "Section Gunner (L110A3)"; };
+                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Juliet"; description = "Lead Breacher"; };
+                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Juliet"; description = "Point Man"; };
+                    class Unit7 { position[] = {2,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Juliet"; description = "Sharpshooter"; };
+                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Juliet"; description = "Rifleman AT"; };
                 };
             };
         };
@@ -1426,10 +1427,10 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_SurveillanceSpecialist"; description = "Surveillance Specialist@Brick 1"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_SIGINTSpecialist"; description = "SIGINT Specialist"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_TechnicalSpecialist"; description = "Technical Specialist"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_AdvancedMedic"; description = "Advanced Medic"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "PRIVATE"; vehicle = "_44th_SRR_SurveillanceSpecialist"; description = "Surveillance Specialist@Brick 1"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SRR_SIGINTSpecialist"; description = "SIGINT Specialist"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SRR_TechnicalSpecialist"; description = "Technical Specialist"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SRR_AdvancedMedic"; description = "Advanced Medic"; };
                 };
             };
             class _44th_GRP_SRR_Brick2
@@ -1438,9 +1439,9 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_Sniper"; description = "Sniper@Brick 2"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_Spotter"; description = "Spotter"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_DroneCarrier"; description = "Drone Carrier"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "PRIVATE"; vehicle = "_44th_SRR_Sniper"; description = "Sniper@Brick 2"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SRR_Spotter"; description = "Spotter"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SRR_DroneCarrier"; description = "Drone Carrier"; };
                 };
             };
             class _44th_GRP_SRR_Brick3
@@ -1449,10 +1450,10 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_PointMan"; description = "Point Man@Brick 3"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_TechExploitSpecialist"; description = "Tech Exploitation Specialist"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_CaptureSpecialist"; description = "Capture Specialist"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SRR_CoverMan"; description = "Cover Man"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "PRIVATE"; vehicle = "_44th_SRR_PointMan"; description = "Point Man@Brick 3"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SRR_TechExploitSpecialist"; description = "Tech Exploitation Specialist"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SRR_CaptureSpecialist"; description = "Capture Specialist"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SRR_CoverMan"; description = "Cover Man"; };
                 };
             };
         };
@@ -1468,7 +1469,7 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};  special = "NONE"; rank = "SERGEANT"; vehicle = "_44th_SAS_TroopSergeant"; description = "Troop Sergeant@Troop HQ"; };
+                    class Unit0 { position[] = {0,0,0};  special = "NONE"; player = "PLAYER COMMANDER"; rank = "SERGEANT"; vehicle = "_44th_SAS_TroopSergeant"; description = "Troop Sergeant@Troop HQ"; };
                 };
             };
             class _44th_GRP_SAS_BrickZulu
@@ -1477,10 +1478,10 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SAS_TeamLead_Zulu"; description = "Team Lead@Brick Zulu"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SAS_LeadScout_Zulu"; description = "Lead Scout"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SAS_PointMan_Zulu"; description = "Point Man"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SAS_Medic_Zulu"; description = "Medic"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SAS_TeamLead_Zulu"; description = "Team Lead@Brick Zulu"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SAS_LeadScout_Zulu"; description = "Lead Scout"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SAS_PointMan_Zulu"; description = "Point Man"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SAS_Medic_Zulu"; description = "Medic"; };
                 };
             };
             class _44th_GRP_SAS_BrickVictor
@@ -1489,10 +1490,10 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SAS_TeamLead_Victor"; description = "Team Lead@Brick Victor"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SAS_Signaller"; description = "Signaller"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SAS_Marksman"; description = "Marksman"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SAS_Specialist"; description = "Specialist"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SAS_TeamLead_Victor"; description = "Team Lead@Brick Victor"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SAS_Signaller"; description = "Signaller"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SAS_Marksman"; description = "Marksman"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SAS_Specialist"; description = "Specialist"; };
                 };
             };
             class _44th_GRP_SAS_BrickRomeo
@@ -1501,10 +1502,10 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "CORPORAL"; vehicle = "_44th_SAS_TeamLead_Romeo"; description = "Team Lead@Brick Romeo"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SAS_LeadScout_Romeo"; description = "Lead Scout"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SAS_PointMan_Romeo"; description = "Point Man"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE";  vehicle = "_44th_SAS_Medic_Romeo"; description = "Medic"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SAS_TeamLead_Romeo"; description = "Team Lead@Brick Romeo"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SAS_LeadScout_Romeo"; description = "Lead Scout"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SAS_PointMan_Romeo"; description = "Point Man"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SAS_Medic_Romeo"; description = "Medic"; };
                 };
             };
             class _44th_GRP_SAS_BrickJuliet
@@ -1513,10 +1514,10 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SAS_Sniper"; description = "Sniper@Brick Juliet"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SAS_Spotter"; description = "Spotter"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SAS_SupportGunner"; description = "Support Gunner"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; rank = "PRIVATE"; vehicle = "_44th_SAS_DroneCarrier"; description = "Drone Carrier"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "PRIVATE"; vehicle = "_44th_SAS_Sniper"; description = "Sniper@Brick Juliet"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SAS_Spotter"; description = "Spotter"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SAS_SupportGunner"; description = "Support Gunner"; };
+                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SAS_DroneCarrier"; description = "Drone Carrier"; };
                 };
             };
         };
@@ -1532,9 +1533,9 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "LIEUTENANT"; vehicle = "_44th_RBNSup_Pilot"; description = "Pilot@Pilots"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE";           rank = "LIEUTENANT"; vehicle = "_44th_Ranger_Pilot"; description = "Pilot"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE";           rank = "LIEUTENANT"; vehicle = "_44th_SFSG_Pilot";   description = "Pilot"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "LIEUTENANT"; vehicle = "_44th_RBNSup_Pilot"; description = "Pilot@Pilots"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "LIEUTENANT"; vehicle = "_44th_Ranger_Pilot"; description = "Pilot"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "LIEUTENANT"; vehicle = "_44th_SFSG_Pilot";   description = "Pilot"; };
                 };
             };
             class _44th_GRP_Mailman_Crewmen
@@ -1543,9 +1544,9 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; rank = "LIEUTENANT"; vehicle = "_44th_RBNSup_Crewman"; description = "Crewman@Crewmen"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE";           rank = "LIEUTENANT"; vehicle = "_44th_Ranger_Crewman"; description = "Crewman"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE";           rank = "LIEUTENANT"; vehicle = "_44th_SFSG_Crewman";   description = "Crewman"; };
+                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "LIEUTENANT"; vehicle = "_44th_RBNSup_Crewman"; description = "Crewman@Crewmen"; };
+                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "LIEUTENANT"; vehicle = "_44th_Ranger_Crewman"; description = "Crewman"; };
+                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "LIEUTENANT"; vehicle = "_44th_SFSG_Crewman";   description = "Crewman"; };
                 };
             };
             class _44th_GRP_Mailman_JSFAW
@@ -1554,10 +1555,27 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};  special = "NONE"; rank = "LIEUTENANT"; vehicle = "_44th_SRR_JSFAWPilot"; description = "JSFAW Pilot@JSFAW"; };
-                    class Unit1 { position[] = {2,2,0};  special = "NONE";           rank = "LIEUTENANT"; vehicle = "_44th_SAS_JSFAWPilot"; description = "JSFAW Pilot"; };
+                    class Unit0 { position[] = {0,0,0};  special = "NONE"; player = "PLAYER COMMANDER"; rank = "LIEUTENANT"; vehicle = "_44th_SRR_JSFAWPilot"; description = "JSFAW Pilot@JSFAW"; };
+                    class Unit1 { position[] = {2,2,0};  special = "NONE"; player = "PLAYER"; rank = "LIEUTENANT"; vehicle = "_44th_SAS_JSFAWPilot"; description = "JSFAW Pilot"; };
                 };
             };
+        };
+    };
+};
+
+class Cfg3DEN
+{
+    class Compositions
+    {
+        class _44th_Comp_ORBAT
+        {
+            path = "44th_ORBAT\orbat\compositions\orbat";
+            side = 1;
+            editorCategory = "FTH_Cat_44thMods";
+            editorSubcategory = "FTH_Sub_44th_Compositions";
+            displayName = "44th Modern Milsim ORBAT";
+            icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+            useSideColorOnIcon = 1;
         };
     };
 };
