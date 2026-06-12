@@ -6,12 +6,24 @@ All mods are available on the Steam Workshop and are designed to work alongside 
 
 ---
 
+## Units
+
+| Unit | Role | Structure |
+|---|---|---|
+| **44 RBN** (Regular Battalion) | Conventional infantry backbone — frontline holding, area security, high-intensity combat | Traditional platoon: central Platoon HQ commanding fixed infantry sections |
+| **44 Rangers** (The Cadre) | Force multipliers — training, mentoring, and leading local/partner forces rather than acting as a standard fighting element | Standalone 11-man command cadre; no internal subordinate sections |
+| **44 SFSG** (Special Forces Strike Group) | The kinetic hammer — heavy offensive strikes, compound breaching, armour ambushes, airfield seizures | Self-contained 8-man section; Lead Section Commander holds total local authority |
+| **44 SRR** (Special Reconnaissance Regiment) | Covert intelligence — "Find, not Fix." Long-range recon, SIGINT, and surveillance for strike elements; avoids direct combat | Very small autonomous teams (pairs or 4-man bricks) reporting direct to command |
+| **44 SAS** (Special Air Service) | Tier 1 direct action — HVT elimination, hostage rescue, sabotage. Surgical precision, silent infiltration, gone before conventional units arrive | Independent 4-man bricks operating as a flexible Troop; HALO/helo insertion specialists |
+
+---
+
 ## Mods
 
 ### [44th Supply Crates](44th_SupplyCrates_mod/)
 [![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3742862207)
 
-Adds pre-configured supply crates for each of the unit's sections and specialist roles. Crates appear in the Eden Editor under a dedicated **44th Supply Crates** category, making mission setup quick and consistent.
+Adds pre-configured supply crates for each of the unit's sections and specialist roles. Crates appear in the Eden Editor under **44th Mods → Supply Crates**, making mission setup quick and consistent.
 
 **Crates included:**
 - Medical
@@ -21,6 +33,22 @@ Adds pre-configured supply crates for each of the unit's sections and specialist
 - SRR, SAS
 
 **Requires:** UK3CB BAF (ACE), ACE3
+
+---
+
+### [44th Kit Crates](44th_KitCrates_mod/)
+
+Adds kit selection crates for each unit type. Players interact with a crate to choose their loadout from the roles available to their section. Crates appear in the Eden Editor under **44th Mods → Kit Crates**.
+
+**Crates included:**
+- RBN — Section roles + Platoon HQ
+- RBN Support — Support weapons roles
+- RANGER — SF team roles
+- SFSG — Section roles
+- SRR — Specialist roles
+- SAS — Troop roles
+
+**Requires:** Warbird
 
 ---
 

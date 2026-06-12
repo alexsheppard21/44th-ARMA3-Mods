@@ -39,8 +39,8 @@ class CfgVehicles
     {
         displayName = "44th Medical Supplies";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_Medical";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Medical.sqf'";
@@ -52,8 +52,8 @@ class CfgVehicles
     {
         displayName = "44 RANGER Fire Support SME";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_RANGER";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_FireSupport_Ranger.sqf'";
@@ -64,8 +64,8 @@ class CfgVehicles
     {
         displayName = "44 RANGER Precision SME";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_RANGER";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Precision_Ranger.sqf'";
@@ -76,8 +76,8 @@ class CfgVehicles
     {
         displayName = "44 RANGER Anti-Armour SME";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_RANGER";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_AntiArmour_Ranger.sqf'";
@@ -88,8 +88,8 @@ class CfgVehicles
     {
         displayName = "44 RANGER 11-Man Section Supplies";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_RANGER";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Section_Ranger.sqf'";
@@ -101,8 +101,8 @@ class CfgVehicles
     {
         displayName = "44 RBN Sniper and Spotter Ammo";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_RBN";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SniperAmmo_RBN.sqf'";
@@ -113,8 +113,8 @@ class CfgVehicles
     {
         displayName = "44 RBN 8-Man Section Supplies";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_RBN";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Section_RBN.sqf'";
@@ -125,8 +125,8 @@ class CfgVehicles
     {
         displayName = "44 RBN EOD/Breaching Supplies";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_RBN";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_EOD_RBN.sqf'";
@@ -138,8 +138,8 @@ class CfgVehicles
     {
         displayName = "44 SFSG Fire Support Supplies";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_SFSG";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_FireSupport_SFSG.sqf'";
@@ -150,8 +150,8 @@ class CfgVehicles
     {
         displayName = "44 SFSG 8-Man Section Supplies";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_SFSG";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Section_SFSG.sqf'";
@@ -162,8 +162,8 @@ class CfgVehicles
     {
         displayName = "44 SFSG Precision Supplies";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_SFSG";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Precision_SFSG.sqf'";
@@ -175,8 +175,8 @@ class CfgVehicles
     {
         displayName = "44 SRR Supplies";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_SF";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SRR.sqf'";
@@ -187,8 +187,8 @@ class CfgVehicles
     {
         displayName = "44 SAS Supplies";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_SupplyCrates";
-        editorSubcategory = "FTH_Sub_SF";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SAS.sqf'";
@@ -210,17 +210,13 @@ class CfgFunctions
 
 class CfgEditorCategories
 {
-    class FTH_Cat_SupplyCrates
+    class FTH_Cat_44thMods
     {
-        displayName = "44th Supply Crates";
+        displayName = "44th Mods";
     };
 };
 
 class CfgEditorSubcategories
 {
-    class FTH_Sub_Medical  { displayName = "Medical";          };
-    class FTH_Sub_RANGER   { displayName = "RANGER";           };
-    class FTH_Sub_RBN      { displayName = "RBN";              };
-    class FTH_Sub_SFSG     { displayName = "SFSG";             };
-    class FTH_Sub_SF       { displayName = "Special Forces";   };
+    class FTH_Sub_SupplyCrates { displayName = "Supply Crates"; };
 };

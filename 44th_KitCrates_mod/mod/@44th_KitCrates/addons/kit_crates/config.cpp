@@ -28,8 +28,8 @@ class CfgVehicles
     {
         displayName = "44 RBN Kit Crate";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_KitCrates";
-        editorSubcategory = "FTH_KitSub_RBN";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_KitCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_RBN.sqf'";
@@ -40,8 +40,8 @@ class CfgVehicles
     {
         displayName = "44 RBN Support Kit Crate";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_KitCrates";
-        editorSubcategory = "FTH_KitSub_RBN";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_KitCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_RBNSUP.sqf'";
@@ -52,8 +52,8 @@ class CfgVehicles
     {
         displayName = "44 RANGER Kit Crate";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_KitCrates";
-        editorSubcategory = "FTH_KitSub_RANGER";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_KitCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_RANGER.sqf'";
@@ -64,8 +64,8 @@ class CfgVehicles
     {
         displayName = "44 SFSG Kit Crate";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_KitCrates";
-        editorSubcategory = "FTH_KitSub_SFSG";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_KitCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_SFSG.sqf'";
@@ -76,8 +76,8 @@ class CfgVehicles
     {
         displayName = "44 SRR Kit Crate";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_KitCrates";
-        editorSubcategory = "FTH_KitSub_SF";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_KitCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_SRR.sqf'";
@@ -88,8 +88,8 @@ class CfgVehicles
     {
         displayName = "44 SAS Kit Crate";
         author = "FullMetalShep";
-        editorCategory = "FTH_Cat_KitCrates";
-        editorSubcategory = "FTH_KitSub_SF";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_KitCrates";
         class EventHandlers
         {
             init = "(_this select 0) execVM '\44th_KitCrates\kit_crates\fn_kitCrate_SAS.sqf'";
@@ -99,16 +99,13 @@ class CfgVehicles
 
 class CfgEditorCategories
 {
-    class FTH_Cat_KitCrates
+    class FTH_Cat_44thMods
     {
-        displayName = "44th Kit Crates";
+        displayName = "44th Mods";
     };
 };
 
 class CfgEditorSubcategories
 {
-    class FTH_KitSub_RBN     { displayName = "RBN";    };
-    class FTH_KitSub_RANGER  { displayName = "RANGER"; };
-    class FTH_KitSub_SFSG    { displayName = "SFSG";   };
-    class FTH_KitSub_SF      { displayName = "Special Forces"; };
+    class FTH_Sub_KitCrates { displayName = "Kit Crates"; };
 };
