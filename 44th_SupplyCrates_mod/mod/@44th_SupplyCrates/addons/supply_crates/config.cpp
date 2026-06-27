@@ -15,7 +15,8 @@ class CfgPatches
             "_44th_Crate_Section_SFSG",
             "_44th_Crate_Precision_SFSG",
             "_44th_Crate_SRR",
-            "_44th_Crate_SAS"
+            "_44th_Crate_SAS",
+            "_44th_Crate_SAS_Juliet"
         };
         weapons[] = {};
         requiredVersion = 0.1;
@@ -143,6 +144,15 @@ class CfgVehicles
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_SupplyCrates";
     };
+
+    class _44th_Crate_SAS_Juliet : UK3CB_BAF_Box_Section_Supplies_ACE
+    {
+        displayName = "44 SAS (Juliet) Supplies";
+        author = "FullMetalShep";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_SupplyCrates";
+    };
+
 };
 
 class Extended_InitPost_EventHandlers
@@ -160,6 +170,8 @@ class Extended_InitPost_EventHandlers
     class _44th_Crate_Precision_SFSG { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_Precision_SFSG.sqf'"; }; };
     class _44th_Crate_SRR { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SRR.sqf'"; }; };
     class _44th_Crate_SAS { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SAS.sqf'"; }; };
+    class _44th_Crate_SAS_Juliet { class _44th_supplycrates { init = "(_this select 0) execVM '\44th_SupplyCrates\supply_crates\fn_fillCrate_SAS_Juliet.sqf'"; }; };
+
 };
 
 class CfgEditorCategories
