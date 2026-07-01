@@ -1,0 +1,43 @@
+[h1]44th Battalion Framework[/h1]
+
+The complete framework for the 44th's milsim operations; the full order of battle, the shared kit library, kit-selection crates, and supply crates, all bundled into a single mod.
+
+Place the entire ORBAT in one click, and every slot spawns kitted, playable, and can be re-roled on the fly.
+
+[hr][/hr]
+
+[h2]What's Inside[/h2]
+
+[b]44th ORBAT[/b]
+The complete 44th order of battle as a one-click Eden composition; every slot playable with lobby descriptions grouped by section. Units spawn with their full role loadout automatically (no crate visit needed) and can be re-kitted on respawn. Individual units and sections can also be placed from the asset and group browsers. Includes Lead/Co Zeus curator modules.
+
+[b]44th Kit Core[/b]
+The single source of truth for every role's loadout. Both the ORBAT (spawn kitting) and the Kit Crates (customisation) read from it, so a player's spawn kit and the crate contents can never drift apart. Also enforces kit version control between server and clients.
+
+[b]44th Kit Crates[/b]
+For customising within a role's allowed parameters and for re-roling. On a player's first spawn, the kit menu auto-opens scoped to their faction. Includes a Master Kit Crate (shows each player only their own role's kit) plus per-faction crates (RBN, RBN Support, RANGER, SFSG, SRR, SAS) for Zeus to re-role on the fly.
+
+[b]44th Supply Crates[/b]
+Pre-configured supply crates for 44th loadouts — medical, fire support, precision, anti-armour, breaching/EOD, sniper ammo, and full section resupply. Placed in Eden under 44th Mods → Supply Crates.
+
+[hr][/hr]
+
+[h2]Requirements[/h2]
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=450814997]CBA_A3[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2382830257]UK3CB BAF Units (ACE)[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=463939057]ACE3[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3300894429]WBK Kits[/url]
+[/list]
+
+[hr][/hr]
+
+[h2]Links[/h2]
+[list]
+[*][b]Discord:[/b] [url=https://discord.gg/44tharma]discord.gg/44tharma[/url] — join the 44th Royal Battalion today!
+[*][b]Source (GitHub):[/b] [url=https://github.com/alexsheppard21/44th-supply_crates]github.com/alexsheppard21/44th-supply_crates[/url]
+[/list]
+
+[hr][/hr]
+
+[i]Built for the 44th Royal Battalion by FullMetalShep. Kits and ORBAT curated by Jayden.[/i]
