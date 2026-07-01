@@ -21,6 +21,20 @@ class CfgPatches
     };
 };
 
+class CfgFunctions
+{
+    class FTH
+    {
+        class KitCrates
+        {
+            file = "\44th_KitCrates\kit_crates";
+            // Client-side: on first spawn, auto-opens the WBK Kits kit menu on a
+            // box scoped to the player's faction (see fn_spawnKitMenu.sqf).
+            class spawnKitMenu { postInit = 1; };
+        };
+    };
+};
+
 class CfgVehicles
 {
     class C_IDAP_supplyCrate_F;

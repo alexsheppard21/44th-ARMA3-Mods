@@ -27,12 +27,13 @@ Arma 3 mod adding pre-configured supply crates for 44th Regiment loadouts. Crate
 | SFSG | 8-Man Section Supplies |
 | SRR | SRR Supplies |
 | SAS | SAS Supplies |
+| SAS | SAS Juliet Supplies |
 
 ## Installation
 
-1. Copy the `@44th_SupplyCrates` folder into your Arma 3 directory.
-2. Enable the mod in the Arma 3 launcher.
-3. In Eden Editor, find crates under **44th Mods → Supply Crates** in the object browser.
+This addon ships inside the **44th Battalion Framework** mod (`@44th`). Enable that
+one mod in the launcher; crates then appear in the Eden Editor under
+**44th Mods → Supply Crates** in the object browser.
 
 ## Author
 

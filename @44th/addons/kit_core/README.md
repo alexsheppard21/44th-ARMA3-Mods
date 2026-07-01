@@ -16,7 +16,7 @@ This mod ships no editor objects; it is a dependency of ORBAT and Kit Crates.
 At preInit (`FTH_fnc_initKits`) it builds the shared library:
 
 - `FTH_Kits` — `roleKey -> [displayName, faction, loadout, allowedSwap]`. The
-  `loadout` is a standard `setUnitLoadout` array; `allowedSwap` is the Warbird
+  `loadout` is a standard `setUnitLoadout` array; `allowedSwap` is the WBK Kits
   whitelist of items a player may swap to.
 - `FTH_RoleForClass` — legacy `_44th_ ORBAT classname -> roleKey` map, used only
   by browser-placed `_44th_` units (the ORBAT composition is now canonical).
@@ -40,7 +40,8 @@ attribute calls `FTH_fnc_applyKit`, so units spawn fully kitted. The legacy
    the composition (Eden → unit → Attributes), not the class maps.
 3. **Bump `FTH_KIT_VERSION` in `script_version.hpp`.** Clients whose version
    differs from the server's are hard-blocked (see `fn_versionControl.sqf`).
-4. Re-pack `@44th_KitCore` and re-sign for the server if using signatures.
+4. Re-pack the `kit_core` PBO (part of the `@44th` mod) and re-sign for the
+   server if using signatures.
 
 > The `data_<FACTION>.sqf` fragments were generated from the old Kit Crate
 > scripts; loadout arrays are plain `setUnitLoadout` format.

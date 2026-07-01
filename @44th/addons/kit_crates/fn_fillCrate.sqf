@@ -9,7 +9,7 @@
                  -> registers ALL kits, each gated by a condition so a player
                     only sees the kit matching their own role (FTH_roleKey).
 
-    Requires Warbird (Wbk_AddKit). If Warbird or KitCore is absent, the crate is
+    Requires WBK Kits (Wbk_AddKit). If WBK Kits or KitCore is absent, the crate is
     left empty after a safe timeout.
 */
 params ["_crate", ["_faction", ""]];

@@ -2,20 +2,36 @@
 
 **[Subscribe on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3743245113)**
 
-Arma 3 mod providing kit crates for the 44th. Players normally spawn already kitted (via 44th ORBAT + Kit Core); these crates are for **customising within a role's allowed parameters** and for **re-roling**.
+Kit crates and the on-spawn kit menu for the 44th. Players normally spawn already kitted (via ORBAT + Kit Core); these crates are for **customising within a role's allowed parameters** and for **re-roling**.
 
-- **Master Kit Crate** — holds every kit but shows each player only the one matching their ORBAT role (`FTH_roleKey`). This is the crate players interact with to tweak their loadout.
+- **On-spawn kit menu** — on a player's *first* spawn, the WBK Kits menu auto-opens on a box scoped to their faction. They see every kit in their group but only their own role's kit is selectable, so other factions never appear (see [On-spawn kit menu](#on-spawn-kit-menu) below).
+- **Master Kit Crate** — holds every kit but shows each player only the one matching their ORBAT role (`FTH_roleKey`). A placed crate players interact with to tweak their loadout.
 - **Per-faction crates** (RBN, RBN Support, RANGER, SFSG, SRR, SAS) — show all of that faction's kits. Kept mainly for Zeus to re-role players on the fly.
 
-All loadouts are read from **44th Kit Core** (`FTH_Kits`), so crate contents always match what players spawn with. Crates are placed in the Eden Editor under **44th Mods → Kit Crates**.
+All loadouts are read from **Kit Core** (`FTH_Kits`), so crate contents always match what players spawn with. Crates are placed in the Eden Editor under **44th Mods → Kit Crates**.
 
 ## Requirements
 
 - [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
-- Warbird
-- 44th Kit Core
+- WBK Kits
+- Kit Core
 
-If Warbird or Kit Core is not loaded, crates simply stay empty (the fill script times out safely after 60 seconds).
+If WBK Kits or Kit Core is not loaded, crates simply stay empty (the fill script times out safely after 60 seconds).
+
+## On-spawn kit menu
+
+`FTH_fnc_spawnKitMenu` (client, runs once per client at postInit) opens the kit
+menu automatically the first time a player spawns:
+
+1. Waits for `FTH_Kits`, WBK Kits, and the player's `FTH_roleKey` to be ready.
+2. Derives the player's faction from their kit record and creates a
+   **client-local** box (`createVehicleLocal`, so no one else sees it) holding
+   only that faction's kits — each gated so only the player's own role kit is
+   selectable and the rest of the faction shows greyed.
+3. Points `WBK_GlobalKitBoxRn` at the box and opens the WBK Kits camera menu.
+4. Deletes the local box as soon as the player closes the menu.
+
+Because it runs once at postInit, it never re-fires on respawn.
 
 ## Crates
 
@@ -75,9 +91,9 @@ Roles: Troop Sergeant, Team Lead, Team Lead 2, Lead Scout, Point Man, Medic, Sig
 
 ## Installation
 
-1. Copy the `@44th_KitCrates` folder into your Arma 3 directory.
-2. Enable the mod in the Arma 3 launcher.
-3. In Eden Editor, find crates under **44th Mods → Kit Crates** in the object browser.
+This addon ships inside the **44th Battalion Framework** mod (`@44th`). Enable that
+one mod in the launcher; crates then appear in the Eden Editor under
+**44th Mods → Kit Crates** in the object browser.
 
 ## Author
 

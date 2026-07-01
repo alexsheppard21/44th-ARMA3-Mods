@@ -132,9 +132,10 @@ Zeus units (Lead Zeus, Co Zeus) additionally receive a game master module assign
 
 ## Installation
 
-1. Copy the `@44th_ORBAT` folder into your Arma 3 directory.
-2. Enable the mod in the Arma 3 launcher.
-3. In Eden Editor, place the full ORBAT from **44th Mods → Compositions**, or find individual units under **44th Mods** in the asset browser and full sections in the group browser.
+This addon ships inside the **44th Battalion Framework** mod (`@44th`). Enable that
+one mod in the launcher, then in Eden Editor place the full ORBAT from
+**44th Mods → Compositions**, or find individual units under **44th Mods** in the
+asset browser and full sections in the group browser.
 
 ## Author
 

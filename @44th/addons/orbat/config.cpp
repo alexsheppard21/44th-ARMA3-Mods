@@ -1565,6 +1565,37 @@ class CfgGroups
 
 class Cfg3DEN
 {
+    class Object
+    {
+        class AttributeCategories
+        {
+            class FTH_44th
+            {
+                displayName = "44th Kit";
+                collapsed = 0;
+                class Attributes
+                {
+                    // Role key from 44th KitCore (e.g. "RBN_PlatoonCommander").
+                    // On mission start this applies the shared loadout and tags
+                    // the unit with FTH_roleKey (used by the master kit crate).
+                    // Registering it here is what makes Eden actually run the
+                    // expression for units placed via the ORBAT composition.
+                    class FTH_kit
+                    {
+                        property = "FTH_kit";
+                        control = "Edit";
+                        displayName = "44th Role Kit";
+                        tooltip = "KitCore role key, e.g. RBN_PlatoonCommander. Leave blank for no kit.";
+                        expression = "if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+                        defaultValue = "''";
+                        typeName = "STRING";
+                        validate = "none";
+                    };
+                };
+            };
+        };
+    };
+
     class Compositions
     {
         class _44th_Comp_ORBAT
