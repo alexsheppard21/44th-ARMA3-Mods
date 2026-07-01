@@ -26,7 +26,7 @@ class CfgPatches
             "UK3CB_BAF_Units_ACE"
         };
         author = "FullMetalShep";
-        version = 1;
+        version = 28;
     };
 };
 

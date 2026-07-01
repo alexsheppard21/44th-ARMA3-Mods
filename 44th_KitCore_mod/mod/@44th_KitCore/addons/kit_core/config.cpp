@@ -17,7 +17,7 @@ class CfgFunctions
     {
         class KitCore
         {
-            file = "44th_KitCore\kit_core";
+            file = "\44th_KitCore\kit_core";
             // Builds the shared loadout library (FTH_Kits) and the ORBAT
             // class -> role-key map (FTH_RoleForClass) before anything spawns.
             class initKits { preInit = 1; };
