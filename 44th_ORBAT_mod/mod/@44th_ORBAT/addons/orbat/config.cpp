@@ -72,7 +72,7 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] = { "A3_Characters_F", "UK3CB_BAF_Units_ACE", "cba_xeh", "KitCore_44th" };
         author = "FullMetalShep";
-        version = 28;
+        version = 29;
     };
 };
 

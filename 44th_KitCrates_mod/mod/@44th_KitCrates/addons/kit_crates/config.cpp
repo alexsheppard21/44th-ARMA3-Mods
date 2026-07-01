@@ -17,7 +17,7 @@ class CfgPatches
             "A3_Supplies_F_Orange_Ammoboxes", "cba_xeh", "KitCore_44th"
         };
         author = "FullMetalShep";
-        version = 28;
+        version = 29;
     };
 };
 
