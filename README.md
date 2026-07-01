@@ -39,7 +39,7 @@ Adds pre-configured supply crates for each of the unit's sections and specialist
 ### [44th ORBAT](44th_ORBAT_mod/)
 [![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3743476647)
 
-Adds the full 44th order of battle. The complete ORBAT places in one click as an Eden composition under **44th Mods → Compositions** — all slots playable with lobby descriptions grouped by section, loadouts baked in, and Zeus modules included. Individual units and sections are also available in the asset and group browsers, spawning with the correct uniform, headgear, rank, basic kit, and TFAR radio frequencies.
+Adds the full 44th order of battle. The complete ORBAT places in one click as an Eden composition under **44th Mods → Compositions** — all slots playable with lobby descriptions grouped by section, loadouts baked in, and Zeus modules included. Individual units and sections are also available in the asset and group browsers. Each slot spawns already wearing its **full role loadout** (pulled from 44th Kit Core), plus the correct rank and TFAR radio frequencies — no need to visit a kit crate first.
 
 **Units included:**
 - Regimental HQ — Lead Zeus, Co Zeus
@@ -50,16 +50,17 @@ Adds the full 44th order of battle. The complete ORBAT places in one click as an
 - SRR — Recon Bricks 1–3, JSFAW
 - SAS — Troop HQ, Bricks Zulu/Victor/Romeo/Juliet, JSFAW
 
-**Requires:** CBA_A3, UK3CB BAF Units (ACE)
+**Requires:** CBA_A3, UK3CB BAF Units (ACE), 44th Kit Core
 
 ---
 
 ### [44th Kit Crates](44th_KitCrates_mod/)
 [![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3743245113)
 
-Adds kit selection crates for each unit type. Players interact with a crate to choose their loadout from the roles available to their section. Crates appear in the Eden Editor under **44th Mods → Kit Crates**.
+Kit crates for browsing and customising loadouts. The **Master Kit Crate** shows each player only the kit for their own ORBAT role — the standard crate players use to tweak their kit within its allowed parameters. The per-faction crates below remain for Zeus to re-role players on the fly. All loadouts come from 44th Kit Core, so crate contents always match what players spawn with. Crates appear in the Eden Editor under **44th Mods → Kit Crates**.
 
 **Crates included:**
+- Master — every kit, filtered to the player's role
 - RBN — Section roles + Platoon HQ
 - RBN Support — Support weapons roles
 - RANGER — SF team roles
@@ -67,7 +68,15 @@ Adds kit selection crates for each unit type. Players interact with a crate to c
 - SRR — Specialist roles
 - SAS — Troop roles
 
-**Requires:** CBA_A3, Warbird
+**Requires:** CBA_A3, Warbird, 44th Kit Core
+
+---
+
+### [44th Kit Core](44th_KitCore_mod/)
+
+The shared loadout library behind ORBAT spawn kitting and the kit crates — one source of truth for every role's loadout, plus kit version control that blocks out-of-date clients. A dependency of 44th ORBAT and 44th Kit Crates; ships no editor objects.
+
+**Requires:** CBA_A3
 
 ---
 

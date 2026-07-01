@@ -70,7 +70,7 @@ class CfgPatches
         };
         weapons[] = {};
         requiredVersion = 0.1;
-        requiredAddons[] = { "A3_Characters_F", "UK3CB_BAF_Units_ACE", "cba_xeh" };
+        requiredAddons[] = { "A3_Characters_F", "UK3CB_BAF_Units_ACE", "cba_xeh", "KitCore_44th" };
         author = "FullMetalShep";
         version = 1;
     };

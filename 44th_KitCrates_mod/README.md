@@ -2,16 +2,20 @@
 
 **[Subscribe on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3743245113)**
 
-Arma 3 mod providing pre-configured kit selection crates for each unit type in the 44th. Players interact with their unit's crate to browse and select a loadout from the roles available to them. Each crate is locked to its unit — players should only take the crate that matches their assigned element.
+Arma 3 mod providing kit crates for the 44th. Players normally spawn already kitted (via 44th ORBAT + Kit Core); these crates are for **customising within a role's allowed parameters** and for **re-roling**.
 
-Crates are placed in the Eden Editor under **44th Mods → Kit Crates**.
+- **Master Kit Crate** — holds every kit but shows each player only the one matching their ORBAT role (`FTH_roleKey`). This is the crate players interact with to tweak their loadout.
+- **Per-faction crates** (RBN, RBN Support, RANGER, SFSG, SRR, SAS) — show all of that faction's kits. Kept mainly for Zeus to re-role players on the fly.
+
+All loadouts are read from **44th Kit Core** (`FTH_Kits`), so crate contents always match what players spawn with. Crates are placed in the Eden Editor under **44th Mods → Kit Crates**.
 
 ## Requirements
 
 - [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
 - Warbird
+- 44th Kit Core
 
-If Warbird is not loaded, crates simply stay empty (the fill script times out safely after 60 seconds).
+If Warbird or Kit Core is not loaded, crates simply stay empty (the fill script times out safely after 60 seconds).
 
 ## Crates
 

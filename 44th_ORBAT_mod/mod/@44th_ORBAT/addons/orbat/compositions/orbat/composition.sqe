@@ -197,7 +197,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Engineer";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item1
@@ -380,7 +393,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Breacher";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 				};
@@ -590,7 +616,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_TeamCommander";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -787,7 +826,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_TeamSergeant";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item2
@@ -983,7 +1035,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_PartnerLiason";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item3
@@ -1166,7 +1231,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_EWOperator";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item4
@@ -1336,7 +1414,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_UASOperator";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item5
@@ -1506,7 +1597,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_TeamMedic";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item6
@@ -1676,7 +1780,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_JointFiresObserver";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item7
@@ -1872,7 +1989,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_LeadBreacher";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item8
@@ -2042,7 +2172,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_LeadScout";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item9
@@ -2212,7 +2355,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_SupportOperator";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item10
@@ -2382,7 +2538,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RANGER_SupportOperator";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 				};
@@ -2566,7 +2735,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Pilot";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item1
@@ -2737,7 +2919,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Pilot";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item2
@@ -2908,7 +3103,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Pilot";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 				};
@@ -3118,7 +3326,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_PlatoonSergeant";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 				};
@@ -3328,7 +3549,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionLead";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -3512,7 +3746,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_Section2iC";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item2
@@ -3682,7 +3929,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionMedic";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item3
@@ -3839,7 +4099,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionGunnerL7A2";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item4
@@ -4022,7 +4295,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_LeadBreacher";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item5
@@ -4179,7 +4465,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_PointMan";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item6
@@ -4336,7 +4635,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_Sharpshooter";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item7
@@ -4493,7 +4805,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_RiflemanAT";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 				};
@@ -4703,7 +5028,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionLead";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -4887,7 +5225,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_Section2iC";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item2
@@ -5057,7 +5408,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionMedic";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item3
@@ -5214,7 +5578,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionGunnerL7A2";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item4
@@ -5397,7 +5774,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_LeadBreacher";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item5
@@ -5554,7 +5944,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_PointMan";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item6
@@ -5711,7 +6114,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_Sharpshooter";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item7
@@ -5868,7 +6284,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_RiflemanAT";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 				};
@@ -6078,7 +6507,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionLead";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -6262,7 +6704,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_Section2iC";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item2
@@ -6432,7 +6887,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionMedic";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item3
@@ -6589,7 +7057,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionGunnerL7A2";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item4
@@ -6772,7 +7253,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_LeadBreacher";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item5
@@ -6929,7 +7423,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_PointMan";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item6
@@ -7086,7 +7593,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_Sharpshooter";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item7
@@ -7243,7 +7763,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_RiflemanAT";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 				};
@@ -7452,7 +7985,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_PatrolCommander";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -7648,7 +8194,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_ReconScout";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item2
@@ -7844,7 +8403,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_SIGINTCommsSpecialist";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item3
@@ -8053,7 +8625,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_SystemsUASSpecialist";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 					class Item4
@@ -8262,7 +8847,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_PatrolMedic";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 					class Item5
@@ -8471,7 +9069,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_ElectronicWarfareCounterUASSpecialist";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 				};
@@ -8680,7 +9291,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_PatrolCommander";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -8876,7 +9500,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_ReconScout";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item2
@@ -9072,7 +9709,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_SIGINTCommsSpecialist";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item3
@@ -9281,7 +9931,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_SystemsUASSpecialist";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 					class Item4
@@ -9490,7 +10153,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_PatrolMedic";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 					class Item5
@@ -9699,7 +10375,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_ElectronicWarfareCounterUASSpecialist";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 				};
@@ -9908,7 +10597,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_PatrolCommander";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -10104,7 +10806,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_ReconScout";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item2
@@ -10300,7 +11015,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_SIGINTCommsSpecialist";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item3
@@ -10509,7 +11237,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_SystemsUASSpecialist";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 					class Item4
@@ -10718,7 +11459,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_PatrolMedic";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 					class Item5
@@ -10927,7 +11681,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SRR_ElectronicWarfareCounterUASSpecialist";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 				};
@@ -11137,7 +11904,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_PatrolCommander";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -11333,7 +12113,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_LeadAssaulterPointMan";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item2
@@ -11529,7 +12322,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_WeaponsSpecialistSupportGunner";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item3
@@ -11738,7 +12544,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_PatrolSharpshooterMarksman";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 					class Item4
@@ -11947,7 +12766,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_AdvancedMedic";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 				};
@@ -12157,7 +12989,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_PatrolCommander";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -12353,7 +13198,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_LeadAssaulterPointMan";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item2
@@ -12549,7 +13407,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_WeaponsSpecialistSupportGunner";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item3
@@ -12745,7 +13616,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_PatrolSharpshooterMarksman";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item4
@@ -12941,7 +13825,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_AdvancedMedic";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 				};
@@ -13151,7 +14048,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_PatrolCommander";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -13347,7 +14257,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_LeadAssaulterPointMan";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item2
@@ -13543,7 +14466,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_WeaponsSpecialistSupportGunner";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item3
@@ -13752,7 +14688,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_PatrolSharpshooterMarksman";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 					class Item4
@@ -13961,7 +14910,20 @@ class items
 									};
 								};
 							};
-							nAttributes=10;
+							class Attribute10
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_AdvancedMedic";
+									};
+								};
+							};
+							nAttributes=11;
 						};
 					};
 				};
@@ -14170,7 +15132,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_Sniper";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -14366,7 +15341,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_Spotter";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item2
@@ -14562,7 +15550,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_Spotter";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 				};
@@ -14915,7 +15916,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_SectionCommander";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item1
@@ -15059,7 +16073,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Sharpshooter";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 					class Item2
@@ -15216,7 +16243,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Grenadier";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item3
@@ -15373,7 +16413,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_TeamMedic";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item4
@@ -15531,7 +16584,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Section2IC";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item5
@@ -15675,7 +16741,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_MachineGunner";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 					class Item6
@@ -15819,7 +16898,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Grenadier";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 					class Item7
@@ -15964,7 +17056,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Rifleman";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 				};
@@ -18204,7 +19309,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_SectionCommander";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item1
@@ -18348,7 +19466,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Sharpshooter";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 					class Item2
@@ -18505,7 +19636,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Grenadier";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item3
@@ -18662,7 +19806,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_TeamMedic";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item4
@@ -18820,7 +19977,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Section2IC";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item5
@@ -18964,7 +20134,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_MachineGunner";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 					class Item6
@@ -19108,7 +20291,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Grenadier";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 					class Item7
@@ -19252,7 +20448,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Rifleman";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 				};
@@ -19462,7 +20671,20 @@ class items
 									};
 								};
 							};
-							nAttributes=9;
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionLead";
+									};
+								};
+							};
+							nAttributes=10;
 						};
 					};
 					class Item1
@@ -19646,7 +20868,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_Section2iC";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item2
@@ -19816,7 +21051,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionMedic";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item3
@@ -19973,7 +21221,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_SectionGunnerL7A2";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item4
@@ -20156,7 +21417,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_LeadBreacher";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item5
@@ -20313,7 +21587,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_PointMan";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item6
@@ -20470,7 +21757,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_Sharpshooter";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item7
@@ -20627,7 +21927,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_RiflemanAT";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 				};
@@ -21207,7 +22520,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Pilot";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item1
@@ -21378,7 +22704,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Pilot";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item2
@@ -21549,7 +22888,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Pilot";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 				};
@@ -21733,7 +23085,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Crewman";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item1
@@ -21904,7 +23269,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Crewman";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item2
@@ -22075,7 +23453,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Crewman";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 				};
@@ -22259,7 +23650,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Crewman";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item1
@@ -22430,7 +23834,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Crewman";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item2
@@ -22601,7 +24018,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Crewman";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 				};
@@ -22772,7 +24202,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_PlatoonCommander";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item1
@@ -22930,7 +24373,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_PlatoonSergeant";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item2
@@ -23113,7 +24569,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_PlatoonMedic";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item3
@@ -23270,7 +24739,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_PlatoonSignaller";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item4
@@ -23427,7 +24909,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_PlatoonUAVOperator";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 				};
@@ -23598,7 +25093,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_SectionCommander";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item1
@@ -23742,7 +25250,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Sharpshooter";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 					class Item2
@@ -23899,7 +25420,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Grenadier";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item3
@@ -24056,7 +25590,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_TeamMedic";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item4
@@ -24214,7 +25761,20 @@ class items
 									};
 								};
 							};
-							nAttributes=6;
+							class Attribute6
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Section2IC";
+									};
+								};
+							};
+							nAttributes=7;
 						};
 					};
 					class Item5
@@ -24358,7 +25918,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_MachineGunner";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 					class Item6
@@ -24502,7 +26075,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Grenadier";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 					class Item7
@@ -24646,7 +26232,20 @@ class items
 									};
 								};
 							};
-							nAttributes=5;
+							class Attribute5
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBN_Rifleman";
+									};
+								};
+							};
+							nAttributes=6;
 						};
 					};
 				};
@@ -24830,7 +26429,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Pilot";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 					class Item1
@@ -25001,7 +26613,20 @@ class items
 									};
 								};
 							};
-							nAttributes=7;
+							class Attribute7
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="RBNSUP_Pilot";
+									};
+								};
+							};
+							nAttributes=8;
 						};
 					};
 				};
@@ -25198,7 +26823,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_JSFAWPilot";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item1
@@ -25382,7 +27020,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_JSFAWPilot";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 					class Item2
@@ -25566,7 +27217,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_JSFAWPilot";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 				};
@@ -25763,7 +27427,20 @@ class items
 									};
 								};
 							};
-							nAttributes=8;
+							class Attribute8
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SAS_JSFAWPilot";
+									};
+								};
+							};
+							nAttributes=9;
 						};
 					};
 				};
@@ -26120,7 +27797,20 @@ class items
 							};
 						};
 					};
-					nAttributes=5;
+					class Attribute5
+					{
+						property="FTH_kit";
+						expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="RBNSUP_MortarGunner";
+							};
+						};
+					};
+					nAttributes=6;
 				};
 			};
 			class Item1
@@ -26264,7 +27954,20 @@ class items
 							};
 						};
 					};
-					nAttributes=5;
+					class Attribute5
+					{
+						property="FTH_kit";
+						expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="RBNSUP_MortarAssistant";
+							};
+						};
+					};
+					nAttributes=6;
 				};
 			};
 		};
@@ -26421,7 +28124,20 @@ class items
 							};
 						};
 					};
-					nAttributes=5;
+					class Attribute5
+					{
+						property="FTH_kit";
+						expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="RBNSUP_JavelinGunner";
+							};
+						};
+					};
+					nAttributes=6;
 				};
 			};
 			class Item1
@@ -26565,7 +28281,20 @@ class items
 							};
 						};
 					};
-					nAttributes=5;
+					class Attribute5
+					{
+						property="FTH_kit";
+						expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="RBNSUP_JavelinAssistant";
+							};
+						};
+					};
+					nAttributes=6;
 				};
 			};
 		};
@@ -26722,7 +28451,20 @@ class items
 							};
 						};
 					};
-					nAttributes=5;
+					class Attribute5
+					{
+						property="FTH_kit";
+						expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="RBNSUP_GPMGGunner";
+							};
+						};
+					};
+					nAttributes=6;
 				};
 			};
 			class Item1
@@ -26866,7 +28608,20 @@ class items
 							};
 						};
 					};
-					nAttributes=5;
+					class Attribute5
+					{
+						property="FTH_kit";
+						expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="RBNSUP_GPMGAssistant";
+							};
+						};
+					};
+					nAttributes=6;
 				};
 			};
 		};
@@ -27036,7 +28791,20 @@ class items
 							};
 						};
 					};
-					nAttributes=6;
+					class Attribute6
+					{
+						property="FTH_kit";
+						expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="RBNSUP_Sniper";
+							};
+						};
+					};
+					nAttributes=7;
 				};
 			};
 			class Item1
@@ -27180,7 +28948,20 @@ class items
 							};
 						};
 					};
-					nAttributes=5;
+					class Attribute5
+					{
+						property="FTH_kit";
+						expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="RBNSUP_Spotter";
+							};
+						};
+					};
+					nAttributes=6;
 				};
 			};
 		};

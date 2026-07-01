@@ -8,23 +8,24 @@ Arma 3 mod adding the full 44th order of battle. The complete ORBAT is placed in
 
 - [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
 - [UK3CB BAF Units (ACE)](https://steamcommunity.com/sharedfiles/filedetails/?id=2382830257)
+- 44th Kit Core (shared loadout library — provides the spawn kits)
 
 ## Full ORBAT composition
 
 Found in Eden under **44th Mods → Compositions → 44th Modern Milsim ORBAT**. Placing it gives the entire ORBAT exactly as configured:
 
-- All 131 slots **playable**, with lobby descriptions grouped by section (e.g. *Rifleman — Zulu Section*)
-- Full role loadouts baked in
+- All slots **playable**, with lobby descriptions grouped by section (e.g. *Rifleman — Zulu Section*)
+- **Full role loadouts applied on spawn** — each unit carries an `FTH_kit` attribute that pulls its loadout from 44th Kit Core, so players spawn kitted without visiting a crate (and are re-kitted on respawn)
+- Loadouts stay editable within their parameters at the kit crates, and are covered by Kit Core's version control
 - Zeus curator modules included for Lead/Co Zeus
 
 This is the intended way to set up a mission — units placed from the asset or group browsers spawn as AI by default (an Eden engine limitation: configs cannot mark units playable), so the mission maker would need to set playability manually.
 
 ## Individual units
 
-Units placed from the asset browser (**44th Mods**) or group browser spawn with:
-- Correct MTP uniform and headgear for their role
+Units placed from the asset browser (**44th Mods**) or group browser are the legacy `_44th_` classes (the composition is now canonical). They spawn with:
+- Their full role loadout from 44th Kit Core where a class mapping exists, otherwise a base fallback (MTP uniform + role headgear)
 - Rank set automatically
-- Basic kit (map, compass, watch, FAK)
 - TFAR SR/LR radio frequencies pre-configured for their section net
 
 Zeus units (Lead Zeus, Co Zeus) additionally receive a game master module assigned on spawn — no pre-placed module needed. The curator refreshes its editable objects periodically, so mid-mission spawns stay Zeus-editable.
