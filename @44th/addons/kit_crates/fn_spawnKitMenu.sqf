@@ -24,6 +24,10 @@ if (!hasInterface) exitWith {};
 if (missionNamespace getVariable ["FTH_spawnMenuShown", false]) exitWith {};
 
 [] spawn {
+    // Give the mission a moment to finish initialising before we take over the
+    // screen with the kit camera, so the menu never opens mid-load.
+    uiSleep 5;
+
     // Wait for the kit library, WBK Kits, and this player's role key to be ready
     // (role key is set by FTH_fnc_applyKit, public, so it syncs to the client).
     private _timeout = time + 60;
