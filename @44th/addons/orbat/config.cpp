@@ -31,30 +31,20 @@ class CfgPatches
             "_44th_Ranger_PartnerLiaison","_44th_Ranger_UASOperator","_44th_Ranger_EWOperator",
             "_44th_Ranger_TeamMedic","_44th_Ranger_LeadBreacher","_44th_Ranger_LeadScout",
             "_44th_Ranger_SupportOperator","_44th_Ranger_Crewman","_44th_Ranger_Pilot",
-            // SFSG HQ + Snipers
-            "_44th_SFSG_PlatoonSergeant","_44th_SFSG_Sniper","_44th_SFSG_Spotter",
+            // SFSG Command (Bulldog)
+            "_44th_SFSG_PlatoonCommander","_44th_SFSG_HQDroneOperator",
             // SFSG Zulu Section
-            "_44th_SFSG_SectionLead_Zulu","_44th_SFSG_Section2iC_Zulu","_44th_SFSG_SectionMedic_Zulu",
-            "_44th_SFSG_SectionGunner_L7A2_Zulu","_44th_SFSG_SectionGunner_L110A3_Zulu",
-            "_44th_SFSG_LeadBreacher_Zulu","_44th_SFSG_PointMan_Zulu","_44th_SFSG_Sharpshooter_Zulu",
-            "_44th_SFSG_Rifleman_AT_Zulu",
+            "_44th_SFSG_SectionCommander_Zulu","_44th_SFSG_Section2iC_Zulu","_44th_SFSG_LeadAssaulter_Zulu","_44th_SFSG_SectionGrenadier_Zulu","_44th_SFSG_SectionMedic_Zulu",
+            "_44th_SFSG_SectionGunner_Zulu","_44th_SFSG_Sharpshooter_Zulu","_44th_SFSG_Rifleman_AT_Zulu",
             // SFSG Victor Section
-            "_44th_SFSG_SectionLead_Victor","_44th_SFSG_Section2iC_Victor","_44th_SFSG_SectionMedic_Victor",
-            "_44th_SFSG_SectionGunner_L7A2_Victor","_44th_SFSG_SectionGunner_L110A3_Victor",
-            "_44th_SFSG_LeadBreacher_Victor","_44th_SFSG_PointMan_Victor","_44th_SFSG_Sharpshooter_Victor",
-            "_44th_SFSG_Rifleman_AT_Victor",
+            "_44th_SFSG_SectionCommander_Victor","_44th_SFSG_Section2iC_Victor","_44th_SFSG_LeadAssaulter_Victor","_44th_SFSG_SectionGrenadier_Victor","_44th_SFSG_SectionMedic_Victor",
+            "_44th_SFSG_SectionGunner_Victor","_44th_SFSG_Sharpshooter_Victor","_44th_SFSG_Rifleman_AT_Victor",
             // SFSG Romeo Section
-            "_44th_SFSG_SectionLead_Romeo","_44th_SFSG_Section2iC_Romeo","_44th_SFSG_SectionMedic_Romeo",
-            "_44th_SFSG_SectionGunner_L7A2_Romeo","_44th_SFSG_SectionGunner_L110A3_Romeo",
-            "_44th_SFSG_LeadBreacher_Romeo","_44th_SFSG_PointMan_Romeo","_44th_SFSG_Sharpshooter_Romeo",
-            "_44th_SFSG_Rifleman_AT_Romeo",
-            // SFSG Juliet Section
-            "_44th_SFSG_SectionLead_Juliet","_44th_SFSG_Section2iC_Juliet","_44th_SFSG_SectionMedic_Juliet",
-            "_44th_SFSG_SectionGunner_L7A2_Juliet","_44th_SFSG_SectionGunner_L110A3_Juliet",
-            "_44th_SFSG_LeadBreacher_Juliet","_44th_SFSG_PointMan_Juliet","_44th_SFSG_Sharpshooter_Juliet",
-            "_44th_SFSG_Rifleman_AT_Juliet",
-            // SFSG Transport
-            "_44th_SFSG_Crewman","_44th_SFSG_Pilot",
+            "_44th_SFSG_SectionCommander_Romeo","_44th_SFSG_Section2iC_Romeo","_44th_SFSG_LeadAssaulter_Romeo","_44th_SFSG_SectionGrenadier_Romeo","_44th_SFSG_SectionMedic_Romeo",
+            "_44th_SFSG_SectionGunner_Romeo","_44th_SFSG_Sharpshooter_Romeo","_44th_SFSG_Rifleman_AT_Romeo",
+            // SFSG Juliet Support Section
+            "_44th_SFSG_SupportCommander_Juliet","_44th_SFSG_SupportSection2iC_Juliet","_44th_SFSG_HeavySupportGunner1_Juliet","_44th_SFSG_HeavySupportGunner2_Juliet",
+            "_44th_SFSG_AssistantGunner_Juliet","_44th_SFSG_ATSpecialist1_Juliet","_44th_SFSG_ATSpecialist2_Juliet","_44th_SFSG_SupportMedic_Juliet",
             // SRR
             "_44th_SRR_SurveillanceSpecialist","_44th_SRR_SIGINTSpecialist","_44th_SRR_TechnicalSpecialist",
             "_44th_SRR_AdvancedMedic","_44th_SRR_Sniper","_44th_SRR_Spotter","_44th_SRR_DroneCarrier",
@@ -72,7 +62,7 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] = { "A3_Characters_F", "UK3CB_BAF_Units_ACE", "cba_xeh", "KitCore_44th" };
         author = "FullMetalShep";
-        version = 29;
+        version = 30;
     };
 };
 
@@ -490,36 +480,29 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_Ranger";
     };
 
-    // ─── SFSG HQ + Snipers ────────────────────────────────────────────────────
+    // ─── SFSG Command Element (Bulldog) ────────────────────────────────────────────
 
-    class _44th_SFSG_PlatoonSergeant : _44th_OrbatUnit
+    class _44th_SFSG_PlatoonCommander : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Platoon Sergeant [SFSG]";
+        displayName = "Platoon Commander [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_Sniper : _44th_OrbatUnit
+    class _44th_SFSG_HQDroneOperator : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Sniper [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_Spotter : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Spotter [SFSG]";
+        displayName = "HQ Drone Operator / RTO [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
 
-    // ─── SFSG Zulu Section (SR 212) ───────────────────────────────────────────
+    // ─── SFSG Zulu Section (SR 212) ────────────────────────────────────────────────
 
-    class _44th_SFSG_SectionLead_Zulu : _44th_OrbatUnit
+    class _44th_SFSG_SectionCommander_Zulu : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section Lead (Zulu) [SFSG]";
+        displayName = "Section Commander (Zulu) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
@@ -530,6 +513,20 @@ class CfgVehicles
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
+    class _44th_SFSG_LeadAssaulter_Zulu : _44th_OrbatUnit
+    {
+        scope = 2;
+        displayName = "Lead Assaulter / Pointman (Zulu) [SFSG]";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_44th_SFSG";
+    };
+    class _44th_SFSG_SectionGrenadier_Zulu : _44th_OrbatUnit
+    {
+        scope = 2;
+        displayName = "Section Grenadier (Zulu) [SFSG]";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_44th_SFSG";
+    };
     class _44th_SFSG_SectionMedic_Zulu : _44th_OrbatUnit
     {
         scope = 2;
@@ -537,55 +534,34 @@ class CfgVehicles
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_SectionGunner_L7A2_Zulu : _44th_OrbatUnit
+    class _44th_SFSG_SectionGunner_Zulu : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section Gunner L7A2 (Zulu) [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_SectionGunner_L110A3_Zulu : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Section Gunner L110A3 (Zulu) [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_LeadBreacher_Zulu : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Lead Breacher (Zulu) [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_PointMan_Zulu : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Point Man (Zulu) [SFSG]";
+        displayName = "Section Gunner (Zulu) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
     class _44th_SFSG_Sharpshooter_Zulu : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Sharpshooter (Zulu) [SFSG]";
+        displayName = "Section Sharpshooter (Zulu) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
     class _44th_SFSG_Rifleman_AT_Zulu : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Rifleman AT (Zulu) [SFSG]";
+        displayName = "Anti-Tank Rifleman (Zulu) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
 
-    // ─── SFSG Victor Section (SR 222) ─────────────────────────────────────────
+    // ─── SFSG Victor Section (SR 222) ──────────────────────────────────────────────
 
-    class _44th_SFSG_SectionLead_Victor : _44th_OrbatUnit
+    class _44th_SFSG_SectionCommander_Victor : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section Lead (Victor) [SFSG]";
+        displayName = "Section Commander (Victor) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
@@ -596,6 +572,20 @@ class CfgVehicles
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
+    class _44th_SFSG_LeadAssaulter_Victor : _44th_OrbatUnit
+    {
+        scope = 2;
+        displayName = "Lead Assaulter / Pointman (Victor) [SFSG]";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_44th_SFSG";
+    };
+    class _44th_SFSG_SectionGrenadier_Victor : _44th_OrbatUnit
+    {
+        scope = 2;
+        displayName = "Section Grenadier (Victor) [SFSG]";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_44th_SFSG";
+    };
     class _44th_SFSG_SectionMedic_Victor : _44th_OrbatUnit
     {
         scope = 2;
@@ -603,55 +593,34 @@ class CfgVehicles
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_SectionGunner_L7A2_Victor : _44th_OrbatUnit
+    class _44th_SFSG_SectionGunner_Victor : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section Gunner L7A2 (Victor) [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_SectionGunner_L110A3_Victor : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Section Gunner L110A3 (Victor) [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_LeadBreacher_Victor : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Lead Breacher (Victor) [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_PointMan_Victor : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Point Man (Victor) [SFSG]";
+        displayName = "Section Gunner (Victor) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
     class _44th_SFSG_Sharpshooter_Victor : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Sharpshooter (Victor) [SFSG]";
+        displayName = "Section Sharpshooter (Victor) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
     class _44th_SFSG_Rifleman_AT_Victor : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Rifleman AT (Victor) [SFSG]";
+        displayName = "Anti-Tank Rifleman (Victor) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
 
-    // ─── SFSG Romeo Section (SR 232) ──────────────────────────────────────────
+    // ─── SFSG Romeo Section (SR 232) ───────────────────────────────────────────────
 
-    class _44th_SFSG_SectionLead_Romeo : _44th_OrbatUnit
+    class _44th_SFSG_SectionCommander_Romeo : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section Lead (Romeo) [SFSG]";
+        displayName = "Section Commander (Romeo) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
@@ -662,6 +631,20 @@ class CfgVehicles
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
+    class _44th_SFSG_LeadAssaulter_Romeo : _44th_OrbatUnit
+    {
+        scope = 2;
+        displayName = "Lead Assaulter / Pointman (Romeo) [SFSG]";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_44th_SFSG";
+    };
+    class _44th_SFSG_SectionGrenadier_Romeo : _44th_OrbatUnit
+    {
+        scope = 2;
+        displayName = "Section Grenadier (Romeo) [SFSG]";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_44th_SFSG";
+    };
     class _44th_SFSG_SectionMedic_Romeo : _44th_OrbatUnit
     {
         scope = 2;
@@ -669,131 +652,87 @@ class CfgVehicles
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_SectionGunner_L7A2_Romeo : _44th_OrbatUnit
+    class _44th_SFSG_SectionGunner_Romeo : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section Gunner L7A2 (Romeo) [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_SectionGunner_L110A3_Romeo : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Section Gunner L110A3 (Romeo) [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_LeadBreacher_Romeo : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Lead Breacher (Romeo) [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_PointMan_Romeo : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Point Man (Romeo) [SFSG]";
+        displayName = "Section Gunner (Romeo) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
     class _44th_SFSG_Sharpshooter_Romeo : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Sharpshooter (Romeo) [SFSG]";
+        displayName = "Section Sharpshooter (Romeo) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
     class _44th_SFSG_Rifleman_AT_Romeo : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Rifleman AT (Romeo) [SFSG]";
+        displayName = "Anti-Tank Rifleman (Romeo) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
 
-    // ─── SFSG Juliet Section (SR 242) ─────────────────────────────────────────
+    // ─── SFSG Juliet Support Section (SR 242/243) ──────────────────────────────────
 
-    class _44th_SFSG_SectionLead_Juliet : _44th_OrbatUnit
+    class _44th_SFSG_SupportCommander_Juliet : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section Lead (Juliet) [SFSG]";
+        displayName = "Support Section Commander (Juliet) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_Section2iC_Juliet : _44th_OrbatUnit
+    class _44th_SFSG_SupportSection2iC_Juliet : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section 2iC (Juliet) [SFSG]";
+        displayName = "Section Support 2iC (Juliet) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_SectionMedic_Juliet : _44th_OrbatUnit
+    class _44th_SFSG_HeavySupportGunner1_Juliet : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section Medic (Juliet) [SFSG]";
+        displayName = "Heavy Support Gunner 1 (Juliet) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_SectionGunner_L7A2_Juliet : _44th_OrbatUnit
+    class _44th_SFSG_HeavySupportGunner2_Juliet : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section Gunner L7A2 (Juliet) [SFSG]";
+        displayName = "Heavy Support Gunner 2 (Juliet) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_SectionGunner_L110A3_Juliet : _44th_OrbatUnit
+    class _44th_SFSG_AssistantGunner_Juliet : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Section Gunner L110A3 (Juliet) [SFSG]";
+        displayName = "Assistant Gunner / Ammo Bearer (Juliet) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_LeadBreacher_Juliet : _44th_OrbatUnit
+    class _44th_SFSG_ATSpecialist1_Juliet : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Lead Breacher (Juliet) [SFSG]";
+        displayName = "Anti-Tank Specialist 1 (Juliet) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_PointMan_Juliet : _44th_OrbatUnit
+    class _44th_SFSG_ATSpecialist2_Juliet : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Point Man (Juliet) [SFSG]";
+        displayName = "Anti-Tank Specialist 2 (Juliet) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
-    class _44th_SFSG_Sharpshooter_Juliet : _44th_OrbatUnit
+    class _44th_SFSG_SupportMedic_Juliet : _44th_OrbatUnit
     {
         scope = 2;
-        displayName = "Sharpshooter (Juliet) [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_Rifleman_AT_Juliet : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Rifleman AT (Juliet) [SFSG]";
+        displayName = "Support Section Medic (Juliet) [SFSG]";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
 
-    // ─── SFSG Transport ───────────────────────────────────────────────────────
-
-    class _44th_SFSG_Crewman : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Crewman [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
-    class _44th_SFSG_Pilot : _44th_OrbatUnit
-    {
-        scope = 2;
-        displayName = "Pilot [SFSG]";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_44th_SFSG";
-    };
 
     // ─── SRR Brick 1 (SR 301) ─────────────────────────────────────────────────
 
@@ -1088,47 +1027,40 @@ class Extended_InitPost_EventHandlers
     class _44th_Ranger_SupportOperator { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Boonie_MTP','PRIVATE','122',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_Ranger_Crewman { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_RLC_Commando','LIEUTENANT','171',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_Ranger_Pilot { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_AAC','LIEUTENANT','142','42'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_PlatoonSergeant { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','SERGEANT','180','50,42'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_Sniper { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_SAS','PRIVATE','250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_Spotter { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_SAS','PRIVATE','250',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionLead_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','212,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_PlatoonCommander { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','SERGEANT','250','50,42'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_HQDroneOperator { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','250','50,42'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SectionCommander_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','212,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_Section2iC_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','212,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_LeadAssaulter_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','212',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SectionGrenadier_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','212',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_SectionMedic_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','212',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionGunner_L7A2_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','212',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionGunner_L110A3_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','212',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_LeadBreacher_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','212',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_PointMan_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','212',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SectionGunner_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','212',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_Sharpshooter_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','212',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_Rifleman_AT_Zulu { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','212',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionLead_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','222,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SectionCommander_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','222,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_Section2iC_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','222,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_LeadAssaulter_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','222',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SectionGrenadier_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','222',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_SectionMedic_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','222',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionGunner_L7A2_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','222',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionGunner_L110A3_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','222',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_LeadBreacher_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','222',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_PointMan_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','222',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SectionGunner_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','222',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_Sharpshooter_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','222',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_Rifleman_AT_Victor { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','222',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionLead_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','232,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SectionCommander_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','232,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_Section2iC_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','232,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_LeadAssaulter_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','232',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SectionGrenadier_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','232',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_SectionMedic_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','232',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionGunner_L7A2_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','232',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionGunner_L110A3_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','232',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_LeadBreacher_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','232',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_PointMan_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','232',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SectionGunner_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','232',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_Sharpshooter_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','232',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SFSG_Rifleman_AT_Romeo { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','232',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionLead_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','242,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_Section2iC_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','242,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionMedic_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','242',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionGunner_L7A2_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','242',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_SectionGunner_L110A3_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','242',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_LeadBreacher_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','242',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_PointMan_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','242',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_Sharpshooter_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','242',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_Rifleman_AT_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','242',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_Crewman { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_RLC_Commando','LIEUTENANT','171',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
-    class _44th_SFSG_Pilot { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_AAC','LIEUTENANT','142','42'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SupportCommander_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','242,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SupportSection2iC_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','CORPORAL','243,250','50'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_HeavySupportGunner1_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','242',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_HeavySupportGunner2_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','242',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_AssistantGunner_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','242',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_ATSpecialist1_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','243',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_ATSpecialist2_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','243',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
+    class _44th_SFSG_SupportMedic_Juliet { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_PR','PRIVATE','243',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SRR_SurveillanceSpecialist { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_SAS','PRIVATE','301',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SRR_SIGINTSpecialist { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_SAS','PRIVATE','301',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
     class _44th_SRR_TechnicalSpecialist { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_SAS','PRIVATE','301',''] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };
@@ -1335,15 +1267,14 @@ class CfgGroups
         class FTH_44th_SFSG
         {
             name = "SFSG";
-            class _44th_GRP_SFSG_HQ
+            class _44th_GRP_SFSG_Bulldog
             {
-                name = "SFSG HQ";
+                name = "Command Element (Bulldog) [SFSG]";
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "SERGEANT"; vehicle = "_44th_SFSG_PlatoonSergeant"; description = "Platoon Sergeant@SFSG HQ"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sniper"; description = "Sniper"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Spotter"; description = "Spotter"; };
+                    class Unit0 { position[] = {0,0,0}; special = "NONE"; player = "PLAYER COMMANDER"; rank = "SERGEANT"; vehicle = "_44th_SFSG_PlatoonCommander"; description = "Platoon Commander@Bulldog"; };
+                    class Unit1 { position[] = {2,2,0}; special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_HQDroneOperator"; description = "HQ Drone Operator / RTO"; };
                 };
             };
             class _44th_GRP_SFSG_Zulu
@@ -1352,15 +1283,14 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Zulu"; description = "Section Lead@Zulu"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Zulu"; description = "Section 2iC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Zulu"; description = "Section Medic"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Zulu"; description = "Section Gunner (L7A2)"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Zulu"; description = "Section Gunner (L110A3)"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Zulu"; description = "Lead Breacher"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Zulu"; description = "Point Man"; };
-                    class Unit7 { position[] = {2,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Zulu"; description = "Sharpshooter"; };
-                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Zulu"; description = "Rifleman AT"; };
+                    class Unit0 { position[] = {0,0,0}; special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionCommander_Zulu"; description = "Section Commander@Zulu"; };
+                    class Unit1 { position[] = {2,2,0}; special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Zulu"; description = "Section 2iC"; };
+                    class Unit2 { position[] = {-2,2,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_LeadAssaulter_Zulu"; description = "Lead Assaulter / Pointman"; };
+                    class Unit3 { position[] = {0,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_SectionGrenadier_Zulu"; description = "Section Grenadier"; };
+                    class Unit4 { position[] = {2,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_SectionMedic_Zulu"; description = "Section Medic"; };
+                    class Unit5 { position[] = {-2,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_SectionGunner_Zulu"; description = "Section Gunner"; };
+                    class Unit6 { position[] = {0,6,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_Sharpshooter_Zulu"; description = "Section Sharpshooter"; };
+                    class Unit7 { position[] = {2,6,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_Rifleman_AT_Zulu"; description = "Anti-Tank Rifleman"; };
                 };
             };
             class _44th_GRP_SFSG_Victor
@@ -1369,15 +1299,14 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Victor"; description = "Section Lead@Victor"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Victor"; description = "Section 2iC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Victor"; description = "Section Medic"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Victor"; description = "Section Gunner (L7A2)"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Victor"; description = "Section Gunner (L110A3)"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Victor"; description = "Lead Breacher"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Victor"; description = "Point Man"; };
-                    class Unit7 { position[] = {2,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Victor"; description = "Sharpshooter"; };
-                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Victor"; description = "Rifleman AT"; };
+                    class Unit0 { position[] = {0,0,0}; special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionCommander_Victor"; description = "Section Commander@Victor"; };
+                    class Unit1 { position[] = {2,2,0}; special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Victor"; description = "Section 2iC"; };
+                    class Unit2 { position[] = {-2,2,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_LeadAssaulter_Victor"; description = "Lead Assaulter / Pointman"; };
+                    class Unit3 { position[] = {0,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_SectionGrenadier_Victor"; description = "Section Grenadier"; };
+                    class Unit4 { position[] = {2,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_SectionMedic_Victor"; description = "Section Medic"; };
+                    class Unit5 { position[] = {-2,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_SectionGunner_Victor"; description = "Section Gunner"; };
+                    class Unit6 { position[] = {0,6,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_Sharpshooter_Victor"; description = "Section Sharpshooter"; };
+                    class Unit7 { position[] = {2,6,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_Rifleman_AT_Victor"; description = "Anti-Tank Rifleman"; };
                 };
             };
             class _44th_GRP_SFSG_Romeo
@@ -1386,32 +1315,30 @@ class CfgGroups
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Romeo"; description = "Section Lead@Romeo"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Romeo"; description = "Section 2iC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Romeo"; description = "Section Medic"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Romeo"; description = "Section Gunner (L7A2)"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Romeo"; description = "Section Gunner (L110A3)"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Romeo"; description = "Lead Breacher"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Romeo"; description = "Point Man"; };
-                    class Unit7 { position[] = {2,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Romeo"; description = "Sharpshooter"; };
-                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Romeo"; description = "Rifleman AT"; };
+                    class Unit0 { position[] = {0,0,0}; special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionCommander_Romeo"; description = "Section Commander@Romeo"; };
+                    class Unit1 { position[] = {2,2,0}; special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Romeo"; description = "Section 2iC"; };
+                    class Unit2 { position[] = {-2,2,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_LeadAssaulter_Romeo"; description = "Lead Assaulter / Pointman"; };
+                    class Unit3 { position[] = {0,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_SectionGrenadier_Romeo"; description = "Section Grenadier"; };
+                    class Unit4 { position[] = {2,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_SectionMedic_Romeo"; description = "Section Medic"; };
+                    class Unit5 { position[] = {-2,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_SectionGunner_Romeo"; description = "Section Gunner"; };
+                    class Unit6 { position[] = {0,6,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_Sharpshooter_Romeo"; description = "Section Sharpshooter"; };
+                    class Unit7 { position[] = {2,6,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_Rifleman_AT_Romeo"; description = "Anti-Tank Rifleman"; };
                 };
             };
             class _44th_GRP_SFSG_Juliet
             {
-                name = "Juliet Section [SFSG]";
+                name = "Juliet Support Section [SFSG]";
                 side = 1;
                 class units
                 {
-                    class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SectionLead_Juliet"; description = "Section Lead@Juliet"; };
-                    class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_Section2iC_Juliet"; description = "Section 2iC"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionMedic_Juliet"; description = "Section Medic"; };
-                    class Unit3 { position[] = {0,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L7A2_Juliet"; description = "Section Gunner (L7A2)"; };
-                    class Unit4 { position[] = {2,4,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_SectionGunner_L110A3_Juliet"; description = "Section Gunner (L110A3)"; };
-                    class Unit5 { position[] = {-2,4,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_LeadBreacher_Juliet"; description = "Lead Breacher"; };
-                    class Unit6 { position[] = {0,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_PointMan_Juliet"; description = "Point Man"; };
-                    class Unit7 { position[] = {2,6,0};   special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Sharpshooter_Juliet"; description = "Sharpshooter"; };
-                    class Unit8 { position[] = {-2,6,0};  special = "NONE"; player = "PLAYER"; rank = "PRIVATE";  vehicle = "_44th_SFSG_Rifleman_AT_Juliet"; description = "Rifleman AT"; };
+                    class Unit0 { position[] = {0,0,0}; special = "NONE"; player = "PLAYER COMMANDER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SupportCommander_Juliet"; description = "Support Section Commander@Juliet"; };
+                    class Unit1 { position[] = {2,2,0}; special = "NONE"; player = "PLAYER"; rank = "CORPORAL"; vehicle = "_44th_SFSG_SupportSection2iC_Juliet"; description = "Section Support 2iC"; };
+                    class Unit2 { position[] = {-2,2,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_HeavySupportGunner1_Juliet"; description = "Heavy Support Gunner"; };
+                    class Unit3 { position[] = {0,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_HeavySupportGunner2_Juliet"; description = "Heavy Support Gunner"; };
+                    class Unit4 { position[] = {2,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_AssistantGunner_Juliet"; description = "Assistant Gunner / Ammo Bearer"; };
+                    class Unit5 { position[] = {-2,4,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_ATSpecialist1_Juliet"; description = "Anti-Tank Specialist"; };
+                    class Unit6 { position[] = {0,6,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_ATSpecialist2_Juliet"; description = "Anti-Tank Specialist"; };
+                    class Unit7 { position[] = {2,6,0}; special = "NONE"; player = "PLAYER"; rank = "PRIVATE"; vehicle = "_44th_SFSG_SupportMedic_Juliet"; description = "Support Section Medic"; };
                 };
             };
         };
@@ -1535,7 +1462,6 @@ class CfgGroups
                 {
                     class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "LIEUTENANT"; vehicle = "_44th_RBNSup_Pilot"; description = "Pilot@Pilots"; };
                     class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "LIEUTENANT"; vehicle = "_44th_Ranger_Pilot"; description = "Pilot"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "LIEUTENANT"; vehicle = "_44th_SFSG_Pilot";   description = "Pilot"; };
                 };
             };
             class _44th_GRP_Mailman_Crewmen
@@ -1546,7 +1472,6 @@ class CfgGroups
                 {
                     class Unit0 { position[] = {0,0,0};   special = "NONE"; player = "PLAYER COMMANDER"; rank = "LIEUTENANT"; vehicle = "_44th_RBNSup_Crewman"; description = "Crewman@Crewmen"; };
                     class Unit1 { position[] = {2,2,0};   special = "NONE"; player = "PLAYER"; rank = "LIEUTENANT"; vehicle = "_44th_Ranger_Crewman"; description = "Crewman"; };
-                    class Unit2 { position[] = {-2,2,0};  special = "NONE"; player = "PLAYER"; rank = "LIEUTENANT"; vehicle = "_44th_SFSG_Crewman";   description = "Crewman"; };
                 };
             };
             class _44th_GRP_Mailman_JSFAW

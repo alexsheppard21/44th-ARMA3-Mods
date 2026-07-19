@@ -47,23 +47,28 @@
 ["RANGER_Crewman",           ["_44th_Ranger_Crewman"]] call _map;
 ["RANGER_Pilot",             ["_44th_Ranger_Pilot"]] call _map;
 
-// ── SFSG HQ + Snipers ─────────────────────────────────────────────────────
-["SFSG_PlatoonSergeant", ["_44th_SFSG_PlatoonSergeant"]] call _map;
-["SFSG_Sniper",          ["_44th_SFSG_Sniper"]] call _map;
-["SFSG_Spotter",         ["_44th_SFSG_Spotter"]] call _map;
+// ── SFSG Command (Bulldog) ────────────────────────────────────────────────
+["SFSG_PlatoonCommander", ["_44th_SFSG_PlatoonCommander"]] call _map;
+["SFSG_HQDroneOperator",  ["_44th_SFSG_HQDroneOperator"]] call _map;
 
-// ── SFSG Sections (Zulu / Victor / Romeo / Juliet share loadouts) ─────────
-["SFSG_SectionLead",       ["_44th_SFSG_SectionLead_Zulu","_44th_SFSG_SectionLead_Victor","_44th_SFSG_SectionLead_Romeo","_44th_SFSG_SectionLead_Juliet"]] call _map;
-["SFSG_Section2iC",        ["_44th_SFSG_Section2iC_Zulu","_44th_SFSG_Section2iC_Victor","_44th_SFSG_Section2iC_Romeo","_44th_SFSG_Section2iC_Juliet"]] call _map;
-["SFSG_SectionMedic",      ["_44th_SFSG_SectionMedic_Zulu","_44th_SFSG_SectionMedic_Victor","_44th_SFSG_SectionMedic_Romeo","_44th_SFSG_SectionMedic_Juliet"]] call _map;
-["SFSG_SectionGunnerL7A2", ["_44th_SFSG_SectionGunner_L7A2_Zulu","_44th_SFSG_SectionGunner_L7A2_Victor","_44th_SFSG_SectionGunner_L7A2_Romeo","_44th_SFSG_SectionGunner_L7A2_Juliet"]] call _map;
-["SFSG_SectionGunnerL110A3",["_44th_SFSG_SectionGunner_L110A3_Zulu","_44th_SFSG_SectionGunner_L110A3_Victor","_44th_SFSG_SectionGunner_L110A3_Romeo","_44th_SFSG_SectionGunner_L110A3_Juliet"]] call _map;
-["SFSG_LeadBreacher",      ["_44th_SFSG_LeadBreacher_Zulu","_44th_SFSG_LeadBreacher_Victor","_44th_SFSG_LeadBreacher_Romeo","_44th_SFSG_LeadBreacher_Juliet"]] call _map;
-["SFSG_PointMan",          ["_44th_SFSG_PointMan_Zulu","_44th_SFSG_PointMan_Victor","_44th_SFSG_PointMan_Romeo","_44th_SFSG_PointMan_Juliet"]] call _map;
-["SFSG_Sharpshooter",      ["_44th_SFSG_Sharpshooter_Zulu","_44th_SFSG_Sharpshooter_Victor","_44th_SFSG_Sharpshooter_Romeo","_44th_SFSG_Sharpshooter_Juliet"]] call _map;
-["SFSG_RiflemanAT",        ["_44th_SFSG_Rifleman_AT_Zulu","_44th_SFSG_Rifleman_AT_Victor","_44th_SFSG_Rifleman_AT_Romeo","_44th_SFSG_Rifleman_AT_Juliet"]] call _map;
-["SFSG_Crewman",           ["_44th_SFSG_Crewman"]] call _map;
-["SFSG_Pilot",             ["_44th_SFSG_Pilot"]] call _map;
+// ── SFSG Assault Sections (Zulu / Victor / Romeo share loadouts) ──────────
+["SFSG_SectionCommander",    ["_44th_SFSG_SectionCommander_Zulu","_44th_SFSG_SectionCommander_Victor","_44th_SFSG_SectionCommander_Romeo"]] call _map;
+["SFSG_Section2iC",          ["_44th_SFSG_Section2iC_Zulu","_44th_SFSG_Section2iC_Victor","_44th_SFSG_Section2iC_Romeo"]] call _map;
+["SFSG_LeadAssaulter",       ["_44th_SFSG_LeadAssaulter_Zulu","_44th_SFSG_LeadAssaulter_Victor","_44th_SFSG_LeadAssaulter_Romeo"]] call _map;
+["SFSG_SectionGrenadier",    ["_44th_SFSG_SectionGrenadier_Zulu","_44th_SFSG_SectionGrenadier_Victor","_44th_SFSG_SectionGrenadier_Romeo"]] call _map;
+["SFSG_SectionMedic",        ["_44th_SFSG_SectionMedic_Zulu","_44th_SFSG_SectionMedic_Victor","_44th_SFSG_SectionMedic_Romeo"]] call _map;
+["SFSG_SectionGunner",       ["_44th_SFSG_SectionGunner_Zulu","_44th_SFSG_SectionGunner_Victor","_44th_SFSG_SectionGunner_Romeo"]] call _map;
+["SFSG_SectionSharpshooter", ["_44th_SFSG_Sharpshooter_Zulu","_44th_SFSG_Sharpshooter_Victor","_44th_SFSG_Sharpshooter_Romeo"]] call _map;
+["SFSG_AntiTankRifleman",    ["_44th_SFSG_Rifleman_AT_Zulu","_44th_SFSG_Rifleman_AT_Victor","_44th_SFSG_Rifleman_AT_Romeo"]] call _map;
+
+// ── SFSG Juliet Support Section ───────────────────────────────────────────
+["SFSG_SupportCommander",    ["_44th_SFSG_SupportCommander_Juliet"]] call _map;
+["SFSG_SupportSection2iC",   ["_44th_SFSG_SupportSection2iC_Juliet"]] call _map;
+["SFSG_HeavySupportGunner",  ["_44th_SFSG_HeavySupportGunner1_Juliet","_44th_SFSG_HeavySupportGunner2_Juliet"]] call _map;
+["SFSG_AssistantGunner",     ["_44th_SFSG_AssistantGunner_Juliet"]] call _map;
+["SFSG_ATSpecialist1",       ["_44th_SFSG_ATSpecialist1_Juliet"]] call _map;
+["SFSG_ATSpecialist2",       ["_44th_SFSG_ATSpecialist2_Juliet"]] call _map;
+["SFSG_SupportMedic",        ["_44th_SFSG_SupportMedic_Juliet"]] call _map;
 
 // ── SRR & SAS ─────────────────────────────────────────────────────────────
 // PENDING: these factions have fewer kits than ORBAT slots. Mapping added

@@ -81,20 +81,32 @@ Zeus units (Lead Zeus, Co Zeus) additionally receive a game master module assign
 | Crewman / Pilot | Mailman |
 
 ### SFSG
+
+Command element **Bulldog**, three assault sections (Zulu/Victor/Romeo), and a
+support/weapons section (Juliet) split into two fire teams (SR 242 / SR 243).
+
 | Class | Role |
 |---|---|
-| Platoon Sergeant | HQ |
-| Sniper / Spotter | HQ |
-| Section Lead (Zulu/Victor/Romeo/Juliet) | |
-| Section 2iC (Zulu/Victor/Romeo/Juliet) | |
-| Section Medic (Zulu/Victor/Romeo/Juliet) | |
-| Section Gunner L7A2 (Zulu/Victor/Romeo/Juliet) | |
-| Section Gunner L110A3 (Zulu/Victor/Romeo/Juliet) | |
-| Lead Breacher (Zulu/Victor/Romeo/Juliet) | |
-| Point Man (Zulu/Victor/Romeo/Juliet) | |
-| Sharpshooter (Zulu/Victor/Romeo/Juliet) | |
-| Rifleman AT (Zulu/Victor/Romeo/Juliet) | |
-| Crewman / Pilot | Mailman |
+| Platoon Commander | Command (Bulldog) |
+| HQ Drone Operator / RTO | Command (Bulldog) |
+| Section Commander (Zulu/Victor/Romeo) | Section lead |
+| Section 2iC (Zulu/Victor/Romeo) | |
+| Lead Assaulter / Pointman (Zulu/Victor/Romeo) | |
+| Section Grenadier (Zulu/Victor/Romeo) | |
+| Section Medic (Zulu/Victor/Romeo) | |
+| Section Gunner (Zulu/Victor/Romeo) | |
+| Section Sharpshooter (Zulu/Victor/Romeo) | |
+| Anti-Tank Rifleman (Zulu/Victor/Romeo) | |
+| Support Section Commander (Juliet) | Support lead |
+| Section Support 2iC (Juliet) | |
+| Heavy Support Gunner ×2 (Juliet) | |
+| Assistant Gunner / Ammo Bearer (Juliet) | |
+| Anti-Tank Specialist ×2 (Juliet) | #1 Javelin, #2 MRAWS |
+| Support Section Medic (Juliet) | |
+
+Every role has a dedicated loadout in 44th Kit Core, so all slots spawn kitted.
+The two Heavy Support Gunners share the L7A2 kit; the two Anti-Tank Specialists
+differ — #1 carries a Javelin, #2 a MRAWS.
 
 ### SRR
 | Class | Role |

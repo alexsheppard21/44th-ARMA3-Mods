@@ -3131,7 +3131,7 @@ class items
 				side="West";
 				class Entities
 				{
-					items=1;
+					items=2;
 					class Item0
 					{
 						dataType="Object";
@@ -3145,7 +3145,7 @@ class items
 						class Attributes
 						{
 							rank="SERGEANT";
-							description="Platoon Sergeant@Bulldog";
+							description="Platoon Commander@Bulldog";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -3274,7 +3274,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="180";
+										value="250";
 									};
 								};
 							};
@@ -3335,7 +3335,217 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_PlatoonSergeant";
+										value="SFSG_PlatoonCommander";
+									};
+								};
+							};
+							nAttributes=10;
+						};
+					};
+					class Item1
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-7.994873,0.0014395714,-1.2929688};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="SERGEANT";
+							description="HQ Drone Operator / RTO";
+							isPlayable=1;
+							ignoreByDynSimulGrid=1;
+							class Inventory
+							{
+								class uniform
+								{
+									typeName="UK3CB_BAF_U_Smock_MTP";
+									isBackpack=0;
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="FirstAidKit";
+											count=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								headgear="UK3CB_BAF_H_Beret_PR";
+							};
+						};
+						id=2054;
+						type="B_Soldier_unarmed_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ace_isEngineer";
+								expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="TFAR_freq_lr";
+								expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="50,42";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ace_isEOD";
+								expression="_this setVariable ['ACE_isEOD', _value, true]";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=1;
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ENH_doStop";
+								expression="if (!is3DEN && _value) then {doStop _this}";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0.99000001;
+									};
+								};
+							};
+							class Attribute5
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male10ENG";
+									};
+								};
+							};
+							class Attribute6
+							{
+								property="ace_isMedic";
+								expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+							};
+							class Attribute7
+							{
+								property="TFAR_freq_sr";
+								expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="250";
+									};
+								};
+							};
+							class Attribute8
+							{
+								property="iedd_ied_sides";
+								expression="_this setVariable ['iedd_ied_sides',_value];";
+								class Value
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=4;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=2;
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=3;
+												};
+											};
+										};
+									};
+								};
+							};
+							class Attribute9
+							{
+								property="FTH_kit";
+								expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="SFSG_HQDroneOperator";
 									};
 								};
 							};
@@ -3368,7 +3578,7 @@ class items
 						class Attributes
 						{
 							rank="CORPORAL";
-							description="Section Lead@Zulu";
+							description="Section Commander@Zulu";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -3558,7 +3768,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionLead";
+										value="SFSG_SectionCommander";
 									};
 								};
 							};
@@ -3774,7 +3984,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Section Medic";
+							description="Lead Assaulter / Pointman";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -3938,7 +4148,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionMedic";
+										value="SFSG_LeadAssaulter";
 									};
 								};
 							};
@@ -3957,7 +4167,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Section Gunner";
+							description="Section Grenadier";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -4108,7 +4318,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionGunnerL7A2";
+										value="SFSG_SectionGrenadier";
 									};
 								};
 							};
@@ -4127,7 +4337,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Lead Breacher";
+							description="Section Medic";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -4304,7 +4514,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_LeadBreacher";
+										value="SFSG_SectionMedic";
 									};
 								};
 							};
@@ -4323,7 +4533,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Point Man";
+							description="Section Gunner";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -4474,7 +4684,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_PointMan";
+										value="SFSG_SectionGunner";
 									};
 								};
 							};
@@ -4493,7 +4703,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Sharpshooter";
+							description="Section Sharpshooter";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -4644,7 +4854,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_Sharpshooter";
+										value="SFSG_SectionSharpshooter";
 									};
 								};
 							};
@@ -4663,7 +4873,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Rifleman";
+							description="Anti-Tank Rifleman";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -4814,7 +5024,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_RiflemanAT";
+										value="SFSG_AntiTankRifleman";
 									};
 								};
 							};
@@ -4847,7 +5057,7 @@ class items
 						class Attributes
 						{
 							rank="CORPORAL";
-							description="Section Lead@Victor";
+							description="Section Commander@Victor";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -5037,7 +5247,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionLead";
+										value="SFSG_SectionCommander";
 									};
 								};
 							};
@@ -5253,7 +5463,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Section Medic";
+							description="Lead Assaulter / Pointman";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -5417,7 +5627,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionMedic";
+										value="SFSG_LeadAssaulter";
 									};
 								};
 							};
@@ -5436,7 +5646,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Section Gunner";
+							description="Section Grenadier";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -5587,7 +5797,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionGunnerL7A2";
+										value="SFSG_SectionGrenadier";
 									};
 								};
 							};
@@ -5606,7 +5816,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Lead Breacher";
+							description="Section Medic";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -5783,7 +5993,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_LeadBreacher";
+										value="SFSG_SectionMedic";
 									};
 								};
 							};
@@ -5802,7 +6012,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Point Man";
+							description="Section Gunner";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -5953,7 +6163,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_PointMan";
+										value="SFSG_SectionGunner";
 									};
 								};
 							};
@@ -5972,7 +6182,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Sharpshooter";
+							description="Section Sharpshooter";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -6123,7 +6333,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_Sharpshooter";
+										value="SFSG_SectionSharpshooter";
 									};
 								};
 							};
@@ -6142,7 +6352,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Rifleman";
+							description="Anti-Tank Rifleman";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -6293,7 +6503,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_RiflemanAT";
+										value="SFSG_AntiTankRifleman";
 									};
 								};
 							};
@@ -6326,7 +6536,7 @@ class items
 						class Attributes
 						{
 							rank="CORPORAL";
-							description="Section Lead@Romeo";
+							description="Section Commander@Romeo";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -6516,7 +6726,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionLead";
+										value="SFSG_SectionCommander";
 									};
 								};
 							};
@@ -6732,7 +6942,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Section Medic";
+							description="Lead Assaulter / Pointman";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -6896,7 +7106,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionMedic";
+										value="SFSG_LeadAssaulter";
 									};
 								};
 							};
@@ -6915,7 +7125,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Section Gunner";
+							description="Section Grenadier";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -7066,7 +7276,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionGunnerL7A2";
+										value="SFSG_SectionGrenadier";
 									};
 								};
 							};
@@ -7085,7 +7295,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Lead Breacher";
+							description="Section Medic";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -7262,7 +7472,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_LeadBreacher";
+										value="SFSG_SectionMedic";
 									};
 								};
 							};
@@ -7281,7 +7491,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Point Man";
+							description="Section Gunner";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -7432,7 +7642,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_PointMan";
+										value="SFSG_SectionGunner";
 									};
 								};
 							};
@@ -7451,7 +7661,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Sharpshooter";
+							description="Section Sharpshooter";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -7602,7 +7812,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_Sharpshooter";
+										value="SFSG_SectionSharpshooter";
 									};
 								};
 							};
@@ -7621,7 +7831,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Rifleman";
+							description="Anti-Tank Rifleman";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -7772,7 +7982,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_RiflemanAT";
+										value="SFSG_AntiTankRifleman";
 									};
 								};
 							};
@@ -20490,7 +20700,7 @@ class items
 						class Attributes
 						{
 							rank="CORPORAL";
-							description="Section Lead@Juliet";
+							description="Support Section Commander@Juliet";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -20680,7 +20890,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionLead";
+										value="SFSG_SupportCommander";
 									};
 								};
 							};
@@ -20700,7 +20910,7 @@ class items
 						class Attributes
 						{
 							rank="CORPORAL";
-							description="Section 2iC";
+							description="Section Support 2iC";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -20816,7 +21026,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="242,250";
+										value="243,250";
 									};
 								};
 							};
@@ -20877,7 +21087,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_Section2iC";
+										value="SFSG_SupportSection2iC";
 									};
 								};
 							};
@@ -20896,7 +21106,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Section Medic";
+							description="Heavy Support Gunner";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -21060,7 +21270,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionMedic";
+										value="SFSG_HeavySupportGunner";
 									};
 								};
 							};
@@ -21079,7 +21289,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Section Gunner";
+							description="Heavy Support Gunner";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -21230,7 +21440,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_SectionGunnerL7A2";
+										value="SFSG_HeavySupportGunner";
 									};
 								};
 							};
@@ -21249,7 +21459,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Lead Breacher";
+							description="Assistant Gunner / Ammo Bearer";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -21426,7 +21636,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_LeadBreacher";
+										value="SFSG_AssistantGunner";
 									};
 								};
 							};
@@ -21445,7 +21655,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Point Man";
+							description="Anti-Tank Specialist";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -21522,7 +21732,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="242";
+										value="243";
 									};
 								};
 							};
@@ -21596,7 +21806,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_PointMan";
+										value="SFSG_ATSpecialist1";
 									};
 								};
 							};
@@ -21615,7 +21825,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Sharpshooter";
+							description="Anti-Tank Specialist";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -21692,7 +21902,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="242";
+										value="243";
 									};
 								};
 							};
@@ -21766,7 +21976,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_Sharpshooter";
+										value="SFSG_ATSpecialist2";
 									};
 								};
 							};
@@ -21785,7 +21995,7 @@ class items
 						flags=5;
 						class Attributes
 						{
-							description="Rifleman";
+							description="Support Section Medic";
 							isPlayable=1;
 							ignoreByDynSimulGrid=1;
 							class Inventory
@@ -21862,7 +22072,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="242";
+										value="243";
 									};
 								};
 							};
@@ -21936,7 +22146,7 @@ class items
 									class data
 									{
 										singleType="STRING";
-										value="SFSG_RiflemanAT";
+										value="SFSG_SupportMedic";
 									};
 								};
 							};
