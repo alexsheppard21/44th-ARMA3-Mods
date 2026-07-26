@@ -16,7 +16,8 @@ class CfgPatches
             "_44th_Crate_Precision_SFSG",
             "_44th_Crate_SRR",
             "_44th_Crate_SAS",
-            "_44th_Crate_SAS_Juliet"
+            "_44th_Crate_SAS_Juliet",
+            "_44th_LogisticsPoint"
         };
         weapons[] = {};
         requiredVersion = 0.1;
@@ -26,7 +27,27 @@ class CfgPatches
             "UK3CB_BAF_Units_ACE"
         };
         author = "FullMetalShep";
-        version = 29;
+        version = 30;
+    };
+};
+
+class CfgFunctions
+{
+    class FTH
+    {
+        class Logistics
+        {
+            file = "\44th_SupplyCrates\supply_crates";
+            // Server: crate-spawn event handler. Client: ACE "Request Supplies"
+            // menu on the logistics point (see fn_logisticsInit.sqf).
+            class logisticsInit { postInit = 1; };
+            // Builds the ACE action tree on a class or a single object.
+            class logisticsActions {};
+            // Promotes any runtime object into a logistics point.
+            class registerLogisticsPoint {};
+            // Server-side crate creation.
+            class spawnSupplyCrate {};
+        };
     };
 };
 
@@ -35,6 +56,21 @@ class CfgVehicles
     class Box_NATO_Equip_F;
     class Box_T_NATO_Wps_F;
     class UK3CB_BAF_Box_Section_Supplies_ACE;
+    class Land_CargoBox_V1_F;
+
+    // --- LOGISTICS POINT ---
+    // Players ACE-interact with this to have any of the crates below spawned
+    // beside it. Also works on any object flagged in its Eden init field with
+    //   this setVariable ["FTH_logisticsPoint", true, true];
+    class _44th_LogisticsPoint : Land_CargoBox_V1_F
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "44th Logistics Point";
+        author = "FullMetalShep";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_Logistics";
+    };
 
     // --- MEDICAL ---
     class _44th_Crate_Medical : Box_NATO_Equip_F
@@ -185,4 +221,5 @@ class CfgEditorCategories
 class CfgEditorSubcategories
 {
     class FTH_Sub_SupplyCrates { displayName = "Supply Crates"; };
+    class FTH_Sub_Logistics    { displayName = "Logistics"; };
 };

@@ -34,6 +34,12 @@ Adds pre-configured supply crates for each of the unit's sections and specialist
 - SFSG — Fire Support, Precision, Section (8-man)
 - SRR, SAS, SAS (Juliet)
 
+Also adds the **44th Logistics Point** (**44th Mods → Logistics**) — a placeable
+resupply point players work themselves. ACE-interact with it, pick a crate from
+the categorised list, and it is delivered beside the point; no Zeus required. Any
+object can be made into one from its init field with
+`this setVariable ["FTH_logisticsPoint", true, true];`.
+
 **Requires:** CBA_A3, UK3CB BAF (ACE), ACE3
 
 ---
