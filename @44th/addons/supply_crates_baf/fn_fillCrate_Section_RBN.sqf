@@ -13,7 +13,7 @@ _crate addWeaponCargoGlobal ["UK3CB_BAF_L85A2_RIS_LDSR2D_IR",  1];
 _crate addWeaponCargoGlobal ["UK3CB_BAF_NLAW_Launcher",         2];
 
 // Magazines
-_crate addMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",                       48];
+_crate addMagazineCargoGlobal ["MCC_PMAG_556_556_30_M855A1",                48];
 _crate addMagazineCargoGlobal ["UK3CB_BAF_762_L42A1_20Rnd",                 10];
 _crate addMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd",                       8];
 _crate addMagazineCargoGlobal ["UK3CB_BAF_SmokeShell",                      12];

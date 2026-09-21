@@ -31,3 +31,40 @@ class CfgFunctions
         };
     };
 };
+
+// Registering FTH_kit here is what makes Eden actually run the expression for
+// units placed by an ORBAT composition. It lives in Kit Core rather than in an
+// ORBAT addon so that every ORBAT - BAF or SciFi - gets it from the one place
+// they all already depend on.
+class Cfg3DEN
+{
+    class Object
+    {
+        class AttributeCategories
+        {
+            class FTH_44th
+            {
+                displayName = "44th Kit";
+                collapsed = 0;
+                class Attributes
+                {
+                    // Role key from Kit Core (e.g. "RBN_PlatoonCommander" or
+                    // "UCNMC_LanceLead"). On mission start this applies the
+                    // shared loadout and tags the unit with FTH_roleKey (used
+                    // by the master kit crate and the respawn hook).
+                    class FTH_kit
+                    {
+                        property = "FTH_kit";
+                        control = "Edit";
+                        displayName = "44th Role Kit";
+                        tooltip = "Kit Core role key, e.g. RBN_PlatoonCommander. Leave blank for no kit.";
+                        expression = "if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+                        defaultValue = "''";
+                        typeName = "STRING";
+                        validate = "none";
+                    };
+                };
+            };
+        };
+    };
+};

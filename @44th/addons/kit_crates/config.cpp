@@ -9,6 +9,7 @@ class CfgPatches
             "_44th_KitCrate_SFSG",
             "_44th_KitCrate_SRR",
             "_44th_KitCrate_SAS",
+            "_44th_KitCrate_UCNMC",
             "_44th_KitCrate_MASTER"
         };
         weapons[] = {};
@@ -17,7 +18,7 @@ class CfgPatches
             "A3_Supplies_F_Orange_Ammoboxes", "cba_xeh", "KitCore_44th"
         };
         author = "FullMetalShep";
-        version = 29;
+        version = 30;
     };
 };
 
@@ -87,6 +88,19 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_KitCrates";
     };
 
+    // SciFi modpack (The Kuiper Engagements) - 44th Detachment, UCN Marine
+    // Corp. Vanilla box like the rest: this addon loads on any modlist, so it
+    // cannot inherit from an OPTRE or TKE class. The kits inside only register
+    // when TKE is present (see FTH_FactionAvailable in fn_initKits.sqf), so on
+    // a BAF night this crate is simply empty.
+    class _44th_KitCrate_UCNMC : C_IDAP_supplyCrate_F
+    {
+        displayName = "44 UCNMC Kit Crate";
+        author = "FullMetalShep";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_KitCrates";
+    };
+
     // Master crate: holds every kit, but each player only sees the kit for
     // their own ORBAT role. Intended as the standard crate players interact
     // with; the per-faction crates above remain for Zeus to re-role people.
@@ -107,6 +121,7 @@ class Extended_InitPost_EventHandlers
     class _44th_KitCrate_SFSG   { class _44th_kitcrates { init = "[(_this select 0), 'SFSG']   execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
     class _44th_KitCrate_SRR    { class _44th_kitcrates { init = "[(_this select 0), 'SRR']    execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
     class _44th_KitCrate_SAS    { class _44th_kitcrates { init = "[(_this select 0), 'SAS']    execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
+    class _44th_KitCrate_UCNMC  { class _44th_kitcrates { init = "[(_this select 0), 'UCNMC']  execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
     class _44th_KitCrate_MASTER { class _44th_kitcrates { init = "[(_this select 0), 'MASTER'] execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
 };
 

@@ -1,4 +1,4 @@
-class CfgPatches
+﻿class CfgPatches
 {
     class _44th_ORBAT
     {
@@ -60,9 +60,9 @@ class CfgPatches
         };
         weapons[] = {};
         requiredVersion = 0.1;
-        requiredAddons[] = { "A3_Characters_F", "UK3CB_BAF_Units_ACE", "cba_xeh", "KitCore_44th" };
+        requiredAddons[] = { "A3_Characters_F", "UK3CB_BAF_Units_ACE", "cba_xeh", "KitCore_44th", "Logistics_44th" };
         author = "FullMetalShep";
-        version = 30;
+        version = 31;
     };
 };
 
@@ -88,7 +88,7 @@ class CfgVehicles
     class B_Soldier_unarmed_F;
     class _44th_OrbatUnit : B_Soldier_unarmed_F { scope = 1; };
 
-    // ─── Regimental HQ ────────────────────────────────────────────────────────
+    // â”€â”€â”€ Regimental HQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_Reg_LeadZeus : _44th_OrbatUnit
     {
@@ -105,7 +105,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_RegHQ";
     };
 
-    // ─── RBN Platoon HQ ───────────────────────────────────────────────────────
+    // â”€â”€â”€ RBN Platoon HQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_RBN_PlatoonCommander : _44th_OrbatUnit
     {
@@ -143,7 +143,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_RBN";
     };
 
-    // ─── RBN Zulu Section (SR 161.1) ──────────────────────────────────────────
+    // â”€â”€â”€ RBN Zulu Section (SR 161.1) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_RBN_SectionCommander_Zulu : _44th_OrbatUnit
     {
@@ -195,7 +195,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_RBN";
     };
 
-    // ─── RBN Victor Section (SR 151.1) ────────────────────────────────────────
+    // â”€â”€â”€ RBN Victor Section (SR 151.1) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_RBN_SectionCommander_Victor : _44th_OrbatUnit
     {
@@ -247,7 +247,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_RBN";
     };
 
-    // ─── RBN Juliet Section (SR 141.1) ────────────────────────────────────────
+    // â”€â”€â”€ RBN Juliet Section (SR 141.1) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_RBN_SectionCommander_Juliet : _44th_OrbatUnit
     {
@@ -299,7 +299,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_RBN";
     };
 
-    // ─── RBN Support ──────────────────────────────────────────────────────────
+    // â”€â”€â”€ RBN Support â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_RBNSup_Engineer : _44th_OrbatUnit
     {
@@ -393,7 +393,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_RBNSup";
     };
 
-    // ─── Ranger ───────────────────────────────────────────────────────────────
+    // â”€â”€â”€ Ranger â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_Ranger_TeamCommander : _44th_OrbatUnit
     {
@@ -480,7 +480,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_Ranger";
     };
 
-    // ─── SFSG Command Element (Bulldog) ────────────────────────────────────────────
+    // â”€â”€â”€ SFSG Command Element (Bulldog) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SFSG_PlatoonCommander : _44th_OrbatUnit
     {
@@ -497,7 +497,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
 
-    // ─── SFSG Zulu Section (SR 212) ────────────────────────────────────────────────
+    // â”€â”€â”€ SFSG Zulu Section (SR 212) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SFSG_SectionCommander_Zulu : _44th_OrbatUnit
     {
@@ -556,7 +556,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
 
-    // ─── SFSG Victor Section (SR 222) ──────────────────────────────────────────────
+    // â”€â”€â”€ SFSG Victor Section (SR 222) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SFSG_SectionCommander_Victor : _44th_OrbatUnit
     {
@@ -615,7 +615,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
 
-    // ─── SFSG Romeo Section (SR 232) ───────────────────────────────────────────────
+    // â”€â”€â”€ SFSG Romeo Section (SR 232) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SFSG_SectionCommander_Romeo : _44th_OrbatUnit
     {
@@ -674,7 +674,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SFSG";
     };
 
-    // ─── SFSG Juliet Support Section (SR 242/243) ──────────────────────────────────
+    // â”€â”€â”€ SFSG Juliet Support Section (SR 242/243) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SFSG_SupportCommander_Juliet : _44th_OrbatUnit
     {
@@ -734,7 +734,7 @@ class CfgVehicles
     };
 
 
-    // ─── SRR Brick 1 (SR 301) ─────────────────────────────────────────────────
+    // â”€â”€â”€ SRR Brick 1 (SR 301) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SRR_SurveillanceSpecialist : _44th_OrbatUnit
     {
@@ -765,7 +765,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SRR";
     };
 
-    // ─── SRR Brick 2 (SR 302, LR 50) ─────────────────────────────────────────
+    // â”€â”€â”€ SRR Brick 2 (SR 302, LR 50) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SRR_Sniper : _44th_OrbatUnit
     {
@@ -789,7 +789,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SRR";
     };
 
-    // ─── SRR Brick 3 (SR 303) ─────────────────────────────────────────────────
+    // â”€â”€â”€ SRR Brick 3 (SR 303) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SRR_PointMan : _44th_OrbatUnit
     {
@@ -827,7 +827,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SRR";
     };
 
-    // ─── SAS Troop HQ ─────────────────────────────────────────────────────────
+    // â”€â”€â”€ SAS Troop HQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SAS_TroopSergeant : _44th_OrbatUnit
     {
@@ -837,7 +837,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SAS";
     };
 
-    // ─── SAS Brick Zulu (SR 401/450) ──────────────────────────────────────────
+    // â”€â”€â”€ SAS Brick Zulu (SR 401/450) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SAS_TeamLead_Zulu : _44th_OrbatUnit
     {
@@ -868,7 +868,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SAS";
     };
 
-    // ─── SAS Brick Victor (SR 402/450) ────────────────────────────────────────
+    // â”€â”€â”€ SAS Brick Victor (SR 402/450) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SAS_TeamLead_Victor : _44th_OrbatUnit
     {
@@ -899,7 +899,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SAS";
     };
 
-    // ─── SAS Brick Romeo (SR 403/450) ─────────────────────────────────────────
+    // â”€â”€â”€ SAS Brick Romeo (SR 403/450) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SAS_TeamLead_Romeo : _44th_OrbatUnit
     {
@@ -930,7 +930,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SAS";
     };
 
-    // ─── SAS Brick Juliet (SR 404, LR 50) ────────────────────────────────────
+    // â”€â”€â”€ SAS Brick Juliet (SR 404, LR 50) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SAS_Sniper : _44th_OrbatUnit
     {
@@ -961,7 +961,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_44th_SAS";
     };
 
-    // ─── SAS Aviation ─────────────────────────────────────────────────────────
+    // â”€â”€â”€ SAS Aviation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     class _44th_SAS_JSFAWPilot : _44th_OrbatUnit
     {
@@ -1097,7 +1097,7 @@ class CfgGroups
 {
     class West
     {
-        // ─── Regimental HQ ────────────────────────────────────────────────────
+        // â”€â”€â”€ Regimental HQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         class FTH_44th_RegHQ
         {
@@ -1114,7 +1114,7 @@ class CfgGroups
             };
         };
 
-        // ─── RBN ──────────────────────────────────────────────────────────────
+        // â”€â”€â”€ RBN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         class FTH_44th_RBN
         {
@@ -1179,7 +1179,7 @@ class CfgGroups
             };
         };
 
-        // ─── RBN Support ──────────────────────────────────────────────────────
+        // â”€â”€â”€ RBN Support â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         class FTH_44th_RBNSup
         {
@@ -1237,7 +1237,7 @@ class CfgGroups
             };
         };
 
-        // ─── Ranger ───────────────────────────────────────────────────────────
+        // â”€â”€â”€ Ranger â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         class FTH_44th_Ranger
         {
@@ -1262,7 +1262,7 @@ class CfgGroups
             };
         };
 
-        // ─── SFSG ─────────────────────────────────────────────────────────────
+        // â”€â”€â”€ SFSG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         class FTH_44th_SFSG
         {
@@ -1343,7 +1343,7 @@ class CfgGroups
             };
         };
 
-        // ─── SRR ──────────────────────────────────────────────────────────────
+        // â”€â”€â”€ SRR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         class FTH_44th_SRR
         {
@@ -1385,7 +1385,7 @@ class CfgGroups
             };
         };
 
-        // ─── SAS ──────────────────────────────────────────────────────────────
+        // â”€â”€â”€ SAS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         class FTH_44th_SAS
         {
@@ -1449,7 +1449,7 @@ class CfgGroups
             };
         };
 
-        // ─── Mailman ──────────────────────────────────────────────────────────
+        // â”€â”€â”€ Mailman â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         class FTH_44th_Mailman
         {
@@ -1490,36 +1490,9 @@ class CfgGroups
 
 class Cfg3DEN
 {
-    class Object
-    {
-        class AttributeCategories
-        {
-            class FTH_44th
-            {
-                displayName = "44th Kit";
-                collapsed = 0;
-                class Attributes
-                {
-                    // Role key from 44th KitCore (e.g. "RBN_PlatoonCommander").
-                    // On mission start this applies the shared loadout and tags
-                    // the unit with FTH_roleKey (used by the master kit crate).
-                    // Registering it here is what makes Eden actually run the
-                    // expression for units placed via the ORBAT composition.
-                    class FTH_kit
-                    {
-                        property = "FTH_kit";
-                        control = "Edit";
-                        displayName = "44th Role Kit";
-                        tooltip = "KitCore role key, e.g. RBN_PlatoonCommander. Leave blank for no kit.";
-                        expression = "if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
-                        defaultValue = "''";
-                        typeName = "STRING";
-                        validate = "none";
-                    };
-                };
-            };
-        };
-    };
+    // The FTH_kit unit attribute used by this composition is registered by Kit
+    // Core (@44th/addons/kit_core), which every ORBAT addon depends on, so both
+    // the BAF and the SciFi ORBAT share one definition.
 
     class Compositions
     {
@@ -1535,3 +1508,4 @@ class Cfg3DEN
         };
     };
 };
+

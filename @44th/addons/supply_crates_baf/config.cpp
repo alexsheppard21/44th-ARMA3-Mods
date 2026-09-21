@@ -24,10 +24,11 @@ class CfgPatches
         requiredAddons[] = {
             "A3_Supplies_F_Exp_Ammoboxes",
             "cba_xeh",
+            "Logistics_44th",
             "UK3CB_BAF_Units_ACE"
         };
         author = "FullMetalShep";
-        version = 30;
+        version = 31;
     };
 };
 
@@ -35,18 +36,13 @@ class CfgFunctions
 {
     class FTH
     {
-        class Logistics
+        class SupplyCrates
         {
             file = "\44th_SupplyCrates\supply_crates";
-            // Server: crate-spawn event handler. Client: ACE "Request Supplies"
-            // menu on the logistics point (see fn_logisticsInit.sqf).
-            class logisticsInit { postInit = 1; };
-            // Builds the ACE action tree on a class or a single object.
-            class logisticsActions {};
-            // Promotes any runtime object into a logistics point.
-            class registerLogisticsPoint {};
-            // Server-side crate creation.
-            class spawnSupplyCrate {};
+            // Hands this addon's crate catalogue to the shared logistics
+            // engine in @44th. The engine itself lives there so a modlist
+            // without BAF still has working logistics points.
+            class registerCrates { preInit = 1; };
         };
     };
 };

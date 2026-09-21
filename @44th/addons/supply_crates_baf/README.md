@@ -54,8 +54,13 @@ For objects created at runtime (Zeus, scripts):
 ```
 
 To change what is on offer, edit the catalogue in
-[logistics_data.sqf](logistics_data.sqf) — crate names are read from their
+[fn_registerCrates.sqf](fn_registerCrates.sqf) — crate names are read from their
 configs, so a new crate only needs its classname adding to a category.
+
+The menu, the crate spawning and the point registration themselves live in the
+shared logistics engine in [`@44th/addons/logistics`](../../../@44th/addons/logistics/),
+so a modlist without BAF still has working logistics points. This addon only
+contributes its catalogue at preInit.
 
 ## Installation
 

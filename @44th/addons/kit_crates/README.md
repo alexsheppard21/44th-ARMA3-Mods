@@ -6,7 +6,7 @@ Kit crates and the on-spawn kit menu for the 44th. Players normally spawn alread
 
 - **On-spawn kit menu** — on a player's *first* spawn, the WBK Kits menu auto-opens on a box scoped to their faction. They see every kit in their group but only their own role's kit is selectable, so other factions never appear (see [On-spawn kit menu](#on-spawn-kit-menu) below).
 - **Master Kit Crate** — holds every kit but shows each player only the one matching their ORBAT role (`FTH_roleKey`). A placed crate players interact with to tweak their loadout.
-- **Per-faction crates** (RBN, RBN Support, RANGER, SFSG, SRR, SAS) — show all of that faction's kits. Kept mainly for Zeus to re-role players on the fly.
+- **Per-faction crates** (RBN, RBN Support, RANGER, SFSG, SRR, SAS, UCNMC) — show all of that faction's kits. Kept mainly for Zeus to re-role players on the fly.
 
 All loadouts are read from **Kit Core** (`FTH_Kits`), so crate contents always match what players spawn with. Crates are placed in the Eden Editor under **44th Mods → Kit Crates**.
 
@@ -86,6 +86,17 @@ Roles: Sniper, Spotter, Drone Carrier, Surveillance Specialist, SIGINT Specialis
 Tier 1 direct action. Independent 4-man bricks deployed for HVT elimination, hostage rescue, and sabotage. Silent infiltration, surgical CQB, then gone before conventional forces arrive.
 
 Roles: Troop Sergeant, Team Lead, Team Lead 2, Lead Scout, Point Man, Medic, Signaller, Marksman, Specialist, Support Gunner, Sniper, Spotter, Drone Carrier, JSFAW Pilot
+
+---
+
+### UCNMC Kit Crate
+**44th Detachment, UCN Marine Corp** — SciFi modpack (The Kuiper Engagements)
+
+The detachment fielded on a SciFi night: a four-man command element (Bulldog) over three eight-man sections and a vehicle/air element.
+
+Roles: Detachment Commander, 2IC / Air and Fires, Detachment Corpsman, Signals and Intel, Lance Lead, Fireteam Lead, Marksman, Heavy, Heavy / Anti-armour, Corpsman, Sniper, Spotter, Chief Pilot, Pilot, Gunner, Vehicle Commander
+
+The crate is a vanilla box like the rest, because this addon loads on any modlist. Its kits only register when TKE is present, so on a BAF night the crate is simply empty.
 
 ---
 
