@@ -1,9 +1,15 @@
 /*
     FTH_fnc_versionControl  (postInit)
 
-    Kit-version notice. The server publishes the kit-data version baked into its
-    KitCore PBO; every client compares it against its own baked value. On
-    mismatch the client gets a persistent on-screen message telling them to
+    Kit-version notice. Kit data is split across packages - Kit Core itself plus
+    one per faction (Kit Core BAF, Kit Core SciFi) - and each bakes its own
+    version into FTH_KitVersions at preInit. The server publishes its set; every
+    client compares each package the server has against its own. A package the
+    server has but the client lacks, or at a different version, is a mismatch.
+    Packages only the client has are ignored (e.g. a client that also has the
+    SciFi mods loaded on a BAF night).
+
+    On mismatch the client gets a persistent on-screen message telling them to
     update. Input is NOT locked, so they can still move and chat to ask what's
     wrong. Matching clients are untouched.
 
@@ -12,22 +18,31 @@
     FTH_KitVersionMismatch = true, which an admin tool could act on if one is
     ever added.
 */
-#include "script_version.hpp"
+if (isNil "FTH_KitVersions") exitWith {};
 
 if (isServer) then {
-    // Public + JIP-synced so late joiners also receive it.
-    missionNamespace setVariable ["FTH_ServerKitVersion", FTH_KIT_VERSION, true];
+    // Array of [package, version] pairs. Public + JIP-synced so late joiners
+    // also receive it.
+    private _pairs = (keys FTH_KitVersions) apply { [_x, FTH_KitVersions get _x] };
+    missionNamespace setVariable ["FTH_ServerKitVersions", _pairs, true];
 };
 
 if (hasInterface) then {
-    private _clientVer = FTH_KIT_VERSION;
-    [_clientVer] spawn {
-        params ["_clientVer"];
+    [] spawn {
+        waitUntil { uiSleep 1; !isNil { missionNamespace getVariable "FTH_ServerKitVersions" } };
+        private _serverPairs = missionNamespace getVariable ["FTH_ServerKitVersions", []];
 
-        waitUntil { uiSleep 1; !isNil { missionNamespace getVariable "FTH_ServerKitVersion" } };
-        private _serverVer = missionNamespace getVariable ["FTH_ServerKitVersion", ""];
+        // "Package: theirs -> server" for every package that doesn't match.
+        private _stale = [];
+        {
+            _x params ["_package", "_serverVer"];
+            private _clientVer = FTH_KitVersions getOrDefault [_package, "not loaded"];
+            if !(_clientVer isEqualTo _serverVer) then {
+                _stale pushBack format ["%1: yours %2, server %3", _package, _clientVer, _serverVer];
+            };
+        } forEach _serverPairs;
 
-        if (_serverVer isEqualTo _clientVer) exitWith {};
+        if (_stale isEqualTo []) exitWith {};
 
         // ── Version mismatch: persistent notice (no input lock) ───────────
         missionNamespace setVariable ["FTH_KitVersionMismatch", true];
@@ -36,10 +51,10 @@ if (hasInterface) then {
             "<t size='1.3' color='#ff4d4d'>44th — KIT OUT OF DATE</t><br/>"
           + "<t size='1.0'>Your 44th kit does not match the server.</t><br/>"
           + "<t size='1.0'>Update the 44th mods via the Steam Workshop and reconnect.</t><br/><br/>"
-          + "<t size='0.85' color='#aaaaaa'>Server kit: %1</t><br/>"
-          + "<t size='0.85' color='#aaaaaa'>Your kit: %2</t>",
-            _serverVer, _clientVer
+          + "<t size='0.85' color='#aaaaaa'>%1</t>",
+            _stale joinString "<br/>"
         ];
+        private _staleText = _stale joinString "; ";
 
         // Keep reminding: private hint re-shown regularly, plus a global
         // system-chat line naming the out-of-date player every 60s so the whole
@@ -53,8 +68,8 @@ if (hasInterface) then {
                 private _who = name player;
                 if (_who == "") then { _who = "A player"; };
                 ([format [
-                    "[44th] %1 is running an OUT-OF-DATE 44th kit (theirs: %2, server: %3) - please update and reconnect.",
-                    _who, _clientVer, _serverVer
+                    "[44th] %1 is running an OUT-OF-DATE 44th kit (%2) - please update and reconnect.",
+                    _who, _staleText
                 ]] remoteExec ["systemChat", 0]);
             };
 

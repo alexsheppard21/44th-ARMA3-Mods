@@ -18,9 +18,15 @@ class CfgFunctions
         class KitCore
         {
             file = "\44th_KitCore\kit_core";
-            // Builds the shared loadout library (FTH_Kits) and the ORBAT
-            // class -> role-key map (FTH_RoleForClass) before anything spawns.
+            // Creates the shared loadout library (FTH_Kits), the ORBAT
+            // class -> role-key map (FTH_RoleForClass) and the faction
+            // availability map, before anything spawns. Defines no kits
+            // itself - see Kit Core BAF / Kit Core SciFi for those.
             class initKits { preInit = 1; };
+            // Registration API each faction package's preInit calls into.
+            class registerKit {};
+            class mapOrbatClass {};
+            class registerFactionAvailable {};
             // Applies a role's loadout to a unit. Called by the composition's
             // per-unit FTH_kit attribute and by the respawn hook.
             class applyKit {};

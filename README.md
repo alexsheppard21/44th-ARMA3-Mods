@@ -24,9 +24,9 @@ Each component keeps its own PBO prefix, so it can still be built and used stand
 
 ## Components
 
-The framework is built from four addons across the two entries — two under [`@44th/addons/`](@44th/addons/) and two under [`@44th_BAF/addons/`](@44th_BAF/addons/):
+The framework is built from eight addons across the three entries — three under [`@44th/addons/`](@44th/addons/) (shared, loads on any modlist), three under [`@44th_BAF/addons/`](@44th_BAF/addons/) (milsim only), and two under [`@44th_SCIFI/addons/`](@44th_SCIFI/addons/) (SciFi only). Kit Core itself is split the same way: the shared engine lives in `@44th`, and each modpack's actual loadout data lives in its own package (`kit_core_baf`, `kit_core_scifi`) so the two halves ship, load and can be dropped independently. Neither faction's kit data can end up in a PBO that requires the other's modpack.
 
-### [Supply Crates](@44th_BAF/addons/supply_crates/) — `@44th_BAF`
+### [Supply Crates](@44th_BAF/addons/supply_crates_baf/) — `@44th_BAF`
 [![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3742862207)
 
 Adds pre-configured supply crates for each of the unit's sections and specialist roles. Crates appear in the Eden Editor under **44th Mods → Supply Crates**, making mission setup quick and consistent.
@@ -48,10 +48,10 @@ object can be made into one from its init field with
 
 ---
 
-### [ORBAT](@44th_BAF/addons/orbat/) — `@44th_BAF`
+### [ORBAT](@44th_BAF/addons/orbat_baf/) — `@44th_BAF`
 [![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3743476647)
 
-Adds the full 44th order of battle. The complete ORBAT places in one click as an Eden composition under **44th Mods → Compositions** — all slots playable with lobby descriptions grouped by section, loadouts baked in, and Zeus modules included. Individual units and sections are also available in the asset and group browsers. Each slot spawns already wearing its **full role loadout** (pulled from Kit Core), plus the correct rank and TFAR radio frequencies — no need to visit a kit crate first.
+Adds the full 44th order of battle. The complete ORBAT places in one click as an Eden composition under **44th Mods → Compositions** — all slots playable with lobby descriptions grouped by section, loadouts baked in, and Zeus modules included. Individual units and sections are also available in the asset and group browsers. Each slot spawns already wearing its **full role loadout** (pulled from Kit Core BAF), plus the correct rank and TFAR radio frequencies — no need to visit a kit crate first.
 
 **Units included:**
 - Regimental HQ — Lead Zeus, Co Zeus
@@ -62,7 +62,7 @@ Adds the full 44th order of battle. The complete ORBAT places in one click as an
 - SRR — Recon Bricks 1–3, JSFAW
 - SAS — Troop HQ, Bricks Zulu/Victor/Romeo/Juliet, JSFAW
 
-**Requires:** CBA_A3, UK3CB BAF Units (ACE), 44th Kit Core
+**Requires:** CBA_A3, UK3CB BAF Units (ACE), 44th Kit Core, 44th Kit Core BAF
 
 ---
 
@@ -89,12 +89,20 @@ Kit crates for browsing and customising loadouts. On a player's **first spawn** 
 Supply crates and a logistics point for the **44th Detachment, UCN Marine Corp** — the SciFi twin of the BAF supply crates, on OPTRE crate models. Crates appear in the Eden Editor under **44th Mods → Supply Crates**.
 
 **Crates included:**
-- UCNMC — 8-Man Section, Fire Support, Precision, Anti-Armour, Command (Bulldog)
+- UCNMC — 8-Man Section, Fire Support, Precision, Anti-Armour, Command (Bulldog), Engineer/Breaching
 - Medical
 
 Contents come from the same UCNMC kits players spawn with, so crate and kit cannot drift apart. Also adds the **44th Logistics Point (UCNMC)** under **44th Mods → Logistics**.
 
 **Requires:** CBA_A3, ACE3, Operation TREBUCHET, The Kuiper Engagements, 44th Logistics
+
+---
+
+### [ORBAT — SciFi](@44th_SCIFI/addons/orbat_scifi/) — `@44th_SCIFI`
+
+Adds the 44th Detachment's SciFi order of battle as a one-click Eden composition, the UCNMC (UCN Marine Corp) twin of the BAF ORBAT. Every slot spawns already kitted from Kit Core SciFi, no crate visit needed.
+
+**Requires:** CBA_A3, Operation TREBUCHET, The Kuiper Engagements, 44th Kit Core, 44th Kit Core SciFi, 44th Logistics
 
 ---
 
@@ -108,9 +116,25 @@ The shared engine behind every logistics point: the ACE "Request Supplies" menu,
 
 ### [Kit Core](@44th/addons/kit_core/) — `@44th`
 
-The shared loadout library behind ORBAT spawn kitting and the kit crates — one source of truth for every role's loadout, plus kit version control that blocks out-of-date clients. A dependency of ORBAT and Kit Crates; ships no editor objects.
+The shared loadout library behind ORBAT spawn kitting and the kit crates — the registration engine and the `FTH_Kits`/`FTH_RoleForClass` maps that everything else reads, plus kit version control that blocks out-of-date clients. Defines no kits itself: it never depends on 3CB, TKE or OPTRE, and loads identically on every modlist. A dependency of ORBAT, Kit Crates, Kit Core BAF and Kit Core SciFi; ships no editor objects.
 
 **Requires:** CBA_A3
+
+---
+
+### [Kit Core — BAF](@44th_BAF/addons/kit_core_baf/) — `@44th_BAF`
+
+Registers the milsim half of the roster (RBN, RBN Support, Ranger, SFSG, SRR, SAS) into Kit Core's shared library. Split out from Kit Core itself so the milsim loadout data ships, loads and can be dropped independently of the SciFi half — this addon never requires TKE or OPTRE. Ships no editor objects.
+
+**Requires:** CBA_A3, 44th Kit Core
+
+---
+
+### [Kit Core — SciFi](@44th_SCIFI/addons/kit_core_scifi/) — `@44th_SCIFI`
+
+Registers the SciFi half of the roster (UCNMC — UCN Marine Corp) into Kit Core's shared library. Split out from Kit Core itself so the SciFi loadout data ships, loads and can be dropped independently of the milsim half — this addon never requires 3CB. Ships no editor objects.
+
+**Requires:** CBA_A3, 44th Kit Core
 
 ---
 

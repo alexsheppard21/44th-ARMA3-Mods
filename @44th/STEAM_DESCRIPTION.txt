@@ -1,37 +1,34 @@
-[h1]44th Battalion Framework[/h1]
+[h1]44th Core[/h1]
 
-The complete framework for the 44th's milsim operations; the full order of battle, the shared kit library, kit-selection crates, and supply crates, all bundled into a single mod.
+The shared, modpack-agnostic half of the 44th Battalion Framework — the engine every other 44th mod is built on. Loads on [b]any[/b] modlist: it never depends on 3CB, TKE, or OPTRE.
 
-Place the entire ORBAT in one click, and every slot spawns kitted, playable, and can be re-roled on the fly.
+Bundles the shared loadout library, kit-selection crates, and the logistics engine behind every supply crate. Pair it with [b]44th BAF[/b] for the milsim half of the roster, or [b]44th SciFi[/b] for the UCNMC half, or both.
 
 [hr][/hr]
 
 [h2]What's Inside[/h2]
 
-[b]44th ORBAT[/b]
-The complete 44th order of battle as a one-click Eden composition; every slot playable with lobby descriptions grouped by section. Units spawn with their full role loadout automatically (no crate visit needed) and can be re-kitted on respawn. Individual units and sections can also be placed from the asset and group browsers. Includes Lead/Co Zeus curator modules.
-
 [b]44th Kit Core[/b]
-The single source of truth for every role's loadout. Both the ORBAT (spawn kitting) and the Kit Crates (customisation) read from it, so a player's spawn kit and the crate contents can never drift apart. Also enforces kit version control between server and clients.
+The single source of truth for every role's loadout — `FTH_Kits`, read by both the ORBAT (spawn kitting) and the Kit Crates (customisation), so a player's spawn kit and crate contents can never drift apart. Also enforces kit version control between server and clients. Defines no kits itself; the actual loadout data for each faction lives in its own package inside [b]44th BAF[/b] or [b]44th SciFi[/b], so removing either one never disturbs the other.
 
 [b]44th Kit Crates[/b]
-For customising within a role's allowed parameters and for re-roling. On a player's first spawn, the kit menu auto-opens scoped to their faction. Includes a Master Kit Crate (shows each player only their own role's kit) plus per-faction crates (RBN, RBN Support, RANGER, SFSG, SRR, SAS) for Zeus to re-role on the fly.
+For customising within a role's allowed parameters, and for re-roling. On a player's first spawn, the kit menu auto-opens scoped to their faction. Includes a Master Kit Crate (shows each player only their own role's kit) plus per-faction crates for Zeus to re-role on the fly.
 
-[b]44th Supply Crates[/b]
-Pre-configured supply crates for 44th loadouts; medical, fire support, precision, anti-armour, breaching/EOD, sniper ammo, and full section resupply. Placed in Eden under 44th Mods → Supply Crates.
-
-[b]44th Logistics Point[/b]
-A placeable resupply point players can work themselves. ACE-interact with it, pick a crate from the categorised list (Medical, RANGER, RBN, SFSG, SRR/SAS), and the crate is delivered beside the point — no Zeus needed. Any object can be turned into one from its Eden init field. Placed in Eden under 44th Mods → Logistics.
+[b]44th Logistics[/b]
+The shared ACE interaction system behind every 44th supply crate — the "Request Supplies" menu, server-side crate spawning, and runtime logistics-point registration. Works on any modlist; each faction's crates only appear when that faction's mods and kit data are installed.
 
 [hr][/hr]
 
 [h2]Requirements[/h2]
+
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=450814997]CBA_A3[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2382830257]UK3CB BAF Units (ACE)[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=463939057]ACE3[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3300894429]WBK Kits[/url]
 [/list]
+
+[b]For BAF roles:[/b] subscribe to [b]44th BAF[/b] as well.
+[b]For SciFi roles:[/b] subscribe to [b]44th SciFi[/b] as well.
 
 [hr][/hr]
 
