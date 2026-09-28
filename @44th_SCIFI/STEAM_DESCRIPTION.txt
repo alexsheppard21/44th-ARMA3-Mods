@@ -1,0 +1,60 @@
+[h1]44th SciFi[/h1]
+
+The SciFi half of the 44th Battalion Framework, built on Operation TREBUCHET (OPTRE) and The Kuiper Engagements (TKE). Adds the order of battle and supply crates for the 44th Detachment, UCN Marine Corp. Requires [b]44th Core[/b] alongside it.
+
+[hr][/hr]
+
+[h2]What's Inside[/h2]
+
+[b]44th ORBAT — SciFi[/b]
+The 44th Detachment's order of battle as a one-click Eden composition — 32 playable slots plus two Zeus, with vehicles and drop pods included. Every slot spawns already wearing its full role loadout, no crate visit needed.
+
+[b]Structure:[/b]
+[list]
+[*]ZEUS — Game Master, Co-Game Master
+[*]Bulldog — IC, 2iC, Corpsman, Comms
+[*]Zulu — two 4-man fireteams (Lance Lead, Marksman, Heavy, Corpsman / Team Lead, Marksman, Heavy, Corpsman)
+[*]Victor — as Zulu, with a Heavy AT in place of the Heavy
+[*]Romeo — as Zulu, with Sniper and Spotter
+[*]Mailman — Chief Pilot, Pilot, Gunner, Vehicle Commander
+[/list]
+
+[b]44th Supply Crates — SciFi[/b]
+Pre-configured supply crates on OPTRE crate models, placed in Eden under 44th Mods → Supply Crates, or requested in-game from a 44th Logistics Point (UCNMC).
+
+[b]Crates included:[/b]
+[list]
+[*]8-Man Section Supplies
+[*]Fire Support Supplies
+[*]Precision Supplies
+[*]Anti-Armour Supplies
+[*]Command (Bulldog) Supplies
+[*]Engineer/Breaching Supplies
+[*]Medical Supplies
+[/list]
+
+Contents are drawn from the same UCNMC kits players spawn with, so a crate can never hand out ammunition for a weapon nobody in the detachment carries.
+
+[hr][/hr]
+
+[h2]Requirements[/h2]
+
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=450814997]CBA_A3[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=463939057]ACE3[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1571615814]Sci-Fi Characters and Gear[/url] (TKE)
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1638341685]OPTRE[/url] (Operation TREBUCHET)
+[*]44th Core (this mod's engine — subscribe alongside this one)
+[/list]
+
+[hr][/hr]
+
+[h2]Links[/h2]
+[list]
+[*][b]Discord:[/b] [url=https://discord.gg/44tharma]discord.gg/44tharma[/url] — join the 44th Royal Battalion today!
+[*][b]Source (GitHub):[/b] [url=https://github.com/alexsheppard21/44th-ARMA3-Mods.git]github.com/alexsheppard21/44th-ARMA3-Mods.git[/url]
+[/list]
+
+[hr][/hr]
+
+[i]Built for the 44th Royal Battalion by FullMetalShep. Kits and ORBAT curated by Jayden.[/i]
