@@ -8,13 +8,13 @@ Eden composition under **44th Mods → Compositions**.
 | Group | Slots |
 |---|---|
 | ZEUS | Game Master, Co-Game Master |
-| Bulldog | IC, 2iC, Corpsman, Comms |
+| Bulldog | IC, 2iC, Corpsman, Comms, Sapper |
 | Zulu | Two 4-man fireteams (Lance Lead, Marksman, Heavy, Corpsman / Team Lead, Marksman, Heavy, Corpsman) |
 | Victor | As Zulu, with Heavy AT in place of Heavy |
 | Romeo | As Zulu, with Sniper and Spotter |
 | Mailman | Chief Pilot, Pilot, Gunner, Vehicle Commander |
 
-32 playable slots plus two Zeus, with vehicles and drop pods included.
+33 playable slots plus two Zeus, with vehicles and drop pods included.
 
 ## Kitting
 

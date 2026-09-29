@@ -306,7 +306,7 @@ class items
 		side="West";
 		class Entities
 		{
-			items=4;
+			items=5;
 			class Item0
 			{
 				dataType="Object";
@@ -493,6 +493,54 @@ class items
 							{
 								singleType="STRING";
 								value="UCNMC_BulldogSignals";
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-15.248291,0.0016813278,6.1774902};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bulldog-5 (Sapper)@Bulldog";
+					isPlayable=1;
+				};
+				id=436;
+				type="B_Soldier_unarmed_F";
+				atlOffset=0.00024223328;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0.94999999;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="FTH_kit";
+						expression="if (_value isEqualType '' && {_value != ''}) then {[_this,_value] call FTH_fnc_applyKit;};";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="UCNMC_Sapper";
 							};
 						};
 					};
