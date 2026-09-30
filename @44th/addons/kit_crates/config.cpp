@@ -121,7 +121,7 @@ class Extended_InitPost_EventHandlers
     class _44th_KitCrate_SFSG   { class _44th_kitcrates { init = "[(_this select 0), 'SFSG']   execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
     class _44th_KitCrate_SRR    { class _44th_kitcrates { init = "[(_this select 0), 'SRR']    execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
     class _44th_KitCrate_SAS    { class _44th_kitcrates { init = "[(_this select 0), 'SAS']    execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
-    class _44th_KitCrate_UCNMC  { class _44th_kitcrates { init = "[(_this select 0), 'UCNMC']  execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
+    class _44th_KitCrate_UCNMC  { class _44th_kitcrates { init = "[(_this select 0), 'UCNMC']  execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
     class _44th_KitCrate_MASTER { class _44th_kitcrates { init = "[(_this select 0), 'MASTER'] execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
 };
 

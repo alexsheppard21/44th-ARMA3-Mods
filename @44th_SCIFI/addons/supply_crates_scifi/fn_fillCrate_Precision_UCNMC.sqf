@@ -21,7 +21,7 @@ _crate addWeaponCargoGlobal ["ACE_Yardage450",        1];
 
 // Magazines - SRS99C 14.5mm sniper
 _crate addMagazineCargoGlobal ["OPTRE_4Rnd_145x114_HVAP_Mag", 16];
-_crate addMagazineCargoGlobal ["OPTRE_4Rnd_145x114_AP_Mag",    8];
+_crate addMagazineCargoGlobal ["OPTRE_4Rnd_145x114_APFSDS_Mag",    8];
 // M392 DMR 7.62 marksman
 _crate addMagazineCargoGlobal ["OPTRE_15Rnd_762x51_Mag",      16];
 // Commando 6.5mm (marksman/spotter swap option)

@@ -47,13 +47,13 @@ class CfgFunctions
 
 class CfgVehicles
 {
-    // OPTRE bases. The weapon crates are House_F derived (big, animated lid);
-    // the ammo racks are ReammoBox_F derived. Both hold cargo.
-    class OPTRE_Weapon_Crate_Marines_S;
-    class OPTRE_Weapon_Crate_Marines_HW;
-    class OPTRE_Weapon_Crate_Marines_LR;
-    class OPTRE_Ammo_Rack_Weapons;
-    class OPTRE_Ammo_Rack_Ammo;
+    // OPTRE military cases (OPTRE_UNSC_Structure_Containers). All three inherit
+    // cargo space from Land_packing_crate_lg_blue and are ACE drag/carry/cargo
+    // capable. Medical in the medic case, weapon-heavy crates in the long case,
+    // ammo/kit crates in the small case.
+    class Land_optre_milcrate_h2smallcrate_medic;
+    class Land_optre_milcrate_h2smallcrate;
+    class Land_optre_milcrate_h3_long;
     class Land_shipping_crate_lg_locked;
 
     // --- LOGISTICS POINT ---
@@ -72,7 +72,7 @@ class CfgVehicles
     };
 
     // --- MEDICAL ---
-    class _44th_Crate_Medical_UCNMC : OPTRE_Ammo_Rack_Ammo
+    class _44th_Crate_Medical_UCNMC : Land_optre_milcrate_h2smallcrate_medic
     {
         scope = 2;
         scopeCurator = 2;
@@ -83,7 +83,7 @@ class CfgVehicles
     };
 
     // --- SECTION ---
-    class _44th_Crate_Section_UCNMC : OPTRE_Weapon_Crate_Marines_S
+    class _44th_Crate_Section_UCNMC : Land_optre_milcrate_h3_long
     {
         scope = 2;
         scopeCurator = 2;
@@ -94,7 +94,7 @@ class CfgVehicles
     };
 
     // --- SPECIALIST ---
-    class _44th_Crate_FireSupport_UCNMC : OPTRE_Weapon_Crate_Marines_HW
+    class _44th_Crate_FireSupport_UCNMC : Land_optre_milcrate_h3_long
     {
         scope = 2;
         scopeCurator = 2;
@@ -104,7 +104,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_SupplyCrates";
     };
 
-    class _44th_Crate_AntiArmour_UCNMC : OPTRE_Weapon_Crate_Marines_HW
+    class _44th_Crate_AntiArmour_UCNMC : Land_optre_milcrate_h3_long
     {
         scope = 2;
         scopeCurator = 2;
@@ -114,7 +114,7 @@ class CfgVehicles
         editorSubcategory = "FTH_Sub_SupplyCrates";
     };
 
-    class _44th_Crate_Precision_UCNMC : OPTRE_Weapon_Crate_Marines_LR
+    class _44th_Crate_Precision_UCNMC : Land_optre_milcrate_h3_long
     {
         scope = 2;
         scopeCurator = 2;
@@ -125,7 +125,7 @@ class CfgVehicles
     };
 
     // --- COMMAND (Bulldog) ---
-    class _44th_Crate_Command_UCNMC : OPTRE_Ammo_Rack_Weapons
+    class _44th_Crate_Command_UCNMC : Land_optre_milcrate_h2smallcrate
     {
         scope = 2;
         scopeCurator = 2;
@@ -136,7 +136,7 @@ class CfgVehicles
     };
 
     // --- ENGINEER / BREACHING ---
-    class _44th_Crate_Engineer_UCNMC : OPTRE_Weapon_Crate_Marines_HW
+    class _44th_Crate_Engineer_UCNMC : Land_optre_milcrate_h2smallcrate
     {
         scope = 2;
         scopeCurator = 2;

@@ -20,13 +20,13 @@ inheritance is resolved at load — they cannot exist on a modlist without OPTRE
 
 | Category | Crate | Model |
 |---|---|---|
-| UCNMC | 8-Man Section Supplies | UNSC Marines weapon crate |
-| UCNMC | Fire Support Supplies | UNSC Marines heavy-weapons crate |
-| UCNMC | Precision Supplies | UNSC Marines long-range crate |
-| UCNMC | Anti-Armour Supplies | UNSC Marines heavy-weapons crate |
-| UCNMC | Command (Bulldog) Supplies | UNSC weapons rack |
-| UCNMC | Engineer/Breaching Supplies | UNSC Marines heavy-weapons crate |
-| Medical | UCNMC Medical Supplies | UNSC ammunition rack |
+| UCNMC | 8-Man Section Supplies | Long Military Case |
+| UCNMC | Fire Support Supplies | Long Military Case |
+| UCNMC | Precision Supplies | Long Military Case |
+| UCNMC | Anti-Armour Supplies | Long Military Case |
+| UCNMC | Command (Bulldog) Supplies | Small Military Case |
+| UCNMC | Engineer/Breaching Supplies | Small Military Case |
+| Medical | UCNMC Medical Supplies | Small Military Case (Medical) |
 
 Contents are drawn from the same UCNMC kits the players spawn with (Kit Core
 SciFi's `data_UCNMC.sqf`), so a crate can never hand out ammunition for a weapon
