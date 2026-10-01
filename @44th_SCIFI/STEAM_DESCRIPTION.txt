@@ -7,15 +7,15 @@ The SciFi half of the 44th Battalion Framework, built on Operation TREBUCHET (OP
 [h2]What's Inside[/h2]
 
 [b]44th ORBAT — SciFi[/b]
-The 44th Detachment's order of battle as a one-click Eden composition — 33 playable slots plus two Zeus, with vehicles and drop pods included. Every slot spawns already wearing its full role loadout, no crate visit needed.
+The 44th Detachment's order of battle as a one-click Eden composition — 29 playable slots plus two Zeus, with vehicles and drop pods included. Every slot spawns already wearing its full role loadout, no crate visit needed.
 
 [b]Structure:[/b]
 [list]
 [*]ZEUS — Game Master, Co-Game Master
 [*]Bulldog — Platoon Commander, Platoon Sergeant, Platoon Corpsman, Radio Operator, Combat Engineer
-[*]Zulu — two 4-man fireteams (Squad Leader, Designated Marksman, Automatic Rifleman, Corpsman / Fireteam Leader, Designated Marksman, Automatic Rifleman, Corpsman)
-[*]Victor — as Zulu, with Automatic Riflemen (AT) in place of the Automatic Riflemen
-[*]Romeo — as Zulu, with a Scout Sniper and Spotter
+[*]Zulu — two 3-man fireteams (Squad Leader, Designated Marksman, Corpsman / Fireteam Leader, Automatic Rifleman (AT), Corpsman)
+[*]Victor — identical to Zulu
+[*]Romeo — two 4-man fireteams (Squad Leader, Scout Sniper, Automatic Rifleman, Corpsman / Fireteam Leader, Spotter, Automatic Rifleman, Corpsman)
 [*]Mailman — Aircraft Commander, Co-Pilot, Crew Chief, Vehicle Commander
 [/list]
 

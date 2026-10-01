@@ -93,7 +93,7 @@ Roles: Troop Sergeant, Team Lead, Team Lead 2, Lead Scout, Point Man, Medic, Sig
 ### UCNMC Kit Crate
 **44th Detachment, UCN Marine Corp** — SciFi modpack (The Kuiper Engagements)
 
-The detachment fielded on a SciFi night: a five-man platoon headquarters (Bulldog) over three eight-man squads and a vehicle/air element.
+The detachment fielded on a SciFi night: a five-man platoon headquarters (Bulldog) over two six-man rifle squads (Zulu, Victor), an eight-man recon squad (Romeo) and a vehicle/air element.
 
 Roles: Platoon Commander, Platoon Sergeant, Platoon Corpsman, Radio Operator, Combat Engineer, Squad Leader, Fireteam Leader, Designated Marksman, Automatic Rifleman, Automatic Rifleman (AT), Corpsman, Scout Sniper, Scout Sniper (Spotter), Aircraft Commander, Co-Pilot, Crew Chief, Vehicle Commander
 

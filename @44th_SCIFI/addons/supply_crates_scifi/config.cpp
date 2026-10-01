@@ -54,14 +54,18 @@ class CfgVehicles
     class Land_optre_milcrate_h2smallcrate_medic;
     class Land_optre_milcrate_h2smallcrate;
     class Land_optre_milcrate_h3_long;
-    class Land_shipping_crate_lg_locked;
+    class OPTRE_Weapon_Crate_Marines_S;   // OPTRE_UNSC_Structure_Military_Crate
 
     // --- LOGISTICS POINT ---
     // The SciFi twin of _44th_LogisticsPoint. Players ACE-interact with it to
     // have any crate below spawned beside it. Also works on any object flagged
     // in its Eden init field with
     //   this setVariable ["FTH_logisticsPoint", true, true];
-    class _44th_LogisticsPoint_UCNMC : Land_shipping_crate_lg_locked
+    // On the UNSC Marines standard-issue weapon crate (the shipping container
+    // it used before was far too big). That crate comes pre-stocked with OPTRE
+    // weapons; the empty Transport* classes below remove them, so the point
+    // only ever hands out crates through its menu.
+    class _44th_LogisticsPoint_UCNMC : OPTRE_Weapon_Crate_Marines_S
     {
         scope = 2;
         scopeCurator = 2;
@@ -69,6 +73,10 @@ class CfgVehicles
         author = "FullMetalShep";
         editorCategory = "FTH_Cat_44thMods";
         editorSubcategory = "FTH_Sub_Logistics";
+        class TransportWeapons {};
+        class TransportMagazines {};
+        class TransportItems {};
+        class TransportBackpacks {};
     };
 
     // --- MEDICAL ---

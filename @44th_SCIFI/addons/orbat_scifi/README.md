@@ -9,12 +9,12 @@ Eden composition under **44th Mods → Compositions**.
 |---|---|
 | ZEUS | Game Master, Co-Game Master |
 | Bulldog | Platoon Commander, Platoon Sergeant, Platoon Corpsman, Radio Operator, Combat Engineer |
-| Zulu | Two 4-man fireteams (Squad Leader, Designated Marksman, Automatic Rifleman, Corpsman / Fireteam Leader, Designated Marksman, Automatic Rifleman, Corpsman) |
-| Victor | As Zulu, with Automatic Riflemen (AT) in place of the Automatic Riflemen |
-| Romeo | As Zulu, with a Scout Sniper and Spotter |
+| Zulu | Two 3-man fireteams (Squad Leader, Designated Marksman, Corpsman / Fireteam Leader, Automatic Rifleman (AT), Corpsman) |
+| Victor | Identical to Zulu |
+| Romeo | Two 4-man fireteams (Squad Leader, Scout Sniper, Automatic Rifleman, Corpsman / Fireteam Leader, Spotter, Automatic Rifleman, Corpsman) |
 | Mailman | Aircraft Commander, Co-Pilot, Crew Chief, Vehicle Commander |
 
-33 playable slots plus two Zeus, with vehicles and drop pods included.
+29 playable slots plus two Zeus, with vehicles and drop pods included.
 
 ## Kitting
 
@@ -25,7 +25,7 @@ on-spawn kit menu and the Master Kit Crate show the right kit.
 
 The slots are placed as vanilla `B_Soldier_unarmed_F` on purpose: the kit supplies
 the uniform, armour, helmet and weapon, so there is one source of truth for a
-role's appearance rather than two. The Zeus slots carry no kit.
+role's appearance rather than two. The two Zeus slots carry the Platoon Commander kit (`UCNMC_BulldogCommander`).
 
 If TKE is not loaded, Kit Core skips the UCNMC kits entirely and the slots spawn
 as plain unarmed soldiers rather than half-kitted ones.
