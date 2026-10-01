@@ -93,9 +93,9 @@ Roles: Troop Sergeant, Team Lead, Team Lead 2, Lead Scout, Point Man, Medic, Sig
 ### UCNMC Kit Crate
 **44th Detachment, UCN Marine Corp** — SciFi modpack (The Kuiper Engagements)
 
-The detachment fielded on a SciFi night: a four-man command element (Bulldog) over three eight-man sections and a vehicle/air element.
+The detachment fielded on a SciFi night: a five-man platoon headquarters (Bulldog) over three eight-man squads and a vehicle/air element.
 
-Roles: Detachment Commander, 2IC / Air and Fires, Detachment Corpsman, Signals and Intel, Lance Lead, Fireteam Lead, Marksman, Heavy, Heavy / Anti-armour, Corpsman, Sniper, Spotter, Chief Pilot, Pilot, Gunner, Vehicle Commander
+Roles: Platoon Commander, Platoon Sergeant / Fires, Platoon Corpsman, Radio Operator, Combat Engineer, Squad Leader, Fireteam Leader, Designated Marksman, Automatic Rifleman, Automatic Rifleman (AT), Corpsman, Scout Sniper, Scout Sniper (Spotter), Aircraft Commander, Co-Pilot, Crew Chief, Vehicle Commander
 
 The crate is a vanilla box like the rest, because this addon loads on any modlist. Its kits only register when TKE is present, so on a BAF night the crate is simply empty.
 

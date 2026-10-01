@@ -318,7 +318,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					description="Bulldog-1 (IC)@Bulldog";
+					description="Bulldog-1 (Platoon Commander)@Bulldog";
 					isPlayable=1;
 				};
 				id=346;
@@ -366,7 +366,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Bulldog-2 (2iC)@Bulldog";
+					description="Bulldog-2 (Platoon Sergeant)@Bulldog";
 					isPlayable=1;
 				};
 				id=347;
@@ -414,7 +414,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Bulldog-3 (Corpsman)@Bulldog";
+					description="Bulldog-3 (Platoon Corpsman)@Bulldog";
 					isPlayable=1;
 				};
 				id=348;
@@ -462,7 +462,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Bulldog-4 (Comms)@Bulldog";
+					description="Bulldog-4 (Radio Operator)@Bulldog";
 					isPlayable=1;
 				};
 				id=349;
@@ -510,7 +510,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Bulldog-5 (Sapper)@Bulldog";
+					description="Bulldog-5 (Combat Engineer)@Bulldog";
 					isPlayable=1;
 				};
 				id=436;
@@ -589,7 +589,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					description="Zulu 1-1 (Lance Lead)@Zulu";
+					description="Zulu 1-1 (Squad Leader)@Zulu";
 					isPlayable=1;
 				};
 				id=351;
@@ -637,7 +637,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Zulu 1-2 (Marksman)@Zulu";
+					description="Zulu 1-2 (Designated Marksman)@Zulu";
 					isPlayable=1;
 				};
 				id=352;
@@ -685,7 +685,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Zulu 1-3 (Heavy)@Zulu";
+					description="Zulu 1-3 (Automatic Rifleman)@Zulu";
 					isPlayable=1;
 				};
 				id=353;
@@ -781,7 +781,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Zulu 2-1 (Team Lead)@Zulu";
+					description="Zulu 2-1 (Fireteam Leader)@Zulu";
 					isPlayable=1;
 				};
 				id=355;
@@ -829,7 +829,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Zulu 2-2 (Marksman)@Zulu";
+					description="Zulu 2-2 (Designated Marksman)@Zulu";
 					isPlayable=1;
 				};
 				id=356;
@@ -877,7 +877,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Zulu 2-3 (Heavy)@Zulu";
+					description="Zulu 2-3 (Automatic Rifleman)@Zulu";
 					isPlayable=1;
 				};
 				id=357;
@@ -1004,7 +1004,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					description="Victor 1-1 (Lance Lead)@Victor";
+					description="Victor 1-1 (Squad Leader)@Victor";
 					isPlayable=1;
 				};
 				id=360;
@@ -1052,7 +1052,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Victor 1-2 (Marksman)@Victor";
+					description="Victor 1-2 (Designated Marksman)@Victor";
 					isPlayable=1;
 				};
 				id=361;
@@ -1100,7 +1100,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Victor 1-3 (Heavy AT)@Victor";
+					description="Victor 1-3 (Automatic Rifleman (AT))@Victor";
 					isPlayable=1;
 				};
 				id=362;
@@ -1196,7 +1196,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Victor 2-1 (Team Lead)@Victor";
+					description="Victor 2-1 (Fireteam Leader)@Victor";
 					isPlayable=1;
 				};
 				id=364;
@@ -1244,7 +1244,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Victor 2-2 (Marksman)@Victor";
+					description="Victor 2-2 (Designated Marksman)@Victor";
 					isPlayable=1;
 				};
 				id=365;
@@ -1292,7 +1292,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Victor 2-3 (Heavy AT)@Victor";
+					description="Victor 2-3 (Automatic Rifleman (AT))@Victor";
 					isPlayable=1;
 				};
 				id=366;
@@ -1419,7 +1419,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					description="Romeo 1-1 (Lance Lead)@Romeo";
+					description="Romeo 1-1 (Squad Leader)@Romeo";
 					isPlayable=1;
 				};
 				id=369;
@@ -1467,7 +1467,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Romeo 1-2 (Sniper)@Romeo";
+					description="Romeo 1-2 (Scout Sniper)@Romeo";
 					isPlayable=1;
 				};
 				id=370;
@@ -1515,7 +1515,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Romeo 1-3 (Heavy)@Romeo";
+					description="Romeo 1-3 (Automatic Rifleman)@Romeo";
 					isPlayable=1;
 				};
 				id=371;
@@ -1611,7 +1611,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Romeo 2-1 (Team Lead)@Romeo";
+					description="Romeo 2-1 (Fireteam Leader)@Romeo";
 					isPlayable=1;
 				};
 				id=373;
@@ -1707,7 +1707,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Romeo 2-3 (Heavy)@Romeo";
+					description="Romeo 2-3 (Automatic Rifleman)@Romeo";
 					isPlayable=1;
 				};
 				id=375;
@@ -1834,7 +1834,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					description="Mailman-1 (Chief Pilot)@Mailman";
+					description="Mailman-1 (Aircraft Commander)@Mailman";
 					isPlayable=1;
 				};
 				id=378;
@@ -1894,7 +1894,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Mailman-2 (Pilot)@Mailman";
+					description="Mailman-2 (Co-Pilot)@Mailman";
 					isPlayable=1;
 				};
 				id=379;
@@ -1954,7 +1954,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Mailman-3 (Gunner)@Mailman";
+					description="Mailman-3 (Crew Chief)@Mailman";
 					isPlayable=1;
 				};
 				id=380;
