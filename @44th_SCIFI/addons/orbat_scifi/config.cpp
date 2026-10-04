@@ -7,6 +7,9 @@
         units[] = {};
         weapons[] = {};
         requiredVersion = 0.1;
+        // Hard-requires its modpack: on a modlist without it, skip this addon
+        // quietly instead of raising a missing-addon warning and loading broken.
+        skipWhenMissingDependencies = 1;
         requiredAddons[] = {
             "A3_Characters_F",
             "cba_xeh",

@@ -25,6 +25,9 @@ class CfgPatches
         };
         weapons[] = {};
         requiredVersion = 0.1;
+        // Hard-requires its modpack: on a modlist without it, skip this addon
+        // quietly instead of raising a missing-addon warning and loading broken.
+        skipWhenMissingDependencies = 1;
         // The crates inherit from OPTRE models, so those three OPTRE addons are
         // hard dependencies. TKE is listed too: nothing inherits from it, but
         // every round in these crates comes from it, and requiring it keeps this

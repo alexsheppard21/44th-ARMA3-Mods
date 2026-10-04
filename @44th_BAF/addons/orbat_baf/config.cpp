@@ -60,6 +60,9 @@
         };
         weapons[] = {};
         requiredVersion = 0.1;
+        // Hard-requires its modpack: on a modlist without it, skip this addon
+        // quietly instead of raising a missing-addon warning and loading broken.
+        skipWhenMissingDependencies = 1;
         requiredAddons[] = { "A3_Characters_F", "UK3CB_BAF_Units_ACE", "cba_xeh", "KitCore_44th", "KitCore_BAF_44th", "Logistics_44th" };
         author = "FullMetalShep";
         version = 31;
