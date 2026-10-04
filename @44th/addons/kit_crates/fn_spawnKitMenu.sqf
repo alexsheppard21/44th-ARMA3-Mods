@@ -1,21 +1,17 @@
 /*
     FTH_fnc_spawnKitMenu  (postInit, client)
 
-    On EVERY spawn (initial and each respawn), auto-opens the WBK Kits kit menu
-    on a kit box scoped to that player's ORBAT faction. The box holds EVERY kit
-    in the player's faction (so they see the full group roster), but only the
-    kit matching their own role (FTH_roleKey) is selectable — the rest show
-    greyed. Kits from other factions never appear at all.
+    On the player's FIRST spawn only (mission start, or joining in progress),
+    auto-opens the WBK Kits kit menu on a kit box scoped to that player's ORBAT
+    faction. The box holds EVERY kit in the player's faction (so they see the
+    full group roster), but only the kit matching their own role (FTH_roleKey)
+    is selectable — the rest show greyed. Kits from other factions never appear
+    at all.
 
-    Triggered two ways:
-      - directly at postInit for the unit the player starts in. CBA's "unit"
-        event for the first unit can fire before this handler is registered,
-        so relying on it alone misses the initial spawn.
-      - CBA's "unit" player event for every respawn / unit switch (same hook
-        Kit Core's FTH_fnc_kitRespawn uses to re-apply the kit).
-    A newer trigger always replaces an opener that is still waiting, so menus
-    never stack. If the player dies with the menu open, the next spawn simply
-    opens it again.
+    Triggered once, directly at postInit for the unit the player starts in.
+    Respawns deliberately do NOT reopen it: Kit Core's FTH_fnc_kitRespawn
+    already re-applies the pristine kit, and players can still use a kit crate
+    by hand. If the player dies before the menu opens, it is not retried.
 
     The box is created with createVehicleLocal, so no other player sees it, and
     is deleted as soon as the menu closes (or the player dies).
@@ -147,13 +143,7 @@ FTH_spawnMenuOpen = {
     };
 };
 
-// Every respawn / unit switch.
-["unit", {
-    params ["_unit"];
-    [_unit] call FTH_spawnMenuOpen;
-}] call CBA_fnc_addPlayerEventHandler;
-
-// The unit the player starts in.
+// The unit the player starts in. Only this one - no respawn hook.
 [] spawn {
     waitUntil { uiSleep 0.5; !isNull player };
     [player] call FTH_spawnMenuOpen;

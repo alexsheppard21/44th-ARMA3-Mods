@@ -250,7 +250,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="180";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50,42";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item1
@@ -299,7 +325,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="180";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50,42";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 		};
@@ -378,7 +430,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="180";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50,42";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item1
@@ -426,7 +504,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="180,161";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50,42";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item2
@@ -474,7 +578,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="ace_isMedic";
+						expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="180,181";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item3
@@ -522,7 +652,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="180";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50,42";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item4
@@ -570,7 +726,46 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="ace_isEngineer";
+						expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="ace_isEOD";
+						expression="_this setVariable ['ACE_isEOD', _value, true]";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="180";
+							};
+						};
+					};
+					nAttributes=5;
 				};
 			};
 		};
@@ -649,7 +844,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="161.1,161";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item1
@@ -697,7 +918,20 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="161.1";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -745,7 +979,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="ace_isMedic";
+						expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="161.1,181";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item3
@@ -793,7 +1053,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="161.1,161";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item4
@@ -841,7 +1127,20 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="161.1";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item5
@@ -889,7 +1188,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="ace_isMedic";
+						expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="161.1,181";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 		};
@@ -968,7 +1293,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="151.1,161";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item1
@@ -1016,7 +1367,20 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="151.1";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -1064,7 +1428,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="ace_isMedic";
+						expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="151.1,181";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item3
@@ -1112,7 +1502,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="151.1,161";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item4
@@ -1160,7 +1576,20 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="151.1";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item5
@@ -1208,7 +1637,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="ace_isMedic";
+						expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="151.1,181";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 		};
@@ -1287,7 +1742,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="141.1,161";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item1
@@ -1335,7 +1816,20 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="141.1";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -1383,7 +1877,20 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="141.1";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item3
@@ -1431,7 +1938,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="ace_isMedic";
+						expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="141.1,181";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item4
@@ -1479,7 +2012,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="141.1,161";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="50";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item5
@@ -1527,7 +2086,20 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="141.1";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item6
@@ -1575,7 +2147,20 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="141.1";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item7
@@ -1623,7 +2208,33 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="ace_isMedic";
+						expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=2;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="141.1,181";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 		};
@@ -1714,7 +2325,33 @@ class items
 							};
 						};
 					};
-					nAttributes=3;
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="142";
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="42";
+							};
+						};
+					};
+					nAttributes=5;
 				};
 			};
 			class Item1
@@ -1774,7 +2411,33 @@ class items
 							};
 						};
 					};
-					nAttributes=3;
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="142";
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="42";
+							};
+						};
+					};
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -1834,7 +2497,33 @@ class items
 							};
 						};
 					};
-					nAttributes=3;
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="142";
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="TFAR_freq_lr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="42";
+							};
+						};
+					};
+					nAttributes=5;
 				};
 			};
 			class Item3
@@ -1894,7 +2583,20 @@ class items
 							};
 						};
 					};
-					nAttributes=3;
+					class Attribute3
+					{
+						property="TFAR_freq_sr";
+						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="171";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 		};

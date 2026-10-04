@@ -3,13 +3,24 @@ class CfgPatches
     class Supply_Crates_SciFi_44th
     {
         units[] = {
-            "_44th_Crate_Medical_UCNMC",
-            "_44th_Crate_Section_UCNMC",
-            "_44th_Crate_FireSupport_UCNMC",
-            "_44th_Crate_Precision_UCNMC",
-            "_44th_Crate_AntiArmour_UCNMC",
-            "_44th_Crate_Command_UCNMC",
+            "_44th_Crate_Rifles_UCNMC",
+            "_44th_Crate_MarksmanWeapons_UCNMC",
+            "_44th_Crate_SupportWeapons_UCNMC",
+            "_44th_Crate_Launchers_UCNMC",
+            "_44th_Crate_Sidearms_UCNMC",
+            "_44th_Crate_RifleAmmo_UCNMC",
+            "_44th_Crate_MarksmanAmmo_UCNMC",
+            "_44th_Crate_SupportAmmo_UCNMC",
+            "_44th_Crate_LauncherAmmo_UCNMC",
+            "_44th_Crate_SidearmAmmo_UCNMC",
+            "_44th_Crate_ShotgunAmmo_UCNMC",
+            "_44th_Crate_Grenades_UCNMC",
+            "_44th_Crate_MedicalBasic_UCNMC",
+            "_44th_Crate_MedicalAdvanced_UCNMC",
             "_44th_Crate_Engineer_UCNMC",
+            "_44th_Crate_Mines_UCNMC",
+            "_44th_Crate_Command_UCNMC",
+            "_44th_Crate_Equipment_UCNMC",
             "_44th_LogisticsPoint_UCNMC"
         };
         weapons[] = {};
@@ -27,7 +38,7 @@ class CfgPatches
             "TKE_Unit_Groups"
         };
         author = "FullMetalShep";
-        version = 1;
+        version = 2;
     };
 };
 
@@ -41,16 +52,34 @@ class CfgFunctions
             // Hands this addon's crate catalogue to the shared logistics
             // engine in @44th.
             class registerCratesSciFi { preInit = 1; };
+            // Fills any crate below from one contents table, keyed by class.
+            class fillCrateUCNMC {};
         };
     };
 };
+
+// Every crate is the same apart from class, model and name.
+#define FTH_CRATE(CLS,BASE,NAME) \
+    class CLS : BASE \
+    { \
+        scope = 2; \
+        scopeCurator = 2; \
+        displayName = NAME; \
+        author = "FullMetalShep"; \
+        editorCategory = "FTH_Cat_44thMods"; \
+        editorSubcategory = "FTH_Sub_SupplyCrates"; \
+    };
+
+// Fill runs server-side only (guarded inside the function).
+#define FTH_FILL(CLS) \
+    class CLS { class _44th_supplycrates_scifi { init = "(_this select 0) spawn FTH_fnc_fillCrateUCNMC"; }; };
 
 class CfgVehicles
 {
     // OPTRE military cases (OPTRE_UNSC_Structure_Containers). All three inherit
     // cargo space from Land_packing_crate_lg_blue and are ACE drag/carry/cargo
-    // capable. Medical in the medic case, weapon-heavy crates in the long case,
-    // ammo/kit crates in the small case.
+    // capable. Long weapons in the long case, medical in the medic case,
+    // everything else in the small case. Contents: fn_fillCrateUCNMC.sqf.
     class Land_optre_milcrate_h2smallcrate_medic;
     class Land_optre_milcrate_h2smallcrate;
     class Land_optre_milcrate_h3_long;
@@ -79,91 +108,53 @@ class CfgVehicles
         class TransportBackpacks {};
     };
 
-    // --- MEDICAL ---
-    class _44th_Crate_Medical_UCNMC : Land_optre_milcrate_h2smallcrate_medic
-    {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "44th UCNMC Medical Supplies";
-        author = "FullMetalShep";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_SupplyCrates";
-    };
+    // --- WEAPONS - kit builds with attachments, no magazines ---
+    FTH_CRATE(_44th_Crate_Rifles_UCNMC, Land_optre_milcrate_h3_long, "44 UCNMC Weapons - Rifles")
+    FTH_CRATE(_44th_Crate_MarksmanWeapons_UCNMC, Land_optre_milcrate_h3_long, "44 UCNMC Weapons - Marksman")
+    FTH_CRATE(_44th_Crate_SupportWeapons_UCNMC, Land_optre_milcrate_h3_long, "44 UCNMC Weapons - Support (SAW)")
+    FTH_CRATE(_44th_Crate_Launchers_UCNMC, Land_optre_milcrate_h3_long, "44 UCNMC Weapons - Launchers")
+    FTH_CRATE(_44th_Crate_Sidearms_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Weapons - Sidearms")
 
-    // --- SECTION ---
-    class _44th_Crate_Section_UCNMC : Land_optre_milcrate_h3_long
-    {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "44 UCNMC 8-Man Section Supplies";
-        author = "FullMetalShep";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_SupplyCrates";
-    };
+    // --- AMMUNITION ---
+    FTH_CRATE(_44th_Crate_RifleAmmo_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Ammo - Rifle")
+    FTH_CRATE(_44th_Crate_MarksmanAmmo_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Ammo - Marksman / Sniper")
+    FTH_CRATE(_44th_Crate_SupportAmmo_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Ammo - Support (SAW)")
+    FTH_CRATE(_44th_Crate_LauncherAmmo_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Ammo - Launcher")
+    FTH_CRATE(_44th_Crate_SidearmAmmo_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Ammo - Sidearm")
+    FTH_CRATE(_44th_Crate_ShotgunAmmo_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Ammo - Shotgun")
+    FTH_CRATE(_44th_Crate_Grenades_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Ammo - Grenades & Signals")
+
+    // --- MEDICAL ---
+    FTH_CRATE(_44th_Crate_MedicalBasic_UCNMC, Land_optre_milcrate_h2smallcrate_medic, "44 UCNMC Medical - Basic")
+    FTH_CRATE(_44th_Crate_MedicalAdvanced_UCNMC, Land_optre_milcrate_h2smallcrate_medic, "44 UCNMC Medical - Advanced (Corpsman)")
 
     // --- SPECIALIST ---
-    class _44th_Crate_FireSupport_UCNMC : Land_optre_milcrate_h3_long
-    {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "44 UCNMC Fire Support Supplies";
-        author = "FullMetalShep";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_SupplyCrates";
-    };
-
-    class _44th_Crate_AntiArmour_UCNMC : Land_optre_milcrate_h3_long
-    {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "44 UCNMC Anti-Armour Supplies";
-        author = "FullMetalShep";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_SupplyCrates";
-    };
-
-    class _44th_Crate_Precision_UCNMC : Land_optre_milcrate_h3_long
-    {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "44 UCNMC Precision Supplies";
-        author = "FullMetalShep";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_SupplyCrates";
-    };
-
-    // --- COMMAND (Bulldog) ---
-    class _44th_Crate_Command_UCNMC : Land_optre_milcrate_h2smallcrate
-    {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "44 UCNMC Command (Bulldog) Supplies";
-        author = "FullMetalShep";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_SupplyCrates";
-    };
-
-    // --- ENGINEER / BREACHING ---
-    class _44th_Crate_Engineer_UCNMC : Land_optre_milcrate_h2smallcrate
-    {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "44 UCNMC Engineer/Breaching Supplies";
-        author = "FullMetalShep";
-        editorCategory = "FTH_Cat_44thMods";
-        editorSubcategory = "FTH_Sub_SupplyCrates";
-    };
+    FTH_CRATE(_44th_Crate_Engineer_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Specialist - Engineer")
+    FTH_CRATE(_44th_Crate_Mines_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Specialist - Mines")
+    FTH_CRATE(_44th_Crate_Command_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Specialist - Command (Bulldog)")
+    FTH_CRATE(_44th_Crate_Equipment_UCNMC, Land_optre_milcrate_h2smallcrate, "44 UCNMC Specialist - Equipment")
 };
 
 class Extended_InitPost_EventHandlers
 {
-    class _44th_Crate_Medical_UCNMC     { class _44th_supplycrates_scifi { init = "(_this select 0) execVM '\44th_SupplyCratesSciFi\supply_crates_scifi\fn_fillCrate_Medical_UCNMC.sqf'"; }; };
-    class _44th_Crate_Section_UCNMC     { class _44th_supplycrates_scifi { init = "(_this select 0) execVM '\44th_SupplyCratesSciFi\supply_crates_scifi\fn_fillCrate_Section_UCNMC.sqf'"; }; };
-    class _44th_Crate_FireSupport_UCNMC { class _44th_supplycrates_scifi { init = "(_this select 0) execVM '\44th_SupplyCratesSciFi\supply_crates_scifi\fn_fillCrate_FireSupport_UCNMC.sqf'"; }; };
-    class _44th_Crate_AntiArmour_UCNMC  { class _44th_supplycrates_scifi { init = "(_this select 0) execVM '\44th_SupplyCratesSciFi\supply_crates_scifi\fn_fillCrate_AntiArmour_UCNMC.sqf'"; }; };
-    class _44th_Crate_Precision_UCNMC   { class _44th_supplycrates_scifi { init = "(_this select 0) execVM '\44th_SupplyCratesSciFi\supply_crates_scifi\fn_fillCrate_Precision_UCNMC.sqf'"; }; };
-    class _44th_Crate_Command_UCNMC     { class _44th_supplycrates_scifi { init = "(_this select 0) execVM '\44th_SupplyCratesSciFi\supply_crates_scifi\fn_fillCrate_Command_UCNMC.sqf'"; }; };
-    class _44th_Crate_Engineer_UCNMC    { class _44th_supplycrates_scifi { init = "(_this select 0) execVM '\44th_SupplyCratesSciFi\supply_crates_scifi\fn_fillCrate_Engineer_UCNMC.sqf'"; }; };
+    FTH_FILL(_44th_Crate_Rifles_UCNMC)
+    FTH_FILL(_44th_Crate_MarksmanWeapons_UCNMC)
+    FTH_FILL(_44th_Crate_SupportWeapons_UCNMC)
+    FTH_FILL(_44th_Crate_Launchers_UCNMC)
+    FTH_FILL(_44th_Crate_Sidearms_UCNMC)
+    FTH_FILL(_44th_Crate_RifleAmmo_UCNMC)
+    FTH_FILL(_44th_Crate_MarksmanAmmo_UCNMC)
+    FTH_FILL(_44th_Crate_SupportAmmo_UCNMC)
+    FTH_FILL(_44th_Crate_LauncherAmmo_UCNMC)
+    FTH_FILL(_44th_Crate_SidearmAmmo_UCNMC)
+    FTH_FILL(_44th_Crate_ShotgunAmmo_UCNMC)
+    FTH_FILL(_44th_Crate_Grenades_UCNMC)
+    FTH_FILL(_44th_Crate_MedicalBasic_UCNMC)
+    FTH_FILL(_44th_Crate_MedicalAdvanced_UCNMC)
+    FTH_FILL(_44th_Crate_Engineer_UCNMC)
+    FTH_FILL(_44th_Crate_Mines_UCNMC)
+    FTH_FILL(_44th_Crate_Command_UCNMC)
+    FTH_FILL(_44th_Crate_Equipment_UCNMC)
 };
 
 class CfgEditorCategories

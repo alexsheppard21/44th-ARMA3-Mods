@@ -4,7 +4,7 @@
 
 Kit crates and the on-spawn kit menu for the 44th. Players normally spawn already kitted (via ORBAT + Kit Core); these crates are for **customising within a role's allowed parameters** and for **re-roling**.
 
-- **On-spawn kit menu** — on *every* spawn (including respawns), the WBK Kits menu auto-opens on a box scoped to their faction. They see every kit in their group but only their own role's kit is selectable, so other factions never appear (see [On-spawn kit menu](#on-spawn-kit-menu) below).
+- **On-spawn kit menu** — on a player's *first* spawn only (not respawns), the WBK Kits menu auto-opens on a box scoped to their faction. They see every kit in their group but only their own role's kit is selectable, so other factions never appear (see [On-spawn kit menu](#on-spawn-kit-menu) below).
 - **Master Kit Crate** — holds every kit but shows each player only the one matching their ORBAT role (`FTH_roleKey`). A placed crate players interact with to tweak their loadout.
 - **Per-faction crates** (RBN, RBN Support, RANGER, SFSG, SRR, SAS, UCNMC) — show all of that faction's kits. Kept mainly for Zeus to re-role players on the fly.
 
@@ -20,8 +20,9 @@ If WBK Kits or Kit Core is not loaded, crates simply stay empty (the fill script
 
 ## On-spawn kit menu
 
-`FTH_fnc_spawnKitMenu` (client, postInit) hooks CBA's `unit` player event and
-opens the kit menu automatically every time a player spawns:
+`FTH_fnc_spawnKitMenu` (client, postInit) opens the kit menu automatically once,
+when the player first spawns (mission start or JIP). Respawns do not reopen it;
+Kit Core's `FTH_fnc_kitRespawn` re-applies the kit instead:
 
 1. Waits for `FTH_Kits`, WBK Kits, and the player's `FTH_roleKey` to be ready.
 2. Derives the player's faction from their kit record and creates a
@@ -31,8 +32,7 @@ opens the kit menu automatically every time a player spawns:
 3. Points `WBK_GlobalKitBoxRn` at the box and opens the WBK Kits camera menu.
 4. Deletes the local box as soon as the player closes the menu (or dies).
 
-A new spawn cancels any opener still waiting, so menus never stack; if the
-player dies with the menu open, the next spawn simply opens it again.
+If the player dies before the menu opens, it is not retried.
 
 ## Crates
 

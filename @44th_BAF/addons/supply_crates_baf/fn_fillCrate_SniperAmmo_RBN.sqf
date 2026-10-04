@@ -1,6 +1,10 @@
 // fn_fillCrate_SniperAmmo_RBN.sqf
 // 44 RBN Sniper & Spotter Ammo
 private _crate = _this;
+// Extended_InitPost runs on every machine (and again for each JIP client),
+// and the *CargoGlobal commands below are global - fill once, on the server,
+// or every client stacks its own copy of the contents into the crate.
+if (!isServer) exitWith {};
 waitUntil { time > 0 };
 
 clearItemCargoGlobal _crate;

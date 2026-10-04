@@ -18,20 +18,40 @@ inheritance is resolved at load — they cannot exist on a modlist without OPTRE
 
 ## Crates
 
-| Category | Crate | Model |
-|---|---|---|
-| UCNMC | 8-Man Section Supplies | Long Military Case |
-| UCNMC | Fire Support Supplies | Long Military Case |
-| UCNMC | Precision Supplies | Long Military Case |
-| UCNMC | Anti-Armour Supplies | Long Military Case |
-| UCNMC | Command (Bulldog) Supplies | Small Military Case |
-| UCNMC | Engineer/Breaching Supplies | Small Military Case |
-| Medical | UCNMC Medical Supplies | Small Military Case (Medical) |
+Each crate does one job, so crates stay small and players only pull what they
+need. Weapons come with the kits' attachments fitted but **no magazines** —
+ammunition is always its own crate.
+
+| Category | Crate | Contents | Model |
+|---|---|---|---|
+| UCNMC Weapons | Rifles | 2× MA32B, 2× MA5K, 1× M45 ATAC | Long |
+| UCNMC Weapons | Marksman | 1× M392 DMR, 1× SRS99C, ballistics kit | Long |
+| UCNMC Weapons | Support (SAW) | 2× M739 SAW, 2 spare barrels | Long |
+| UCNMC Weapons | Launchers | 2× M41 SSR | Long |
+| UCNMC Weapons | Sidearms | 3× UCN pistol, 2× M7 | Small |
+| UCNMC Ammunition | Rifle | 30× MA32B/MA5K mags | Small |
+| UCNMC Ammunition | Marksman / Sniper | DMR mags, SRS99 HVAP + APFSDS | Small |
+| UCNMC Ammunition | Support (SAW) | 8× 192rnd boxes | Small |
+| UCNMC Ammunition | Launcher | 4× M41 rockets | Small |
+| UCNMC Ammunition | Sidearm | UCN pistol + M7 mags | Small |
+| UCNMC Ammunition | Shotgun | 8 gauge pellets, slugs, HEDP | Small |
+| UCNMC Ammunition | Grenades & Signals | frag, impact, smoke, signal smoke, chemlights | Small |
+| UCNMC Medical | Basic | bandages, tourniquets, chest seals, splints, morphine/epi/TXA | Small (Medical) |
+| UCNMC Medical | Advanced (Corpsman) | IVs, plasma, airway, KAT drugs, oxygen, body bags | Small (Medical) |
+| UCNMC Specialist | Engineer | C7/M168 charges, clackers, defusal, toolkit, mine detector | Small |
+| UCNMC Specialist | Mines | AT, SLAM, AP, bounding, dispenser, IED | Small |
+| UCNMC Specialist | Command (Bulldog) | Vectors, Androids, MicroDAGRs, map tools, radio packs | Small |
+| UCNMC Specialist | Equipment | backpacks, cable ties, ear plugs, torches, slings | Small |
+
+Every crate is filled by one script, `fn_fillCrateUCNMC.sqf`, from a contents
+table keyed by crate class. The fill runs **on the server only** — the
+`Extended_InitPost` hook fires on every machine, and the global cargo commands
+would otherwise stack one copy of the contents per client.
 
 Contents are drawn from the same UCNMC kits the players spawn with (Kit Core
 SciFi's `data_UCNMC.sqf`), so a crate can never hand out ammunition for a weapon
 nobody in the detachment carries. **When a kit's weapon changes, update the
-matching crate here too** — nothing checks this automatically.
+matching entry in the contents table too** — nothing checks this automatically.
 
 Most weapons are OPTRE (MA32B/MA5K, M392 DMR, M739 SAW, M41 SSR, SRS99C, M45
 ATAC, M7); the UCN pistol, grenades and most gear are TKE. Coloured signal smoke
@@ -49,5 +69,6 @@ this setVariable ["FTH_logisticsPoint", true, true];
 
 The point, the menu and the crate spawning are handled by the shared engine in
 `@44th/addons/logistics`; this addon only contributes its catalogue at preInit
-(`fn_registerCratesSciFi.sqf`). Adding a crate is: define it in `config.cpp`,
-write its fill script, add its classname to the catalogue.
+(`fn_registerCratesSciFi.sqf`). Adding a crate is: add an `FTH_CRATE` and an
+`FTH_FILL` line in `config.cpp`, add its contents to the table in
+`fn_fillCrateUCNMC.sqf`, and add its classname to the catalogue.

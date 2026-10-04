@@ -13,7 +13,7 @@ either way. Nothing here inherits from a modpack class.
 Each crate addon registers its own categories at **preInit**:
 
 ```sqf
-["UCNMC", "UCNMC", ["_44th_Crate_Section_UCNMC", ...], "_44th_LogisticsPoint_UCNMC"]
+["UCNMC_WPN", "UCNMC Weapons", ["_44th_Crate_Rifles_UCNMC", ...], "_44th_LogisticsPoint_UCNMC"]
     call FTH_fnc_logisticsRegister;
 ```
 
