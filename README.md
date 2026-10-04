@@ -88,9 +88,13 @@ Kit crates for browsing and customising loadouts. On a player's **first spawn** 
 
 Supply crates and a logistics point for the **44th Detachment, UCN Marine Corp** — the SciFi twin of the BAF supply crates, on OPTRE crate models. Crates appear in the Eden Editor under **44th Mods → Supply Crates**.
 
+Each crate does one job, so crates stay small and players only pull what they need. Weapons come with kit attachments but no magazines; ammunition is always its own crate.
+
 **Crates included:**
-- UCNMC — 8-Man Section, Fire Support, Precision, Anti-Armour, Command (Bulldog), Engineer/Breaching
-- Medical
+- Weapons — Rifles, Marksman, Support (SAW), Launchers, Sidearms
+- Ammunition — Rifle, Marksman / Sniper, Support (SAW), Launcher, Sidearm, Shotgun, Grenades & Signals
+- Medical — Basic, Advanced (Corpsman)
+- Specialist — Engineer, Mines, Command (Bulldog), Equipment
 
 Contents come from the same UCNMC kits players spawn with, so crate and kit cannot drift apart. Also adds the **44th Logistics Point (UCNMC)** under **44th Mods → Logistics**.
 

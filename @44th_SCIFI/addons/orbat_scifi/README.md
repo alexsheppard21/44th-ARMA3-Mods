@@ -27,6 +27,30 @@ The slots are placed as vanilla `B_Soldier_unarmed_F` on purpose: the kit suppli
 the uniform, armour, helmet and weapon, so there is one source of truth for a
 role's appearance rather than two. The two Zeus slots carry the Platoon Commander kit (`UCNMC_BulldogCommander`).
 
+## Permissions and radios
+
+Set per slot in the composition, matching the RBN platoon in the BAF ORBAT.
+
+- **Corpsmen** (all seven, including the Platoon Corpsman) are ACE **Doctors**.
+- **Combat Engineer** is an ACE **Advanced Engineer** and **Explosive Specialist**.
+
+TFAR frequencies (short range / long range):
+
+| Slots | SR | LR |
+|---|---|---|
+| Zeus, Platoon Commander, Radio Operator | 180 | 50, 42 |
+| Platoon Sergeant | 180, 161 | 50, 42 |
+| Platoon Corpsman | 180, 181 | — |
+| Combat Engineer | 180 | — |
+| Zulu / Victor / Romeo | 161.1 / 151.1 / 141.1 | — |
+| Squad and Fireteam Leaders | squad net + 161 | 50 |
+| Corpsmen | squad net + 181 | — |
+| Mailman aircrew (1–3) | 142 | 42 |
+| Mailman Vehicle Commander | 171 | — |
+
+180 is the Bulldog net, 161 the platoon leaders' net, 181 the medical net, LR 50
+command and LR 42 air.
+
 If TKE is not loaded, Kit Core skips the UCNMC kits entirely and the slots spawn
 as plain unarmed soldiers rather than half-kitted ones.
 
