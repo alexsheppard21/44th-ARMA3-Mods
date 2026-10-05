@@ -4,10 +4,9 @@
     Kit-version notice. Kit data is split across packages - Kit Core itself plus
     one per faction (Kit Core BAF, Kit Core SciFi) - and each bakes its own
     version into FTH_KitVersions at preInit. The server publishes its set; every
-    client compares each package the server has against its own. A package the
-    server has but the client lacks, or at a different version, is a mismatch.
-    Packages only the client has are ignored (e.g. a client that also has the
-    SciFi mods loaded on a BAF night).
+    client compares each package both sides have; a different version is a
+    mismatch. Packages only one side has are ignored (e.g. a server carrying
+    both BAF and SciFi while a player loads only tonight's faction).
 
     On mismatch the client gets a persistent on-screen message telling them to
     update. Input is NOT locked, so they can still move and chat to ask what's
@@ -32,11 +31,16 @@ if (hasInterface) then {
         waitUntil { uiSleep 1; !isNil { missionNamespace getVariable "FTH_ServerKitVersions" } };
         private _serverPairs = missionNamespace getVariable ["FTH_ServerKitVersions", []];
 
-        // "Package: theirs -> server" for every package that doesn't match.
+        // "Package: theirs -> server" for every package both sides have that
+        // doesn't match. Packages the client doesn't load are skipped - the
+        // server may carry both faction packages while players only load
+        // tonight's, and a mission that genuinely needs a missing package's
+        // content is already refused by Arma's own missing-addon check.
         private _stale = [];
         {
             _x params ["_package", "_serverVer"];
-            private _clientVer = FTH_KitVersions getOrDefault [_package, "not loaded"];
+            if !(_package in FTH_KitVersions) then { continue };
+            private _clientVer = FTH_KitVersions get _package;
             if !(_clientVer isEqualTo _serverVer) then {
                 _stale pushBack format ["%1: yours %2, server %3", _package, _clientVer, _serverVer];
             };

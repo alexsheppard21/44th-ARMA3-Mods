@@ -35,13 +35,13 @@ ammunition is always its own crate.
 | UCNMC Ammunition | Launcher | 4× M41 rockets | Small |
 | UCNMC Ammunition | Sidearm | UCN pistol + M7 mags | Small |
 | UCNMC Ammunition | Shotgun | 8 gauge pellets, slugs, HEDP | Small |
-| UCNMC Ammunition | Grenades & Signals | frag, impact, smoke, signal smoke, chemlights | Small |
+| UCNMC Ammunition | Grenades & Signals | frag, impact, smoke, signal smoke, chemlights, bags of bolts | Small |
 | UCNMC Medical | Basic | bandages, tourniquets, chest seals, splints, morphine/epi/TXA | Small (Medical) |
 | UCNMC Medical | Advanced (Corpsman) | IVs, plasma, airway, KAT drugs, oxygen, body bags | Small (Medical) |
 | UCNMC Specialist | Engineer | C7/M168 charges, clackers, defusal, toolkit, mine detector | Small |
 | UCNMC Specialist | Mines | AT, SLAM, AP, bounding, dispenser, IED | Small |
-| UCNMC Specialist | Command (Bulldog) | Vectors, Androids, MicroDAGRs, map tools, radio packs | Small |
-| UCNMC Specialist | Equipment | backpacks, cable ties, ear plugs, torches, slings | Small |
+| UCNMC Specialist | Command (Bulldog) | binoculars, Androids, MicroDAGRs, map tools, radio packs | Small |
+| UCNMC Specialist | Equipment | backpacks, cable ties, ear plugs, torches, slings, anomaly detectors | Small |
 
 Every crate is filled by one script, `fn_fillCrateUCNMC.sqf`, from a contents
 table keyed by crate class. The fill runs **on the server only** — the

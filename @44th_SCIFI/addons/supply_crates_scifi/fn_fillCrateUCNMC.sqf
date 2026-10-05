@@ -26,15 +26,15 @@ if (!isServer) exitWith {};
 waitUntil { uiSleep 0.1; time > 0 };
 
 // Kit weapon builds (no magazine loaded - ammunition ships separately).
-private _ma32b  = ["OPTRE_MA32B", "OPTRE_MA5Suppressor", "OPTRE_M6C_Laser", "OPTRE_M6D_Scope_Black", [], [], ""];
-private _ma5k   = ["OPTRE_MA5K", "OPTRE_MA5Suppressor", "OPTRE_M6C_Laser", "OPTRE_M6D_Scope_Black", [], [], ""];
-private _m45    = ["OPTRE_M45ATAC", "", "", "", [], [], ""];
-private _m392   = ["OPTRE_M392_DMR", "OPTRE_MA5Suppressor", "OPTRE_M6C_Laser", "OPTRE_M393_Scope", [], [], "bipod_02_F_blk"];
-private _srs99  = ["OPTRE_SRS99C", "OPTRE_SRS99D_Suppressor", "OPTRE_BMR_Laser", "TKE_10xSightV2", [], [], ""];
-private _m739   = ["OPTRE_M739_SAW_Black_F", "", "OPTRE_M6C_Laser", "OPTRE_M739_SAW_Smartlink", [], [], "bipod_01_F_blk"];
+private _ma32b  = ["OPTRE_MA32B", "OPTRE_MA5Suppressor", "OPTRE_M6C_Flashlight", "OPTRE_M6D_Scope_Black", [], [], ""];
+private _ma5k   = ["OPTRE_MA5K", "OPTRE_MA5Suppressor", "OPTRE_M6C_Flashlight", "OPTRE_M6D_Scope_Black", [], [], ""];
+private _m45    = ["OPTRE_M45ATAC", "", "OPTRE_M45_Flashlight", "", [], [], ""];
+private _m392   = ["OPTRE_M392_DMR", "OPTRE_MA5Suppressor", "OPTRE_M6C_Flashlight", "OPTRE_M393_Scope", [], [], "bipod_02_F_blk"];
+private _srs99  = ["OPTRE_SRS99C", "OPTRE_SRS99D_Suppressor", "OPTRE_BMR_Flashlight", "TKE_10xSightV2", [], [], ""];
+private _m739   = ["OPTRE_M739_SAW_Black_F", "", "OPTRE_M6C_Flashlight", "OPTRE_M739_SAW_Smartlink", [], [], "bipod_01_F_blk"];
 private _m41    = ["OPTRE_M41_SSR", "", "", "", [], [], ""];
 private _pistol = ["TKE_UCNPistol", "", "", "", [], [], ""];
-private _m7     = ["OPTRE_M7_Folded", "OPTRE_M7_silencer", "OPTRE_M6C_Laser", "TKE_ReflexSight", [], [], ""];
+private _m7     = ["OPTRE_M7_Folded", "OPTRE_M7_silencer", "OPTRE_M6C_Flashlight", "TKE_ReflexSight", [], [], ""];
 
 private _contents = createHashMapFromArray [
 
@@ -92,12 +92,14 @@ private _contents = createHashMapFromArray [
         [], [["OPTRE_12Rnd_8Gauge_Pellets", 8], ["OPTRE_12Rnd_8Gauge_Slugs", 6], ["OPTRE_12Rnd_8Gauge_HEDP", 6]], [], []
     ]],
     // TKE ships frag/impact/white smoke only, so coloured smoke is vanilla.
+    // bolts_infinite = Diwako's bag of bolts (spares for anyone who loses theirs).
     ["_44th_Crate_Grenades_UCNMC", [
         [],
         [
             ["TKE_FRAG_mag", 12], ["TKE_IMPACT_mag", 4], ["TKE_SMOKE_mag", 16],
             ["SmokeShellRed", 4], ["SmokeShellGreen", 4], ["SmokeShellPurple", 4],
-            ["Chemlight_green", 10], ["Chemlight_red", 10], ["ACE_Chemlight_IR", 8]
+            ["Chemlight_green", 10], ["Chemlight_red", 10], ["ACE_Chemlight_IR", 8],
+            ["bolts_infinite", 4]
         ],
         [], []
     ]],
@@ -147,7 +149,7 @@ private _contents = createHashMapFromArray [
         []
     ]],
     ["_44th_Crate_Command_UCNMC", [
-        [["ACE_Vector", 2]],
+        [["Binocular", 2]],
         [],
         [
             ["ItemAndroid", 4], ["ItemMicroDAGR", 4], ["ACE_MapTools", 4],
@@ -160,7 +162,7 @@ private _contents = createHashMapFromArray [
         [],
         [
             ["ACE_CableTie", 20], ["ACE_EarPlugs", 6], ["ACE_Flashlight_XL50", 4],
-            ["ACE_EntrenchingTool", 2], ["tsp_sling", 4]
+            ["ACE_EntrenchingTool", 2], ["tsp_sling", 4], ["AnomalyDetector", 4]
         ],
         [["TKE_LightPackUCN", 2], ["TKE_RuckSackUCMR", 2], ["TKE_AlicePackUCNM_Med", 1]]
     ]]
@@ -178,7 +180,7 @@ clearMagazineCargoGlobal _crate;
 clearBackpackCargoGlobal _crate;
 
 {
-    // ACE_Vector and other plain weapons go in as-is; full builds with attachments.
+    // Binoculars and other plain weapons go in as-is; full builds with attachments.
     _x params ["_w", "_n"];
     if (_w isEqualType "") then {
         _crate addWeaponCargoGlobal [_w, _n];
