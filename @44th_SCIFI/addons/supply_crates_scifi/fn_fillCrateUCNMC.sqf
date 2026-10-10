@@ -26,15 +26,15 @@ if (!isServer) exitWith {};
 waitUntil { uiSleep 0.1; time > 0 };
 
 // Kit weapon builds (no magazine loaded - ammunition ships separately).
-private _ma32b  = ["OPTRE_MA32B", "OPTRE_MA5Suppressor", "OPTRE_M6C_Flashlight", "OPTRE_M6D_Scope_Black", [], [], ""];
-private _ma5k   = ["OPTRE_MA5K", "OPTRE_MA5Suppressor", "OPTRE_M6C_Flashlight", "OPTRE_M6D_Scope_Black", [], [], ""];
-private _m45    = ["OPTRE_M45ATAC", "", "OPTRE_M45_Flashlight", "", [], [], ""];
-private _m392   = ["OPTRE_M392_DMR", "OPTRE_MA5Suppressor", "OPTRE_M6C_Flashlight", "OPTRE_M393_Scope", [], [], "bipod_02_F_blk"];
-private _srs99  = ["OPTRE_SRS99C", "OPTRE_SRS99D_Suppressor", "OPTRE_BMR_Flashlight", "TKE_10xSightV2", [], [], ""];
-private _m739   = ["OPTRE_M739_SAW_Black_F", "", "OPTRE_M6C_Flashlight", "OPTRE_M739_SAW_Smartlink", [], [], "bipod_01_F_blk"];
-private _m41    = ["OPTRE_M41_SSR", "", "", "", [], [], ""];
+private _ma32b  = ["OPTRE_MA32B", "OPTRE_MA5Suppressor", "OPTRE_BMR_Laser", "OPTRE_M6D_Scope_Black", [], [], ""];
+private _ma5k   = ["OPTRE_MA5K", "OPTRE_MA5Suppressor", "OPTRE_BMR_Laser", "OPTRE_M6D_Scope_Black", [], [], ""];
+private _m45    = ["OPTRE_M45ATAC", "", "OPTRE_BMR_Laser", "", [], [], ""];
+private _m392   = ["OPTRE_M392_DMR", "OPTRE_MA5Suppressor", "OPTRE_BMR_Laser", "OPTRE_M393_Scope", [], [], "bipod_02_F_blk"];
+private _srs99  = ["OPTRE_SRS99C", "OPTRE_SRS99D_Suppressor", "OPTRE_BMR_Laser", "TKE_10xSightV2", [], [], ""];
+private _m739   = ["OPTRE_M739_SAW_Black_F", "", "OPTRE_BMR_Laser", "OPTRE_M739_SAW_Smartlink", [], [], "bipod_01_F_blk"];
+private _m6g    = ["OPTRE_M6GGNR", "", "", "", [], [], ""];
 private _pistol = ["TKE_UCNPistol", "", "", "", [], [], ""];
-private _m7     = ["OPTRE_M7_Folded", "OPTRE_M7_silencer", "OPTRE_M6C_Flashlight", "TKE_ReflexSight", [], [], ""];
+private _m7     = ["OPTRE_M7_Folded", "OPTRE_M7_silencer", "OPTRE_BMR_Laser", "TKE_ReflexSight", [], [], ""];
 
 private _contents = createHashMapFromArray [
 
@@ -56,7 +56,7 @@ private _contents = createHashMapFromArray [
         []
     ]],
     ["_44th_Crate_Launchers_UCNMC", [
-        [[_m41, 2]],
+        [[_m6g, 2]],
         [], [], []
     ]],
     ["_44th_Crate_Sidearms_UCNMC", [
@@ -65,9 +65,9 @@ private _contents = createHashMapFromArray [
     ]],
 
     // ── AMMUNITION ───────────────────────────────────────────────────────
-    // MA32B / MA5K
+    // MA32B / MA5K, plus the BPRA5 swap option (Corpsmen, Mailman)
     ["_44th_Crate_RifleAmmo_UCNMC", [
-        [], [["OPTRE_32Rnd_762x51_Mag", 30]], [], []
+        [], [["OPTRE_32Rnd_762x51_Mag", 30], ["TKE_ARX12_62x35_mag", 12]], [], []
     ]],
     // M392 DMR / SRS99C
     ["_44th_Crate_MarksmanAmmo_UCNMC", [
@@ -79,9 +79,9 @@ private _contents = createHashMapFromArray [
     ["_44th_Crate_SupportAmmo_UCNMC", [
         [], [["OPTRE_M739_SAW_192rnd_Box", 8]], [], []
     ]],
-    // M41 SSR
+    // M6 GGNR (laser batteries)
     ["_44th_Crate_LauncherAmmo_UCNMC", [
-        [], [["OPTRE_M41_Twin_AI", 4]], [], []
+        [], [["OPTRE_SpLaser_Battery_Launcher", 4]], [], []
     ]],
     // UCN pistol / M7
     ["_44th_Crate_SidearmAmmo_UCNMC", [
@@ -149,7 +149,7 @@ private _contents = createHashMapFromArray [
         []
     ]],
     ["_44th_Crate_Command_UCNMC", [
-        [["Binocular", 2]],
+        [["OPTRE_Binoculars", 2]],
         [],
         [
             ["ItemAndroid", 4], ["ItemMicroDAGR", 4], ["ACE_MapTools", 4],

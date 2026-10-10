@@ -13,9 +13,9 @@ The 44th Detachment's order of battle as a one-click Eden composition — 29 pla
 [list]
 [*]ZEUS — Game Master, Co-Game Master
 [*]Bulldog — Platoon Commander, Platoon Sergeant, Platoon Corpsman, Radio Operator, Combat Engineer
-[*]Zulu — two 3-man fireteams (Squad Leader, Designated Marksman, Corpsman / Fireteam Leader, Automatic Rifleman (AT), Corpsman)
+[*]Zulu — two 3-man fireteams (Squad Leader, Designated Marksman, Corpsman / Fireteam Leader, Automatic Rifleman (AT), Automatic Rifleman)
 [*]Victor — identical to Zulu
-[*]Romeo — two 4-man fireteams (Squad Leader, Scout Sniper, Automatic Rifleman, Corpsman / Fireteam Leader, Spotter, Automatic Rifleman, Corpsman)
+[*]Romeo — two 4-man fireteams (Squad Leader, Scout Sniper, Automatic Rifleman, Corpsman / Fireteam Leader, Spotter, Automatic Rifleman, Automatic Rifleman (AT))
 [*]Mailman — Aircraft Commander, Co-Pilot, Crew Chief, Vehicle Commander
 [/list]
 

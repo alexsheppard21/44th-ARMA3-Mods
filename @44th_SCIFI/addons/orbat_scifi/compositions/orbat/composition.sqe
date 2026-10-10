@@ -1154,7 +1154,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Zulu 2-3 (Corpsman)@Zulu";
+					description="Zulu 2-3 (Automatic Rifleman)@Zulu";
 					isPlayable=1;
 				};
 				id=358;
@@ -1171,7 +1171,7 @@ class items
 							class data
 							{
 								singleType="SCALAR";
-								value=1.03;
+								value=0.91000003;
 							};
 						};
 					};
@@ -1184,24 +1184,11 @@ class items
 							class data
 							{
 								singleType="STRING";
-								value="UCNMC_Corpsman";
+								value="UCNMC_Heavy";
 							};
 						};
 					};
 					class Attribute2
-					{
-						property="ace_isMedic";
-						expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-						class Value
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=2;
-							};
-						};
-					};
-					class Attribute3
 					{
 						property="TFAR_freq_sr";
 						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
@@ -1210,11 +1197,11 @@ class items
 							class data
 							{
 								singleType="STRING";
-								value="161.1,181";
+								value="161.1";
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=3;
 				};
 			};
 		};
@@ -1603,7 +1590,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Victor 2-3 (Corpsman)@Victor";
+					description="Victor 2-3 (Automatic Rifleman)@Victor";
 					isPlayable=1;
 				};
 				id=367;
@@ -1620,7 +1607,7 @@ class items
 							class data
 							{
 								singleType="SCALAR";
-								value=1.03;
+								value=0.91000003;
 							};
 						};
 					};
@@ -1633,24 +1620,11 @@ class items
 							class data
 							{
 								singleType="STRING";
-								value="UCNMC_Corpsman";
+								value="UCNMC_Heavy";
 							};
 						};
 					};
 					class Attribute2
-					{
-						property="ace_isMedic";
-						expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-						class Value
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=2;
-							};
-						};
-					};
-					class Attribute3
 					{
 						property="TFAR_freq_sr";
 						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
@@ -1659,11 +1633,11 @@ class items
 							class data
 							{
 								singleType="STRING";
-								value="151.1,181";
+								value="151.1";
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=3;
 				};
 			};
 		};
@@ -2174,7 +2148,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					description="Romeo 2-4 (Corpsman)@Romeo";
+					description="Romeo 2-4 (Automatic Rifleman (AT))@Romeo";
 					isPlayable=1;
 				};
 				id=376;
@@ -2191,7 +2165,7 @@ class items
 							class data
 							{
 								singleType="SCALAR";
-								value=1.03;
+								value=0.91000003;
 							};
 						};
 					};
@@ -2204,24 +2178,11 @@ class items
 							class data
 							{
 								singleType="STRING";
-								value="UCNMC_Corpsman";
+								value="UCNMC_HeavyAT";
 							};
 						};
 					};
 					class Attribute2
-					{
-						property="ace_isMedic";
-						expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-						class Value
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=2;
-							};
-						};
-					};
-					class Attribute3
 					{
 						property="TFAR_freq_sr";
 						expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
@@ -2230,11 +2191,11 @@ class items
 							class data
 							{
 								singleType="STRING";
-								value="141.1,181";
+								value="141.1";
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=3;
 				};
 			};
 		};

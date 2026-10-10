@@ -27,12 +27,12 @@ ammunition is always its own crate.
 | UCNMC Weapons | Rifles | 2× MA32B, 2× MA5K, 1× M45 ATAC | Long |
 | UCNMC Weapons | Marksman | 1× M392 DMR, 1× SRS99C, ballistics kit | Long |
 | UCNMC Weapons | Support (SAW) | 2× M739 SAW, 2 spare barrels | Long |
-| UCNMC Weapons | Launchers | 2× M41 SSR | Long |
+| UCNMC Weapons | Launchers | 2× M6 GGNR | Long |
 | UCNMC Weapons | Sidearms | 3× UCN pistol, 2× M7 | Small |
 | UCNMC Ammunition | Rifle | 30× MA32B/MA5K mags | Small |
 | UCNMC Ammunition | Marksman / Sniper | DMR mags, SRS99 HVAP + APFSDS | Small |
 | UCNMC Ammunition | Support (SAW) | 8× 192rnd boxes | Small |
-| UCNMC Ammunition | Launcher | 4× M41 rockets | Small |
+| UCNMC Ammunition | Launcher | 4× M6 GGNR batteries | Small |
 | UCNMC Ammunition | Sidearm | UCN pistol + M7 mags | Small |
 | UCNMC Ammunition | Shotgun | 8 gauge pellets, slugs, HEDP | Small |
 | UCNMC Ammunition | Grenades & Signals | frag, impact, smoke, signal smoke, chemlights, bags of bolts | Small |
@@ -53,7 +53,7 @@ SciFi's `data_UCNMC.sqf`), so a crate can never hand out ammunition for a weapon
 nobody in the detachment carries. **When a kit's weapon changes, update the
 matching entry in the contents table too** — nothing checks this automatically.
 
-Most weapons are OPTRE (MA32B/MA5K, M392 DMR, M739 SAW, M41 SSR, SRS99C, M45
+Most weapons are OPTRE (MA32B/MA5K, M392 DMR, M739 SAW, M6 GGNR, SRS99C, M45
 ATAC, M7); the UCN pistol, grenades and most gear are TKE. Coloured signal smoke
 is vanilla — TKE ships frag, impact and white smoke only.
 

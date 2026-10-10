@@ -9,9 +9,9 @@ Eden composition under **44th Mods → Compositions**.
 |---|---|
 | ZEUS | Game Master, Co-Game Master |
 | Bulldog | Platoon Commander, Platoon Sergeant, Platoon Corpsman, Radio Operator, Combat Engineer |
-| Zulu | Two 3-man fireteams (Squad Leader, Designated Marksman, Corpsman / Fireteam Leader, Automatic Rifleman (AT), Corpsman) |
+| Zulu | Two 3-man fireteams (Squad Leader, Designated Marksman, Corpsman / Fireteam Leader, Automatic Rifleman (AT), Automatic Rifleman) |
 | Victor | Identical to Zulu |
-| Romeo | Two 4-man fireteams (Squad Leader, Scout Sniper, Automatic Rifleman, Corpsman / Fireteam Leader, Spotter, Automatic Rifleman, Corpsman) |
+| Romeo | Two 4-man fireteams (Squad Leader, Scout Sniper, Automatic Rifleman, Corpsman / Fireteam Leader, Spotter, Automatic Rifleman, Automatic Rifleman (AT)) |
 | Mailman | Aircraft Commander, Co-Pilot, Crew Chief, Vehicle Commander |
 
 29 playable slots plus two Zeus, with vehicles and drop pods included.
@@ -31,7 +31,7 @@ role's appearance rather than two. The two Zeus slots carry the Platoon Commande
 
 Set per slot in the composition, matching the RBN platoon in the BAF ORBAT.
 
-- **Corpsmen** (all seven, including the Platoon Corpsman) are ACE **Doctors**.
+- **Corpsmen** (all four, including the Platoon Corpsman) are ACE **Doctors**.
 - **Combat Engineer** is an ACE **Advanced Engineer** and **Explosive Specialist**.
 
 TFAR frequencies (short range / long range):
