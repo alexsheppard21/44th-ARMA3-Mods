@@ -1,0 +1,72 @@
+[h1]44th Cold War[/h1]
+
+The Cold War half of the 44th Battalion Framework, built on Spearpoint Alpha and Cold War Rearmed III for operations set between 1960 and 1980. Adds the order of battle, loadouts and supply crates for the Royal Marines, 2 Para and Mechanised Infantry. Requires [b]44th Battalion Framework[/b] alongside it.
+
+[hr][/hr]
+
+[h2]What's Inside[/h2]
+
+[b]44th ORBAT — Cold War[/b]
+A one-click Eden composition with 113 playable slots, vehicles and a logistics point. Three full companies sit side by side so a mission maker can keep the one the operation calls for. Every slot spawns already wearing its full role loadout, no crate visit needed. Also adds the 44th Master Kit Crate (Cold War), which shows each player only their own kit.
+
+[b]Structure:[/b]
+[list]
+[*]Regimental Command — GHQ, Zeus
+[*]Royal Marines — Bulldog (Plt. IC, RTO, 3 Medics), Zulu, Victor, Romeo (LMG and GPMG groups), Juliet
+[*]2 Para — Bulldog, Zulu, Victor, Romeo (GPMG group with a section Medic), Juliet
+[*]Mechanised Infantry — organised as 2 Para
+[*]Juliet in each company — Plt. SGT, Engineer, 2-man Mortar team, 2-man HAT team
+[*]Mailman — 4 Pilots
+[*]Anvil 1-1 and 1-2 — Commander, Driver, Gunner, Loader
+[/list]
+
+[b]44th Kit Core — Cold War[/b]
+47 role loadouts across the three companies and the shared crews, in the same kit library as the rest of the framework, so a player's spawn kit and kit crate always match.
+
+[b]44th Berets — Cold War[/b]
+The 44th cap badge on a beret in sand, maroon, green, black, blue or khaki, available in the kit menu.
+
+[b]44th Supply Crates — Cold War[/b]
+Pre-configured supply crates on CWR3 models, placed in Eden under 44th Mods → Supply Crates, or requested in-game from a 44th Logistics Point (Cold War).
+
+Each crate does one job, so crates stay small and players only pull what they need. Weapons come without magazines — ammunition is always its own crate.
+
+[b]Crates included:[/b]
+[list]
+[*]Weapons — Rifles (SLR), LMG (L4), GPMG (L7), Launchers, 2 Inch Mortar, Sidearms
+[*]Ammunition — Rifle, LMG, GPMG, Carl Gustav, 2 Inch Mortar, Sidearm, Grenades & Signals
+[*]Medical — Basic, Advanced (Medic)
+[*]Specialist — Engineer, Command (Bulldog), Equipment, Flare Pistols
+[/list]
+
+Contents are drawn from the same kits players spawn with, so a crate can never hand out ammunition for a weapon nobody carries.
+
+[hr][/hr]
+
+[h2]Requirements[/h2]
+
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=450814997]CBA_A3[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=463939057]ACE3[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3300894429]WBK Kit Menu[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2296251132]Spearpoint Alpha[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=497660133]CUP Weapons[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2316343124]Cold War Rearmed III[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2521566285]Cold War Rearmed III - British Armed Forces[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2020940806]KAT - Advanced Medical[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=894678801]Task Force Arrowhead Radio (BETA!!!)[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3755893366]44th Battalion Framework[/url] (this mod's engine — subscribe alongside this one)
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3522669909]44th Core[/url] (breaching gear and cigarettes in the kits)
+[/list]
+
+[hr][/hr]
+
+[h2]Links[/h2]
+[list]
+[*][b]Discord:[/b] [url=https://discord.gg/44tharma]discord.gg/44tharma[/url] — join the 44th Royal Battalion today!
+[*][b]Source (GitHub):[/b] [url=https://github.com/alexsheppard21/44th-ARMA3-Mods.git]github.com/alexsheppard21/44th-ARMA3-Mods.git[/url]
+[/list]
+
+[hr][/hr]
+
+[i]Built for the 44th Royal Battalion by FullMetalShep. ORBAT composition by Rydelta.[/i]

@@ -15,6 +15,8 @@ packages that call into this API from their own preInit:
   Ranger, SFSG, SRR, SAS.
 - **[Kit Core SciFi](../../../@44th_SCIFI/addons/kit_core_scifi/)** (`@44th_SCIFI`) — UCNMC (UCN Marine
   Corp).
+- **[Kit Core CW](../../../@44th_CW/addons/kit_core_cw/)** (`@44th_CW`) — Royal Marines, 2 Para,
+  Mechanised Infantry, and the crews they share.
 
 Splitting it this way means this addon, and anything that only depends on it
 (Kit Crates), never requires 3CB, TKE or OPTRE, and loads identically on every
@@ -63,12 +65,12 @@ attribute calls `FTH_fnc_applyKit`, so units spawn fully kitted. The legacy
 ## Editing loadouts
 
 1. Edit the relevant `data_<FACTION>.sqf` fragment (loadout + allowed-swap
-   list) in [Kit Core BAF](../../../@44th_BAF/addons/kit_core_baf/) or [Kit Core SciFi](../../../@44th_SCIFI/addons/kit_core_scifi/),
+   list) in [Kit Core BAF](../../../@44th_BAF/addons/kit_core_baf/), [Kit Core SciFi](../../../@44th_SCIFI/addons/kit_core_scifi/) or [Kit Core CW](../../../@44th_CW/addons/kit_core_cw/),
    whichever faction it belongs to.
 2. To change which kit a *slot* uses, edit that unit's **FTH_kit** attribute in
    the composition (Eden → unit → Attributes), not the class maps.
 3. **Bump the version in that faction package's `script_version.hpp`**
-   (`FTH_KIT_VERSION_BAF` or `FTH_KIT_VERSION_SCIFI`). Bump this addon's own
+   (`FTH_KIT_VERSION_BAF`, `FTH_KIT_VERSION_SCIFI` or `FTH_KIT_VERSION_CW`). Bump this addon's own
    `FTH_KIT_VERSION` only when Kit Core itself changes. Clients whose versions
    differ from the server's get a persistent notice (see `fn_versionControl.sqf`).
 4. Re-pack this PBO and the faction package(s) you touched, and re-sign for the
@@ -83,7 +85,7 @@ attribute calls `FTH_fnc_applyKit`, so units spawn fully kitted. The legacy
 ## Version control
 
 Every package holding kit data bakes its own version into `FTH_KitVersions` at
-preInit — `Core` (this addon's `FTH_KIT_VERSION`), `BAF` and `SCIFI` (each
+preInit — `Core` (this addon's `FTH_KIT_VERSION`), `BAF`, `SCIFI` and `CW` (each
 faction package's own `script_version.hpp`). The server publishes its set, and
 every client compares each package the server has against its own; a package
 missing on the client counts as a mismatch, extra client-only packages are

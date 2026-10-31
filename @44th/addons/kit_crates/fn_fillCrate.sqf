@@ -2,17 +2,21 @@
     Fills a kit crate from the shared loadout library (44th_KitCore / FTH_Kits),
     so crate contents can never drift from what players spawn with.
 
-    Params: [_crate, _faction]
-      _faction = "RBN" | "RBNSUP" | "RANGER" | "SFSG" | "SRR" | "SAS"
+    Params: [_crate, _faction, _masterFactions]
+      _faction = "RBN" | "RBNSUP" | "RANGER" | "SFSG" | "SRR" | "SAS" | "UCNMC"
+                 | "CWRM" | "CWPARA" | "CWMECH" | "CWCREW"
                  -> registers every kit for that faction (Zeus can re-role here).
       _faction = "MASTER"
-                 -> registers ALL kits, each gated by a condition so a player
-                    only sees the kit matching their own role (FTH_roleKey).
+                 -> registers the kits of every faction in _masterFactions, each
+                    gated by a condition so a player only sees the kit matching
+                    their own role (FTH_roleKey). Each modpack's ORBAT addon
+                    ships its own master crate with its own faction list. An
+                    empty list means every kit (the retired shared crate).
 
     Requires WBK Kits (Wbk_AddKit). If WBK Kits or KitCore is absent, the crate is
     left empty after a safe timeout.
 */
-params ["_crate", ["_faction", ""]];
+params ["_crate", ["_faction", ""], ["_masterFactions", []]];
 
 private _timeout = time + 60;
 waitUntil { !isNil "Wbk_AddKit" || time > _timeout };
@@ -28,7 +32,12 @@ private _isMaster = (_faction == "MASTER");
 
 {
     _y params ["_name", "_kitFaction", "_loadout", "_swap"];
-    if (_isMaster || {_kitFaction == _faction}) then {
+    private _wanted = if (_isMaster) then {
+        _masterFactions isEqualTo [] || {_kitFaction in _masterFactions}
+    } else {
+        _kitFaction == _faction
+    };
+    if (_wanted) then {
         // Master crate: show a kit only to the player whose role matches it.
         private _cond = "true";
         if (_isMaster) then {

@@ -5,8 +5,8 @@
 Kit crates and the on-spawn kit menu for the 44th. Players normally spawn already kitted (via ORBAT + Kit Core); these crates are for **customising within a role's allowed parameters** and for **re-roling**.
 
 - **On-spawn kit menu** — on a player's *first* spawn only (not respawns), the WBK Kits menu auto-opens on a box scoped to their faction. They see every kit in their group but only their own role's kit is selectable, so other factions never appear (see [On-spawn kit menu](#on-spawn-kit-menu) below).
-- **Master Kit Crate** — holds every kit but shows each player only the one matching their ORBAT role (`FTH_roleKey`). A placed crate players interact with to tweak their loadout.
-- **Per-faction crates** (RBN, RBN Support, RANGER, SFSG, SRR, SAS, UCNMC) — show all of that faction's kits. Kept mainly for Zeus to re-role players on the fly.
+- **Master Kit Crates** — one per modpack, shipped by that pack's ORBAT addon rather than here: **(BAF)**, **(SciFi)** and **(Cold War)**. Each holds that pack's kits but shows each player only the one matching their ORBAT role (`FTH_roleKey`). A placed crate players interact with to tweak their loadout. All three call this addon's `fn_fillCrate.sqf` with their faction list. The old shared `_44th_KitCrate_MASTER` is hidden from the editor but kept, so existing missions still load.
+- **Per-faction crates** (RBN, RBN Support, RANGER, SFSG, SRR, SAS, UCNMC, and the four Cold War crates) — show all of that faction's kits. Kept mainly for Zeus to re-role players on the fly.
 
 All loadouts are read from **Kit Core** (`FTH_Kits`), so crate contents always match what players spawn with. Crates are placed in the Eden Editor under **44th Mods → Kit Crates**.
 
@@ -98,6 +98,13 @@ The detachment fielded on a SciFi night: a five-man platoon headquarters (Bulldo
 Roles: Platoon Commander, Platoon Sergeant, Platoon Corpsman, Radio Operator, Combat Engineer, Squad Leader, Fireteam Leader, Designated Marksman, Automatic Rifleman, Automatic Rifleman (AT), Corpsman, Scout Sniper, Scout Sniper (Spotter), Aircraft Commander, Co-Pilot, Crew Chief, Vehicle Commander
 
 The crate is a vanilla box like the rest, because this addon loads on any modlist. Its kits only register when TKE is present, so on a BAF night the crate is simply empty.
+
+### Cold War Kit Crates
+**Royal Marines, 2 Para, Mechanised Infantry, Aircrew & Armour** — Cold War modlist (Spearpoint / CWR3)
+
+One crate per company, plus one for the Mailman aircrew and Anvil armour crews the three companies share. Same deal as UCNMC: vanilla boxes, empty unless Kit Core CW has registered its kits.
+
+Roles: Platoon IC, Platoon SGT, Platoon RTO, Medic, Section IC, Section 2IC, Rifleman, GPMG No.1, GPMG No.2, Mortar No.1, Mortar No.2, HAT No.1, HAT No.2, Engineer, plus LMG No.1 and LMG No.2 (Royal Marines only). Crew crate: Pilot, Crew Commander, Crew.
 
 ---
 

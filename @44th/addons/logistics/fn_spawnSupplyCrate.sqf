@@ -28,10 +28,12 @@ private _known = false;
 if (!_known) exitWith {};
 
 // Drop on clear ground around the point, working outwards from directly behind
-// it, so repeated requests don't stack crates inside each other.
-private _dropPos = _point getRelPos [3, 180];
+// it, so repeated requests don't stack crates inside each other. Clear the
+// point's own footprint too: 3m is fine for a crate but lands inside a container.
+private _dropDist = 3 max (((boundingBoxReal _point) select 2) + 1);
+private _dropPos = _point getRelPos [_dropDist, 180];
 {
-    private _candidate = _point getRelPos [3, _x];
+    private _candidate = _point getRelPos [_dropDist, _x];
     // "House" catches crate models built on House_F rather than ReammoBox_F
     // (the OPTRE weapon crates are), so those don't get stacked either.
     if ((nearestObjects [_candidate, ["ReammoBox_F", "ThingX", "House"], 1.5]) isEqualTo []) exitWith {

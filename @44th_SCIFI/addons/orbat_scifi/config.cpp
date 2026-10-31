@@ -3,8 +3,8 @@
     class _44th_ORBAT_SciFi
     {
         // The composition places vanilla soldier objects and kits them from Kit
-        // Core, so this addon defines no units of its own.
-        units[] = {};
+        // Core, so this addon's only object is its master kit crate.
+        units[] = { "_44th_KitCrate_MASTER_SCIFI" };
         weapons[] = {};
         requiredVersion = 0.1;
         // Hard-requires its modpack: on a modlist without it, skip this addon
@@ -15,12 +15,13 @@
             "cba_xeh",
             "KitCore_44th",
             "KitCore_SciFi_44th",
+            "KitCrates_44th",
             "Logistics_44th",
             "TKE_Unit_Groups",
             "OPTRE_Vehicles_Warthog"
         };
         author = "FullMetalShep";
-        version = 1;
+        version = 2;
     };
 };
 
@@ -32,6 +33,26 @@ class CfgEditorCategories
 class CfgEditorSubcategories
 {
     class FTH_Sub_44th_Compositions { displayName = "Compositions"; };
+};
+
+class CfgVehicles
+{
+    class C_IDAP_supplyCrate_F;
+
+    // Master crate: holds every SciFi kit, but each player only sees the kit for
+    // their own ORBAT role. Vanilla box like the rest of the kit crates.
+    class _44th_KitCrate_MASTER_SCIFI : C_IDAP_supplyCrate_F
+    {
+        displayName = "44th Master Kit Crate (SciFi)";
+        author = "FullMetalShep";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_KitCrates";
+    };
+};
+
+class Extended_InitPost_EventHandlers
+{
+    class _44th_KitCrate_MASTER_SCIFI { class _44th_kitcrates { init = "[(_this select 0), 'MASTER', ['UCNMC']] execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
 };
 
 class Cfg3DEN

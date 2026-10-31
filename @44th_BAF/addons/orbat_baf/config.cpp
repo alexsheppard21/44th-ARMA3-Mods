@@ -56,16 +56,18 @@
             "_44th_SAS_TeamLead_Victor","_44th_SAS_Signaller","_44th_SAS_Marksman","_44th_SAS_Specialist",
             "_44th_SAS_TeamLead_Romeo","_44th_SAS_LeadScout_Romeo","_44th_SAS_PointMan_Romeo","_44th_SAS_Medic_Romeo",
             "_44th_SAS_Sniper","_44th_SAS_Spotter","_44th_SAS_SupportGunner","_44th_SAS_DroneCarrier",
-            "_44th_SAS_JSFAWPilot"
+            "_44th_SAS_JSFAWPilot",
+            // Kit crate
+            "_44th_KitCrate_MASTER_BAF"
         };
         weapons[] = {};
         requiredVersion = 0.1;
         // Hard-requires its modpack: on a modlist without it, skip this addon
         // quietly instead of raising a missing-addon warning and loading broken.
         skipWhenMissingDependencies = 1;
-        requiredAddons[] = { "A3_Characters_F", "UK3CB_BAF_Units_ACE", "cba_xeh", "KitCore_44th", "KitCore_BAF_44th", "Logistics_44th" };
+        requiredAddons[] = { "A3_Characters_F", "UK3CB_BAF_Units_ACE", "cba_xeh", "KitCore_44th", "KitCore_BAF_44th", "KitCrates_44th", "Logistics_44th" };
         author = "FullMetalShep";
-        version = 31;
+        version = 32;
     };
 };
 
@@ -90,6 +92,17 @@ class CfgVehicles
 {
     class B_Soldier_unarmed_F;
     class _44th_OrbatUnit : B_Soldier_unarmed_F { scope = 1; };
+    class C_IDAP_supplyCrate_F;
+
+    // Master crate: holds every BAF kit, but each player only sees the kit for
+    // their own ORBAT role. Vanilla box like the rest of the kit crates.
+    class _44th_KitCrate_MASTER_BAF : C_IDAP_supplyCrate_F
+    {
+        displayName = "44th Master Kit Crate (BAF)";
+        author = "FullMetalShep";
+        editorCategory = "FTH_Cat_44thMods";
+        editorSubcategory = "FTH_Sub_KitCrates";
+    };
 
     // â”€â”€â”€ Regimental HQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
@@ -977,6 +990,7 @@ class CfgVehicles
 
 class Extended_InitPost_EventHandlers
 {
+    class _44th_KitCrate_MASTER_BAF { class _44th_kitcrates { init = "[(_this select 0), 'MASTER', ['RBN','RBNSUP','RANGER','SFSG','SRR','SAS']] execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
     class _44th_Reg_LeadZeus { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_RA','COLONEL','180','50,42'] execVM '\44th_ORBAT\orbat\fn_initZeus.sqf';"; }; };
     class _44th_Reg_CoZeus { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_RA','MAJOR','180','50,42'] execVM '\44th_ORBAT\orbat\fn_initZeus.sqf';"; }; };
     class _44th_RBN_PlatoonCommander { class _44th_orbat { init = "[(_this select 0),'UK3CB_BAF_H_Beret_RA','CAPTAIN','180','50,42'] execVM '\44th_ORBAT\orbat\fn_initUnit.sqf';"; }; };

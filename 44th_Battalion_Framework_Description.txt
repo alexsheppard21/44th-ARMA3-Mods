@@ -2,7 +2,7 @@
 
 The complete framework for the 44th's milsim operations; the full order of battle, the shared kit library, kit-selection crates, and supply crates, all bundled into a single mod.
 
-Place the entire ORBAT in one click, and every slot spawns kitted, playable, and can be re-roled on the fly. Supports both BAF and Sci-Fi campaigns.
+Place the entire ORBAT in one click, and every slot spawns kitted, playable, and can be re-roled on the fly. Supports BAF, Sci-Fi and Cold War campaigns.
 
 [hr][/hr]
 
@@ -15,7 +15,7 @@ The complete 44th order of battle as one-click Eden compositions. Includes BAF (
 The single source of truth for every role's loadout. Both the ORBAT (spawn kitting) and the Kit Crates (customisation) read from it, so a player's spawn kit and the crate contents can never drift apart. Also enforces kit version control between server and clients. Contains loadouts for RBN, RBN Support, Ranger, SFSG, SRR, SAS (BAF) and UCNMC Marine Corps (Sci-Fi).
 
 [b]44th Kit Crates[/b]
-For customising within a role's allowed parameters and for re-roling. On a player's first spawn, the kit menu auto-opens scoped to their faction. Includes a Master Kit Crate (shows each player only their own role's kit) plus per-faction crates (RBN, RBN Support, Ranger, SFSG, SRR, SAS) for Zeus to re-role on the fly.
+For customising within a role's allowed parameters and for re-roling. On a player's first spawn, the kit menu auto-opens scoped to their faction. Includes a Master Kit Crate per modpack (shows each player only their own role's kit) plus per-faction crates (RBN, RBN Support, Ranger, SFSG, SRR, SAS) for Zeus to re-role on the fly.
 
 [b]44th Supply Crates[/b]
 Pre-configured supply crates for 44th loadouts. BAF: medical, fire support, precision, anti-armour, breaching/EOD, sniper ammo, and full section resupply. UCNMC: focused single-job crates — weapons, ammunition by weapon type, basic and advanced medical, engineer, mines, command and equipment. Placed in Eden under 44th Mods → Supply Crates. BAF crates load when UK3CB is present; UCNMC crates load when TKE is present.
@@ -37,6 +37,13 @@ Shared ACE interaction system for requesting and spawning supply crates. Works o
 [b]For BAF ORBAT & Crates:[/b]
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2382830257]UK3CB BAF Units (ACE)[/url]
+[/list]
+
+[b]For Cold War ORBAT & Crates:[/b]
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2296251132]Spearpoint Alpha[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2316343124]Cold War Rearmed III[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2521566285]Cold War Rearmed III - British Armed Forces[/url]
 [/list]
 
 [b]For Sci-Fi ORBAT & Crates:[/b]

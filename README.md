@@ -2,9 +2,9 @@
 
 This repository contains **44th Battalion Framework** — the Arma 3 mod for the 44th Royal Battalion, a British-themed milsim unit part of the wider 44th Gaming Group. It bundles the unit's ORBAT, shared kit library, kit-selection crates, and supply crates into a single mod (`@44th`), built around our specific loadouts, structure, and playstyle.
 
-The framework ships as **three launcher entries**, split by what each part depends on. `@44th` holds the modpack-agnostic half (Kit Core, Kit Crates and the shared Logistics engine) and loads on any modlist. `@44th_BAF` holds the half built on 3CB BAF classes (ORBAT and Supply Crates) and loads only on the modern milsim pack. `@44th_SCIFI` holds the half built on OPTRE and TKE classes (UCNMC Supply Crates) and loads only on the SciFi pack.
+The framework ships as **four launcher entries**, split by what each part depends on. `@44th` holds the modpack-agnostic half (Kit Core, Kit Crates and the shared Logistics engine) and loads on any modlist. `@44th_BAF` holds the half built on 3CB BAF classes (ORBAT and Supply Crates) and loads only on the modern milsim pack. `@44th_SCIFI` holds the half built on OPTRE and TKE classes (UCNMC Supply Crates) and loads only on the SciFi pack. `@44th_CW` holds the half built on Spearpoint and CWR3 classes (ORBAT and Supply Crates) and loads only on the Cold War pack.
 
-The split exists because those addons inherit directly from `UK3CB_BAF_*` and `OPTRE_*` config classes. Config inheritance is resolved at load, so they cannot run without their modpack present — there is no runtime guard that can save them. Kit Core, Kit Crates and Logistics have no such tie: the kit crates derive from a vanilla box and fill themselves from `FTH_Kits` at runtime, and each faction's kits only register when that faction's mods are loaded.
+The split exists because those addons inherit directly from `UK3CB_BAF_*`, `OPTRE_*` and `cwr3_*` config classes. Config inheritance is resolved at load, so they cannot run without their modpack present — there is no runtime guard that can save them. Kit Core, Kit Crates and Logistics have no such tie: the kit crates derive from a vanilla box and fill themselves from `FTH_Kits` at runtime, and each faction's kits only register when that faction's mods are loaded.
 
 Each component keeps its own PBO prefix, so it can still be built and used standalone if needed.
 
@@ -24,7 +24,7 @@ Each component keeps its own PBO prefix, so it can still be built and used stand
 
 ## Components
 
-The framework is built from eight addons across the three entries — three under [`@44th/addons/`](@44th/addons/) (shared, loads on any modlist), three under [`@44th_BAF/addons/`](@44th_BAF/addons/) (milsim only), and two under [`@44th_SCIFI/addons/`](@44th_SCIFI/addons/) (SciFi only). Kit Core itself is split the same way: the shared engine lives in `@44th`, and each modpack's actual loadout data lives in its own package (`kit_core_baf`, `kit_core_scifi`) so the two halves ship, load and can be dropped independently. Neither faction's kit data can end up in a PBO that requires the other's modpack.
+The framework is built from thirteen addons across the four entries — three under [`@44th/addons/`](@44th/addons/) (shared, loads on any modlist), three under [`@44th_BAF/addons/`](@44th_BAF/addons/) (milsim only), three under [`@44th_SCIFI/addons/`](@44th_SCIFI/addons/) (SciFi only), and four under [`@44th_CW/addons/`](@44th_CW/addons/) (Cold War only). Kit Core itself is split the same way: the shared engine lives in `@44th`, and each modpack's actual loadout data lives in its own package (`kit_core_baf`, `kit_core_scifi`, `kit_core_cw`) so each half ships, loads and can be dropped independently. No faction's kit data can end up in a PBO that requires another's modpack.
 
 ### [Supply Crates](@44th_BAF/addons/supply_crates_baf/) — `@44th_BAF`
 [![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3742862207)
@@ -72,7 +72,7 @@ Adds the full 44th order of battle. The complete ORBAT places in one click as an
 Kit crates for browsing and customising loadouts. On a player's **first spawn** the kit menu auto-opens on a box scoped to their faction — they see every kit in their group but only their own role's kit is selectable, so other factions never clutter the UI. The **Master Kit Crate** likewise shows each player only the kit for their own ORBAT role. The per-faction crates remain for Zeus to re-role players on the fly. All loadouts come from Kit Core, so crate contents always match what players spawn with. Crates appear in the Eden Editor under **44th Mods → Kit Crates**.
 
 **Crates included:**
-- Master — every kit, filtered to the player's role
+- Master — one per modpack, in each ORBAT addon; every kit in that pack, filtered to the player's role
 - RBN — Section roles + Platoon HQ
 - RBN Support — Support weapons roles
 - RANGER — SF team roles
@@ -110,6 +110,32 @@ Adds the 44th Detachment's SciFi order of battle as a one-click Eden composition
 
 ---
 
+### [Supply Crates — Cold War](@44th_CW/addons/supply_crates_cw/) — `@44th_CW`
+
+Supply crates and a logistics point for the Cold War modlist (1960–1980), on CWR3 crate models. Crates appear in the Eden Editor under **44th Mods → Supply Crates**.
+
+Each crate does one job, as on the SciFi side, and all three companies share one catalogue because they carry the same weapons.
+
+**Crates included:**
+- Weapons — Rifles (SLR), LMG (L4), GPMG (L7), Launchers, 2 Inch Mortar, Sidearms
+- Ammunition — Rifle, LMG, GPMG, Carl Gustav, 2 Inch Mortar, Sidearm, Grenades & Signals
+- Medical — Basic, Advanced (Medic)
+- Specialist — Engineer, Command (Bulldog), Equipment, Flare Pistols
+
+Also adds the **44th Logistics Point (Cold War)** under **44th Mods → Logistics**.
+
+**Requires:** CBA_A3, ACE3, Spearpoint Alpha, CUP Weapons, Cold War Rearmed III, 44th Logistics
+
+---
+
+### [ORBAT — Cold War](@44th_CW/addons/orbat_cw/) — `@44th_CW`
+
+Adds the Cold War order of battle as a one-click Eden composition: Royal Marines, 2 Para and Mechanised Infantry side by side, plus Regimental Command, Mailman and Anvil, for 113 playable slots. Every slot spawns already kitted from Kit Core CW, no crate visit needed.
+
+**Requires:** CBA_A3, Spearpoint Alpha, Cold War Rearmed III, Cold War Rearmed III - British Armed Forces, 44th Kit Core, 44th Kit Crates, Kit Core CW, Supply Crates CW, 44th Logistics
+
+---
+
 ### [Logistics](@44th/addons/logistics/) — `@44th`
 
 The shared engine behind every logistics point: the ACE "Request Supplies" menu, server-side crate spawning, and runtime point registration. Ships no crates of its own — each supply-crate addon registers its catalogue at preInit, so the point works on a BAF night, a SciFi night, or both. A dependency of both supply-crate addons; ships no editor objects.
@@ -137,6 +163,22 @@ Registers the milsim half of the roster (RBN, RBN Support, Ranger, SFSG, SRR, SA
 ### [Kit Core — SciFi](@44th_SCIFI/addons/kit_core_scifi/) — `@44th_SCIFI`
 
 Registers the SciFi half of the roster (UCNMC — UCN Marine Corp) into Kit Core's shared library. Split out from Kit Core itself so the SciFi loadout data ships, loads and can be dropped independently of the milsim half — this addon never requires 3CB. Ships no editor objects.
+
+**Requires:** CBA_A3, 44th Kit Core
+
+---
+
+### [Berets — Cold War](@44th_CW/addons/berets_cw/) — `@44th_CW`
+
+The CWR3 beret with the 44th cap badge in sand, maroon, green, black, blue and khaki, as kit menu options. Ships no editor objects.
+
+**Requires:** Cold War Rearmed III, Cold War Rearmed III - British Armed Forces
+
+---
+
+### [Kit Core — Cold War](@44th_CW/addons/kit_core_cw/) — `@44th_CW`
+
+Registers the Cold War half of the roster (Royal Marines, 2 Para, Mechanised Infantry, and the aircrew and armour crews they share) into Kit Core's shared library. Ships no editor objects.
 
 **Requires:** CBA_A3, 44th Kit Core
 
