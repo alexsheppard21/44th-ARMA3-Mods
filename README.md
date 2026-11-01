@@ -170,7 +170,7 @@ Registers the SciFi half of the roster (UCNMC — UCN Marine Corp) into Kit Core
 
 ### [Berets — Cold War](@44th_CW/addons/berets_cw/) — `@44th_CW`
 
-The CWR3 beret with the 44th cap badge in sand, maroon, green, black, blue and khaki, as kit menu options. Ships no editor objects.
+The CWR3 beret with the 44th cap badge in one colour per role type (SF, Infantry, Commando, Support, Paratrooper, Light Infantry, Armoured), as kit menu options for the roles that wear that colour. Ships no editor objects.
 
 **Requires:** Cold War Rearmed III, Cold War Rearmed III - British Armed Forces
 

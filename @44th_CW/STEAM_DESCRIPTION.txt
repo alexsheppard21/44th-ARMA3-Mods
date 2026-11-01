@@ -21,10 +21,10 @@ A one-click Eden composition with 113 playable slots, vehicles and a logistics p
 [/list]
 
 [b]44th Kit Core — Cold War[/b]
-47 role loadouts across the three companies and the shared crews, in the same kit library as the rest of the framework, so a player's spawn kit and kit crate always match.
+48 role loadouts across the three companies, the shared crews and Zeus, in the same kit library as the rest of the framework, so a player's spawn kit and kit crate always match.
 
 [b]44th Berets — Cold War[/b]
-The 44th cap badge on a beret in sand, maroon, green, black, blue or khaki, available in the kit menu.
+The 44th cap badge on a beret for each role type: SF, Infantry, Commando, Support, Paratrooper, Light Infantry and Armoured. Available in the kit menu for roles that wear that beret.
 
 [b]44th Supply Crates — Cold War[/b]
 Pre-configured supply crates on CWR3 models, placed in Eden under 44th Mods → Supply Crates, or requested in-game from a 44th Logistics Point (Cold War).

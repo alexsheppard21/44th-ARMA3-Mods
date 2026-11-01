@@ -2,7 +2,7 @@
     FTH_fnc_initFactionsCW  (preInit)
 
     Registers the Cold War half of the roster (Royal Marines, 2 Para, Mechanised
-    Infantry, and the crews shared between them) into the shared Kit Core
+    Infantry, the crews shared between them, and Zeus) into the shared Kit Core
     library. Split out from Kit Core itself so the Cold War data ships, loads
     and can be dropped independently of the BAF and SciFi halves.
 
@@ -23,7 +23,8 @@ private _factionAddon = createHashMapFromArray [
     ["CWRM",   "SP_Uniforms"],
     ["CWPARA", "SP_Uniforms"],
     ["CWMECH", "SP_Uniforms"],
-    ["CWCREW", "cwr3_soldiers_uk"]
+    ["CWCREW", "cwr3_soldiers_uk"],
+    ["CWZEUS", "SP_Uniforms"]
 ];
 {
     [_x, _y] call FTH_fnc_registerFactionAvailable;
@@ -35,6 +36,7 @@ private _factionAddon = createHashMapFromArray [
 private _reg = { _this call FTH_fnc_registerKit; };
 
 // ── Loadout library (Cold War modlist - Spearpoint / CWR3) ────────────────
+#include "data_CWZEUS.sqf"
 #include "data_CWCREW.sqf"
 #include "data_CWRM.sqf"
 #include "data_CWPARA.sqf"

@@ -22,7 +22,7 @@ class CfgPatches
             "cwr3_expansion_uk"
         };
         author = "FullMetalShep";
-        version = 2;
+        version = 3;
     };
 };
 
@@ -53,7 +53,7 @@ class CfgVehicles
 
 class Extended_InitPost_EventHandlers
 {
-    class _44th_KitCrate_MASTER_CW { class _44th_kitcrates { init = "[(_this select 0), 'MASTER', ['CWRM','CWPARA','CWMECH','CWCREW']] execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
+    class _44th_KitCrate_MASTER_CW { class _44th_kitcrates { init = "[(_this select 0), 'MASTER', ['CWZEUS','CWRM','CWPARA','CWMECH','CWCREW']] execVM '\44th_KitCrates\kit_crates\fn_fillCrate.sqf'"; }; };
 };
 
 class Cfg3DEN

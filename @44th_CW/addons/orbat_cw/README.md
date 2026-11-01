@@ -48,8 +48,9 @@ show the right kit.
 
 The slots are placed as vanilla `B_Soldier_unarmed_F` on purpose: the kit supplies
 everything, so there is one source of truth for a role's appearance rather than
-two. The two Regimental Command slots carry the Royal Marines Platoon IC kit
-(`CWRM_PlatoonIC`). All Crew Driver, Gunner and Loader slots share one Crew kit.
+two. The two Regimental Command slots carry the Zeus kit (`CWZEUS_Zeus`): the Royal
+Marines Platoon IC loadout, with every beret in the kit menu so Zeus can match the
+unit being played. All Crew Driver, Gunner and Loader slots share one Crew kit.
 
 If Spearpoint is not loaded, Kit Core skips the infantry kits entirely and the
 slots spawn as plain unarmed soldiers rather than half-kitted ones.

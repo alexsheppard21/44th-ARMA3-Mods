@@ -1,8 +1,8 @@
 # 44th Kit Core — Cold War
 
 Registers the Cold War half of the 44th roster into [Kit Core](../../../@44th/addons/kit_core/)'s
-shared loadout library: Royal Marines, 2 Para, Mechanised Infantry, and the
-aircrew and armour crews they share. Split out of Kit Core itself so this data
+shared loadout library: Royal Marines, 2 Para, Mechanised Infantry, the aircrew
+and armour crews they share, and Zeus. Split out of Kit Core itself so this data
 can ship, load and be dropped on its own — it never requires 3CB, TKE or OPTRE,
 and removing it never touches the other factions' kits.
 
@@ -28,6 +28,7 @@ Cold War-classed content (ORBAT CW, Supply Crates CW) hard-require them.
 | `CWPARA` — 2 Para | 14 | `SP_Uniforms` | `data_CWPARA.sqf` |
 | `CWMECH` — Mechanised Infantry | 14 | `SP_Uniforms` | `data_CWMECH.sqf` |
 | `CWCREW` — Mailman and Anvil crews | 3 | `cwr3_soldiers_uk` | `data_CWCREW.sqf` |
+| `CWZEUS` — Regimental Command | 1 | `SP_Uniforms` | `data_CWZEUS.sqf` |
 
 Role keys are the faction plus the role: `CWRM_PlatoonIC`, `CWPARA_GPMGNo1`,
 `CWCREW_Pilot`. The ORBAT slots and crates look kits up by key, so **keys must

@@ -2683,7 +2683,7 @@ class items
 							class data
 							{
 								singleType="STRING";
-								value="CWRM_PlatoonIC";
+								value="CWZEUS_Zeus";
 							};
 						};
 					};
@@ -2785,7 +2785,7 @@ class items
 							class data
 							{
 								singleType="STRING";
-								value="CWRM_PlatoonIC";
+								value="CWZEUS_Zeus";
 							};
 						};
 					};

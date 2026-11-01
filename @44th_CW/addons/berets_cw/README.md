@@ -1,18 +1,20 @@
 # 44th Berets — Cold War
 
-The CWR3 beret with the 44th cap badge, in six colours. All six are options in the
-kit menu on every Cold War kit; the default kits still wear the regimental berets.
+The CWR3 beret with the 44th cap badge, one colour per role type. They are options
+in the kit menu, each only on the kits that already wear that colour; default kits
+still wear the regimental berets, and Pilots get none.
 
-| Class | Colour | Texture |
-|---|---|---|
-| `_44th_Beret_Sand_CW` | Sand | `data/44th_beret_sand_co.paa` |
-| `_44th_Beret_Maroon_CW` | Maroon | CWR3 |
-| `_44th_Beret_Green_CW` | Green | CWR3 |
-| `_44th_Beret_Black_CW` | Black | CWR3 |
-| `_44th_Beret_Blue_CW` | Blue | CWR3 (dark blue) |
-| `_44th_Beret_Khaki_CW` | Khaki | `data/44th_beret_khaki_co.paa` |
+| Name in game | Colour | Class | Kit menu | Texture |
+|---|---|---|---|---|
+| 44th Beret (SF) | Sand | `_44th_Beret_Sand_CW` | None yet | `data/44th_beret_sand_co.paa` |
+| 44th Beret (Infantry) | Khaki | `_44th_Beret_Khaki_CW` | Mechanised Infantry | `data/44th_beret_khaki_co.paa` |
+| 44th Beret (Commando) | Sea green | `_44th_Beret_SeaGreen_CW` | Royal Marines | CWR3 |
+| 44th Beret (Support) | Blue | `_44th_Beret_Blue_CW` | None yet | CWR3 (dark blue) |
+| 44th Beret (Paratrooper) | Maroon | `_44th_Beret_Maroon_CW` | 2 Para | CWR3 |
+| 44th Beret (Light Inf) | Green | `_44th_Beret_Green_CW` | Mechanised Infantry | CWR3 |
+| 44th Beret (Armoured) | Black | `_44th_Beret_Black_CW` | Crew Commander, Crew | CWR3 |
 
-The CWR3 beret keeps its colour and badge in separate textures, so all six share
+The CWR3 beret keeps its colour and badge in separate textures, so all seven share
 `data/44th_beret_badge_ca.paa`: a 1024×1024 texture with the badge in the same
 place as CWR3's own. To change the badge, replace that file. Keep it dark: the game
 brightens these textures about 2× under light, so an average brightness of about
